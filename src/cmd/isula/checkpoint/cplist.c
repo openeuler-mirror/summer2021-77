@@ -33,15 +33,25 @@ const char g_cmd_checkpoint_ls_usage[] = "ls [OPTIONS] checkpoint [checkpoint...
 struct client_arguments g_cmd_checkpoint_ls_args;
 
 #define LS_OPTIONS(cmdargs) \
-    { CMD_OPT_TYPE_BOOL, false, "force", 'f', &(cmdargs).force, "Do not prompt for confirmation", NULL },
+    { CMD_OPT_TYPE_STRING, false, "checkpoint-dir", 0, &(cmdargs).checkpoint_dir, "Use a custom checkpoint storage directory", NULL },
 
 
 
 static int client_checkpoint_ls(const struct client_arguments *args, char ***volumes, size_t *volumes_len){
-    //printf("enter\n");
+    
+    //printf("%s\n",);
     DIR *dirp;
     struct dirent *dp;
-    dirp=opendir("/tmp/isula-criu/");
+    if(args->checkpoint_dir){
+        //printf("%s\n",args->checkpoint_dir);
+        dirp=opendir(args->checkpoint_dir);
+        //dirp=opendir("/tmp/isula/");
+
+        //printf("error\n");
+    }else{
+        dirp=opendir("/tmp/isula-criu/");
+    }
+    
     while((dp=readdir(dirp))!=NULL){
         if(strcmp(dp->d_name, ".") == 0 || strcmp(dp->d_name, "..") == 0){
             continue;
@@ -59,33 +69,41 @@ int cmd_checkpoint_ls_main(int argc, const char **argv)
     struct isula_libutils_log_config lconf = { 0 };
     int exit_code = 1;
     command_t cmd;
+    
     char **checkpoints = NULL;
     size_t checkpoints_len = 0;
    // char ch = 'n';
-    struct command_option options[] = { LOG_OPTIONS(lconf) COMMON_OPTIONS(g_cmd_checkpoint_ls_args)
+   
+    struct command_option options[] = { 
         LS_OPTIONS(g_cmd_checkpoint_ls_args)
     };
     //printf("%s",options[0])
+    
 
     if (client_arguments_init(&g_cmd_checkpoint_ls_args)) {
         COMMAND_ERROR("client arguments init failed");
         exit(ECOMMON);
     }
+    //printf("%d\n",cmd.option_count);
     g_cmd_checkpoint_ls_args.progname = util_string_join(" ", argv, 2);
     isula_libutils_default_log_config(argv[0], &lconf);
     subcommand_init(&cmd, options, sizeof(options) / sizeof(options[0]), argc, (const char **)argv, g_cmd_checkpoint_ls_desc,
                     g_cmd_checkpoint_ls_usage);
-
+    //here failed
+    //printf("%d\n",cmd.option_count);
     if (command_parse_args(&cmd, &g_cmd_checkpoint_ls_args.argc, &g_cmd_checkpoint_ls_args.argv)) {
         exit(exit_code);
     }
+    //printf("%s\n",cmd.options->large);
+    //printf("%s\n",g_cmd_checkpoint_ls_args.checkpoint_dir);
+    
     if (isula_libutils_log_enable(&lconf)) {
         COMMAND_ERROR("checkpoint ls: log init failed");
         exit(exit_code);
     }
 
 
-
+    //printf("%s\n",g_cmd_checkpoint_ls_args.argv[0]);
     if (g_cmd_checkpoint_ls_args.argc != 0) {
         
         COMMAND_ERROR("%s: \"checkpoint ls\" requires exactly 0 arguments.", g_cmd_checkpoint_ls_args.progname);

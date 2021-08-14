@@ -41,7 +41,7 @@ const char g_cmd_checkpoint_rm_usage[] = "rm [OPTIONS] checkpoint [checkpoint...
 struct client_arguments g_cmd_checkpoint_rm_args;
 
 #define REMOVE_OPTIONS(cmdargs) \
-    { CMD_OPT_TYPE_BOOL, false, "force", 'f', &(cmdargs).force, "Do not prompt for confirmation", NULL },
+    { CMD_OPT_TYPE_STRING, false, "checkpoint-dir", 0, &(cmdargs).checkpoint_dir, "Use a custom checkpoint storage directory", NULL },
 
 
 
@@ -113,7 +113,13 @@ static int client_checkpoint_rm(const struct client_arguments *args, char ***vol
    
     char checkpoint_dir[1000]="/tmp/isula-criu/";
     strcat(checkpoint_dir,args->name);
-    delete_file(checkpoint_dir);
+    if(args->checkpoint_dir){
+         strcat(args->checkpoint_dir,args->name);
+        delete_file(args->checkpoint_dir);
+    }else{
+        delete_file(checkpoint_dir);
+    }
+    
     return 1;
 }
 

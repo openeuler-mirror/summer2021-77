@@ -33,9 +33,10 @@ const char g_cmd_checkpoint_create_usage[] = "create [OPTIONS] checkpoint [check
 struct client_arguments g_cmd_checkpoint_create_args;
 
 #define CREATE_OPTIONS(cmdargs) \
-    { CMD_OPT_TYPE_BOOL, false, "force", 'f', &(cmdargs).force, "Do not prompt for confirmation", NULL },
+    { CMD_OPT_TYPE_STRING, false, "checkpoint-dir", 0, &(cmdargs).checkpoint_dir, "Use a custom checkpoint storage directory", NULL },
 
 static int client_checkpoint_create(const struct client_arguments *args, char ***volumes, size_t *volumes_len){
+    printf("%s\n",args->checkpoint_dir);
     struct lxc_container *c;
     c=lxc_container_new(args->name,"/var/lib/isulad/engines/lcr/");
     if (!c) {
@@ -53,7 +54,12 @@ static int client_checkpoint_create(const struct client_arguments *args, char **
    
     char checkpoint_dir[1000]="/tmp/isula-criu/";
     strcat(checkpoint_dir,c->name);
-    bool res =  c->checkpoint(c,checkpoint_dir,true,false);
+    bool res;
+    if(args->checkpoint_dir){
+        res = c->checkpoint(c,args->checkpoint_dir,true,false);
+    }else{
+        res =  c->checkpoint(c,checkpoint_dir,true,false);
+    }
     if(!res){
         printf("Checkpointing %s failed",args->name);
     }else{
@@ -71,7 +77,7 @@ int cmd_checkpoint_create_main(int argc, const char **argv)
     char **checkpoints = NULL;
     size_t checkpoints_len = 0;
    // char ch = 'n';
-    struct command_option options[] = { LOG_OPTIONS(lconf) COMMON_OPTIONS(g_cmd_checkpoint_create_args)
+    struct command_option options[] = { 
         CREATE_OPTIONS(g_cmd_checkpoint_create_args)
     };
     //printf("%s",options[0])
@@ -88,6 +94,8 @@ int cmd_checkpoint_create_main(int argc, const char **argv)
     if (command_parse_args(&cmd, &g_cmd_checkpoint_create_args.argc, &g_cmd_checkpoint_create_args.argv)) {
         exit(exit_code);
     }
+    //printf("cmd.options->larg:%s\n",cmd.options->large);
+    //printf("%s\n",g_cmd_checkpoint_create_args.checkpoint_dir);
     if (isula_libutils_log_enable(&lconf)) {
         COMMAND_ERROR("checkpoint create: log init failed");
         exit(exit_code);
@@ -95,11 +103,12 @@ int cmd_checkpoint_create_main(int argc, const char **argv)
 
 
 
+    /*
     if (g_cmd_checkpoint_create_args.argc != 1) {
         
         COMMAND_ERROR("%s: \"checkpoint create\" requires exactly 1 arguments.", g_cmd_checkpoint_create_args.progname);
         exit(exit_code);
-    }
+    }*/
 
     //printf("%s\n","name");
     g_cmd_checkpoint_create_args.name=g_cmd_checkpoint_create_args.argv[0];

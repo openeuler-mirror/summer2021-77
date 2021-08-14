@@ -32,8 +32,9 @@ const char g_cmd_checkpoint_restore_usage[] = "restore [OPTIONS] checkpoint [che
 
 struct client_arguments g_cmd_checkpoint_restore_args;
 
-#define LS_OPTIONS(cmdargs) \
-    { CMD_OPT_TYPE_BOOL, false, "force", 'f', &(cmdargs).force, "Do not prompt for confirmation", NULL },
+#define RESTORE_OPTIONS(cmdargs) \
+    { CMD_OPT_TYPE_STRING, false, "checkpoint-dir", 0, &(cmdargs).checkpoint_dir, "Use a custom checkpoint storage directory", NULL },
+
 
 
 
@@ -54,7 +55,14 @@ static int client_checkpoint_restore(const struct client_arguments *args, char *
 	}
     char checkpoint_dir[1000]="/tmp/isula-criu/";
     strcat(checkpoint_dir,c->name);
-    bool res =  c->restore(c,checkpoint_dir,false);
+    bool res;
+    if(args->checkpoint_dir){
+        strcat(args->checkpoint_dir,c->name);
+        res =  c->restore(c,checkpoint_dir,false);
+    }else{
+        res =  c->restore(c,checkpoint_dir,false);
+    }
+    
     if (!res){
         printf("Restoring %s failed\n",args->name);
     }else{
@@ -74,7 +82,7 @@ int cmd_checkpoint_restore_main(int argc, const char **argv)
     size_t checkpoints_len = 0;
    // char ch = 'n';
     struct command_option options[] = { LOG_OPTIONS(lconf) COMMON_OPTIONS(g_cmd_checkpoint_restore_args)
-        LS_OPTIONS(g_cmd_checkpoint_restore_args)
+        RESTORE_OPTIONS(g_cmd_checkpoint_restore_args)
     };
     //printf("%s",options[0])
 
