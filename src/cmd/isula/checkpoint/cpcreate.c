@@ -27,8 +27,8 @@
 #include "protocol_type.h"
 
 const char g_cmd_checkpoint_create_desc[] =
-    "Remove one or more checkpoints. You cannot remove a checkpoint that is in use by a container.";
-const char g_cmd_checkpoint_create_usage[] = "create [OPTIONS] checkpoint [checkpoint...]";
+    "Create a checkpoint from a running container";
+const char g_cmd_checkpoint_create_usage[] = "isula checkpoint create [OPTIONS] CONTAINER";
 
 struct client_arguments g_cmd_checkpoint_create_args;
 

@@ -648,6 +648,33 @@ cmd/command_parser.c.s:
 	cd /root/下载/iSulad/build && $(MAKE) -f src/CMakeFiles/isula.dir/build.make src/CMakeFiles/isula.dir/cmd/command_parser.c.s
 .PHONY : cmd/command_parser.c.s
 
+cmd/isula/base/checkpoint.o: cmd/isula/base/checkpoint.c.o
+
+.PHONY : cmd/isula/base/checkpoint.o
+
+# target to build an object file
+cmd/isula/base/checkpoint.c.o:
+	cd /root/下载/iSulad/build && $(MAKE) -f src/CMakeFiles/isula.dir/build.make src/CMakeFiles/isula.dir/cmd/isula/base/checkpoint.c.o
+.PHONY : cmd/isula/base/checkpoint.c.o
+
+cmd/isula/base/checkpoint.i: cmd/isula/base/checkpoint.c.i
+
+.PHONY : cmd/isula/base/checkpoint.i
+
+# target to preprocess a source file
+cmd/isula/base/checkpoint.c.i:
+	cd /root/下载/iSulad/build && $(MAKE) -f src/CMakeFiles/isula.dir/build.make src/CMakeFiles/isula.dir/cmd/isula/base/checkpoint.c.i
+.PHONY : cmd/isula/base/checkpoint.c.i
+
+cmd/isula/base/checkpoint.s: cmd/isula/base/checkpoint.c.s
+
+.PHONY : cmd/isula/base/checkpoint.s
+
+# target to generate assembly for a file
+cmd/isula/base/checkpoint.c.s:
+	cd /root/下载/iSulad/build && $(MAKE) -f src/CMakeFiles/isula.dir/build.make src/CMakeFiles/isula.dir/cmd/isula/base/checkpoint.c.s
+.PHONY : cmd/isula/base/checkpoint.c.s
+
 cmd/isula/base/create.o: cmd/isula/base/create.c.o
 
 .PHONY : cmd/isula/base/create.o
@@ -6268,6 +6295,9 @@ help:
 	@echo "... cmd/command_parser.o"
 	@echo "... cmd/command_parser.i"
 	@echo "... cmd/command_parser.s"
+	@echo "... cmd/isula/base/checkpoint.o"
+	@echo "... cmd/isula/base/checkpoint.i"
+	@echo "... cmd/isula/base/checkpoint.s"
 	@echo "... cmd/isula/base/create.o"
 	@echo "... cmd/isula/base/create.i"
 	@echo "... cmd/isula/base/create.s"

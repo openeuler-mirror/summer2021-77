@@ -27,8 +27,8 @@
 #include "protocol_type.h"
 
 const char g_cmd_checkpoint_ls_desc[] =
-    "Remove one or more checkpoints. You cannot remove a checkpoint that is in use by a container.";
-const char g_cmd_checkpoint_ls_usage[] = "ls [OPTIONS] checkpoint [checkpoint...]";
+    "List checkpoints for a container";
+const char g_cmd_checkpoint_ls_usage[] = "isula checkpoint ls [OPTIONS]";
 
 struct client_arguments g_cmd_checkpoint_ls_args;
 

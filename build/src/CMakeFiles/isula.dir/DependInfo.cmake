@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/root/下载/iSulad/src/cmd/command_parser.c" "/root/下载/iSulad/build/src/CMakeFiles/isula.dir/cmd/command_parser.c.o"
+  "/root/下载/iSulad/src/cmd/isula/base/checkpoint.c" "/root/下载/iSulad/build/src/CMakeFiles/isula.dir/cmd/isula/base/checkpoint.c.o"
   "/root/下载/iSulad/src/cmd/isula/base/create.c" "/root/下载/iSulad/build/src/CMakeFiles/isula.dir/cmd/isula/base/create.c.o"
   "/root/下载/iSulad/src/cmd/isula/base/kill.c" "/root/下载/iSulad/build/src/CMakeFiles/isula.dir/cmd/isula/base/kill.c.o"
   "/root/下载/iSulad/src/cmd/isula/base/rename.c" "/root/下载/iSulad/build/src/CMakeFiles/isula.dir/cmd/isula/base/rename.c.o"
@@ -63,7 +64,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
   "ENABLE_SELINUX=1"
   "GRPC_CONNECTOR"
   "HAVE_LIBCAP_H=1"
-  "ISULAD_BUILD_TIME=\"2021-08-15T01:04:20.517858813+08:00\""
+  "ISULAD_BUILD_TIME=\"2021-08-15T03:08:16.581461343+08:00\""
   "ISULAD_GIT_COMMIT=\"9aa57ef27d3719729097f75c65125519497b8b66\""
   "ISULAD_ROOT_PATH=\"/var/lib/isulad\""
   "ISULAD_STATE_PATH=\"/var/run/isulad\""

@@ -35,8 +35,8 @@
 #include "protocol_type.h"
 
 const char g_cmd_checkpoint_rm_desc[] =
-    "Remove one or more checkpoints. You cannot remove a checkpoint that is in use by a container.";
-const char g_cmd_checkpoint_rm_usage[] = "rm [OPTIONS] checkpoint [checkpoint...]";
+    "Remove a checkpoint";
+const char g_cmd_checkpoint_rm_usage[] = "isula checkpoint rm [OPTIONS] CONTAINER";
 
 struct client_arguments g_cmd_checkpoint_rm_args;
 
