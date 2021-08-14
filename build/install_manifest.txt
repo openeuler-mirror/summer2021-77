@@ -1,0 +1,15 @@
+/usr/local/lib/pkgconfig/isulad.pc
+/usr/local/include/isulad/image_api.h
+/etc/isulad/daemon.json
+/etc/default/isulad/config.json
+/etc/default/isulad/systemcontainer_config.json
+/etc/isulad/seccomp_default.json
+/etc/default/isulad/hooks/default.json
+/etc/default/isulad/isulad-check.sh
+/etc/sysmonitor/process/isulad-monit
+/usr/local/lib/libisula.so
+/usr/local/bin/isula
+/usr/local/bin/isulad-shim
+/usr/local/bin/isulad
+/usr/local/lib/libhttpclient.so
+/usr/local/lib/libisulad_img.so
