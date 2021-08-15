@@ -11,7 +11,7 @@
 #include "cprestore.h"
 
 const char g_cmd_checkpoint_desc[] = "Manage checkpoints";
-const char g_cmd_checkpoint_usage[] = "isula checkpoint COMMAND"
+const char g_cmd_checkpoint_usage[] = "isula checkpoint COMMAND";
 
 
 struct command g_checkpoint_commands[] = {

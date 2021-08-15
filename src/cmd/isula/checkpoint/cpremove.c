@@ -36,7 +36,7 @@
 
 const char g_cmd_checkpoint_rm_desc[] =
     "Remove a checkpoint";
-const char g_cmd_checkpoint_rm_usage[] = "isula checkpoint rm [OPTIONS] CONTAINER";
+const char g_cmd_checkpoint_rm_usage[] = "rm [OPTIONS] CONTAINER";
 
 struct client_arguments g_cmd_checkpoint_rm_args;
 

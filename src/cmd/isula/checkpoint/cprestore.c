@@ -27,8 +27,8 @@
 #include "protocol_type.h"
 
 const char g_cmd_checkpoint_restore_desc[] =
-    "Remove one or more checkpoints. You cannot remove a checkpoint that is in use by a container.";
-const char g_cmd_checkpoint_restore_usage[] = "restore [OPTIONS] checkpoint [checkpoint...]";
+    "Restore a checkpoint";
+const char g_cmd_checkpoint_restore_usage[] = "restore [OPTIONS] checkpoint";
 
 struct client_arguments g_cmd_checkpoint_restore_args;
 

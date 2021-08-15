@@ -28,7 +28,7 @@
 
 const char g_cmd_checkpoint_ls_desc[] =
     "List checkpoints for a container";
-const char g_cmd_checkpoint_ls_usage[] = "isula checkpoint ls [OPTIONS]";
+const char g_cmd_checkpoint_ls_usage[] = "ls [OPTIONS]";
 
 struct client_arguments g_cmd_checkpoint_ls_args;
 

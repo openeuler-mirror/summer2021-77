@@ -28,7 +28,7 @@
 
 const char g_cmd_checkpoint_create_desc[] =
     "Create a checkpoint from a running container";
-const char g_cmd_checkpoint_create_usage[] = "isula checkpoint create [OPTIONS] CONTAINER";
+const char g_cmd_checkpoint_create_usage[] = "create [OPTIONS] CONTAINER";
 
 struct client_arguments g_cmd_checkpoint_create_args;
 
