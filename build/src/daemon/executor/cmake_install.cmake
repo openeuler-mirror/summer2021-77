@@ -1,4 +1,4 @@
-# Install script for directory: /root/下载/iSulad/src/daemon/executor
+# Install script for directory: /root/下载/summer2021-77/src/daemon/executor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/下载/iSulad/build/src/daemon/executor/container_cb/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/executor/image_cb/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/executor/volume_cb/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/executor/container_cb/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/executor/image_cb/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/executor/volume_cb/cmake_install.cmake")
 
 endif()
 

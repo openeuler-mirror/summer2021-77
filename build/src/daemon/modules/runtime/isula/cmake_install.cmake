@@ -1,4 +1,4 @@
-# Install script for directory: /root/下载/iSulad/src/daemon/modules/runtime/isula
+# Install script for directory: /root/下载/summer2021-77/src/daemon/modules/runtime/isula
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,4 +1,4 @@
-# Install script for directory: /root/下载/iSulad/src/cmd/isula/stream
+# Install script for directory: /root/下载/summer2021-77/src/cmd/isula/stream
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

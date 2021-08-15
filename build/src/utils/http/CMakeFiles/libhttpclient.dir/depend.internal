@@ -14,12 +14,12 @@ src/utils/http/CMakeFiles/libhttpclient.dir/__/buffer/buffer.c.o
  ../src/utils/cutils/utils_regex.h
  ../src/utils/cutils/utils_string.h
  ../src/utils/cutils/utils_verify.h
- /root/下载/iSulad/src/utils/buffer/buffer.c
- /root/下载/iSulad/src/utils/buffer/buffer.h
+ /root/下载/summer2021-77/src/utils/buffer/buffer.c
+ /root/下载/summer2021-77/src/utils/buffer/buffer.h
 src/utils/http/CMakeFiles/libhttpclient.dir/certificate.c.o
  ../src/utils/cutils/utils_file.h
- /root/下载/iSulad/src/utils/http/certificate.c
- /root/下载/iSulad/src/utils/http/certificate.h
+ /root/下载/summer2021-77/src/utils/http/certificate.c
+ /root/下载/summer2021-77/src/utils/http/certificate.h
 src/utils/http/CMakeFiles/libhttpclient.dir/http.c.o
  ../src/common/constants.h
  ../src/utils/buffer/buffer.h
@@ -34,8 +34,8 @@ src/utils/http/CMakeFiles/libhttpclient.dir/http.c.o
  ../src/utils/cutils/utils_regex.h
  ../src/utils/cutils/utils_string.h
  ../src/utils/cutils/utils_verify.h
- /root/下载/iSulad/src/utils/http/http.c
- /root/下载/iSulad/src/utils/http/http.h
+ /root/下载/summer2021-77/src/utils/http/http.c
+ /root/下载/summer2021-77/src/utils/http/http.h
 src/utils/http/CMakeFiles/libhttpclient.dir/parser.c.o
  ../src/common/constants.h
  ../src/utils/cutils/utils.h
@@ -49,8 +49,8 @@ src/utils/http/CMakeFiles/libhttpclient.dir/parser.c.o
  ../src/utils/cutils/utils_regex.h
  ../src/utils/cutils/utils_string.h
  ../src/utils/cutils/utils_verify.h
- /root/下载/iSulad/src/utils/http/parser.c
- /root/下载/iSulad/src/utils/http/parser.h
+ /root/下载/summer2021-77/src/utils/http/parser.c
+ /root/下载/summer2021-77/src/utils/http/parser.h
 src/utils/http/CMakeFiles/libhttpclient.dir/rest_common.c.o
  ../src/common/constants.h
  ../src/utils/buffer/buffer.h
@@ -66,7 +66,7 @@ src/utils/http/CMakeFiles/libhttpclient.dir/rest_common.c.o
  ../src/utils/cutils/utils_string.h
  ../src/utils/cutils/utils_verify.h
  ../src/utils/http/http.h
- /root/下载/iSulad/src/utils/http/http.h
- /root/下载/iSulad/src/utils/http/parser.h
- /root/下载/iSulad/src/utils/http/rest_common.c
- /root/下载/iSulad/src/utils/http/rest_common.h
+ /root/下载/summer2021-77/src/utils/http/http.h
+ /root/下载/summer2021-77/src/utils/http/parser.h
+ /root/下载/summer2021-77/src/utils/http/rest_common.c
+ /root/下载/summer2021-77/src/utils/http/rest_common.h

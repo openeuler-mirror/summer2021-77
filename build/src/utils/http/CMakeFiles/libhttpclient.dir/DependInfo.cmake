@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/root/下载/iSulad/src/utils/buffer/buffer.c" "/root/下载/iSulad/build/src/utils/http/CMakeFiles/libhttpclient.dir/__/buffer/buffer.c.o"
-  "/root/下载/iSulad/src/utils/http/certificate.c" "/root/下载/iSulad/build/src/utils/http/CMakeFiles/libhttpclient.dir/certificate.c.o"
-  "/root/下载/iSulad/src/utils/http/http.c" "/root/下载/iSulad/build/src/utils/http/CMakeFiles/libhttpclient.dir/http.c.o"
-  "/root/下载/iSulad/src/utils/http/parser.c" "/root/下载/iSulad/build/src/utils/http/CMakeFiles/libhttpclient.dir/parser.c.o"
-  "/root/下载/iSulad/src/utils/http/rest_common.c" "/root/下载/iSulad/build/src/utils/http/CMakeFiles/libhttpclient.dir/rest_common.c.o"
+  "/root/下载/summer2021-77/src/utils/buffer/buffer.c" "/root/下载/summer2021-77/build/src/utils/http/CMakeFiles/libhttpclient.dir/__/buffer/buffer.c.o"
+  "/root/下载/summer2021-77/src/utils/http/certificate.c" "/root/下载/summer2021-77/build/src/utils/http/CMakeFiles/libhttpclient.dir/certificate.c.o"
+  "/root/下载/summer2021-77/src/utils/http/http.c" "/root/下载/summer2021-77/build/src/utils/http/CMakeFiles/libhttpclient.dir/http.c.o"
+  "/root/下载/summer2021-77/src/utils/http/parser.c" "/root/下载/summer2021-77/build/src/utils/http/CMakeFiles/libhttpclient.dir/parser.c.o"
+  "/root/下载/summer2021-77/src/utils/http/rest_common.c" "/root/下载/summer2021-77/build/src/utils/http/CMakeFiles/libhttpclient.dir/rest_common.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -18,7 +18,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
   "ENABLE_SELINUX=1"
   "GRPC_CONNECTOR"
   "HAVE_LIBCAP_H=1"
-  "ISULAD_BUILD_TIME=\"2021-08-15T03:08:16.581461343+08:00\""
+  "ISULAD_BUILD_TIME=\"2021-08-15T12:18:43.067953491+08:00\""
   "ISULAD_GIT_COMMIT=\"9aa57ef27d3719729097f75c65125519497b8b66\""
   "ISULAD_ROOT_PATH=\"/var/lib/isulad\""
   "ISULAD_STATE_PATH=\"/var/run/isulad\""

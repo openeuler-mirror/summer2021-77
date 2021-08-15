@@ -3,15 +3,15 @@
 
 # compile C with /usr/bin/cc
 # compile CXX with /usr/bin/c++
-C_FLAGS = -fPIC -fstack-protector-all -D_FORTIFY_SOURCE=2 -O2 -Wall -Werror -rdynamic -D__FILENAME__='"$(subst /root/下载/iSulad/,,$(abspath $<))"'   -g -O2
+C_FLAGS = -fPIC -fstack-protector-all -D_FORTIFY_SOURCE=2 -O2 -Wall -Werror -rdynamic -D__FILENAME__='"$(subst /root/下载/summer2021-77/,,$(abspath $<))"'   -g -O2
 
-C_DEFINES = -DENABLE_OCI_IMAGE=1 -DENABLE_SELINUX=1 -DGRPC_CONNECTOR -DHAVE_LIBCAP_H=1 -DISULAD_BUILD_TIME=\"2021-08-15T03:08:16.581461343+08:00\" -DISULAD_GIT_COMMIT=\"9aa57ef27d3719729097f75c65125519497b8b66\" -DISULAD_ROOT_PATH=\"/var/lib/isulad\" -DISULAD_STATE_PATH=\"/var/run/isulad\" -DOPENSSL_VERIFY -DSYSTEMD_NOTIFY
+C_DEFINES = -DENABLE_OCI_IMAGE=1 -DENABLE_SELINUX=1 -DGRPC_CONNECTOR -DHAVE_LIBCAP_H=1 -DISULAD_BUILD_TIME=\"2021-08-15T12:18:43.067953491+08:00\" -DISULAD_GIT_COMMIT=\"9aa57ef27d3719729097f75c65125519497b8b66\" -DISULAD_ROOT_PATH=\"/var/lib/isulad\" -DISULAD_STATE_PATH=\"/var/run/isulad\" -DOPENSSL_VERIFY -DSYSTEMD_NOTIFY
 
-C_INCLUDES = -I/root/下载/iSulad/src/cmd -I/root/下载/iSulad/src/cmd/isulad-shim -I/root/下载/iSulad/src -I/root/下载/iSulad/src/common -I/root/下载/iSulad/src/utils -I/root/下载/iSulad/src/utils/tar -I/root/下载/iSulad/src/utils/sha256 -I/root/下载/iSulad/src/utils/cutils -I/root/下载/iSulad/src/utils/cutils/map -I/root/下载/iSulad/src/utils/console -I/root/下载/iSulad/src/utils/buffer -I/root/下载/iSulad/src/utils/cpputils -I/root/下载/iSulad/build/conf 
+C_INCLUDES = -I/root/下载/summer2021-77/src/cmd -I/root/下载/summer2021-77/src/cmd/isulad-shim -I/root/下载/summer2021-77/src -I/root/下载/summer2021-77/src/common -I/root/下载/summer2021-77/src/utils -I/root/下载/summer2021-77/src/utils/tar -I/root/下载/summer2021-77/src/utils/sha256 -I/root/下载/summer2021-77/src/utils/cutils -I/root/下载/summer2021-77/src/utils/cutils/map -I/root/下载/summer2021-77/src/utils/console -I/root/下载/summer2021-77/src/utils/buffer -I/root/下载/summer2021-77/src/utils/cpputils -I/root/下载/summer2021-77/build/conf 
 
-CXX_FLAGS = -fPIC -std=c++11 -fstack-protector-all -D_FORTIFY_SOURCE=2 -O2 -Wall -Werror -D__FILENAME__='"$(subst /root/下载/iSulad/,,$(abspath $<))"'   -g -O2
+CXX_FLAGS = -fPIC -std=c++11 -fstack-protector-all -D_FORTIFY_SOURCE=2 -O2 -Wall -Werror -D__FILENAME__='"$(subst /root/下载/summer2021-77/,,$(abspath $<))"'   -g -O2
 
-CXX_DEFINES = -DENABLE_OCI_IMAGE=1 -DENABLE_SELINUX=1 -DGRPC_CONNECTOR -DHAVE_LIBCAP_H=1 -DISULAD_BUILD_TIME=\"2021-08-15T03:08:16.581461343+08:00\" -DISULAD_GIT_COMMIT=\"9aa57ef27d3719729097f75c65125519497b8b66\" -DISULAD_ROOT_PATH=\"/var/lib/isulad\" -DISULAD_STATE_PATH=\"/var/run/isulad\" -DOPENSSL_VERIFY -DSYSTEMD_NOTIFY
+CXX_DEFINES = -DENABLE_OCI_IMAGE=1 -DENABLE_SELINUX=1 -DGRPC_CONNECTOR -DHAVE_LIBCAP_H=1 -DISULAD_BUILD_TIME=\"2021-08-15T12:18:43.067953491+08:00\" -DISULAD_GIT_COMMIT=\"9aa57ef27d3719729097f75c65125519497b8b66\" -DISULAD_ROOT_PATH=\"/var/lib/isulad\" -DISULAD_STATE_PATH=\"/var/run/isulad\" -DOPENSSL_VERIFY -DSYSTEMD_NOTIFY
 
-CXX_INCLUDES = -I/root/下载/iSulad/src/cmd -I/root/下载/iSulad/src/cmd/isulad-shim -I/root/下载/iSulad/src -I/root/下载/iSulad/src/common -I/root/下载/iSulad/src/utils -I/root/下载/iSulad/src/utils/tar -I/root/下载/iSulad/src/utils/sha256 -I/root/下载/iSulad/src/utils/cutils -I/root/下载/iSulad/src/utils/cutils/map -I/root/下载/iSulad/src/utils/console -I/root/下载/iSulad/src/utils/buffer -I/root/下载/iSulad/src/utils/cpputils -I/root/下载/iSulad/build/conf 
+CXX_INCLUDES = -I/root/下载/summer2021-77/src/cmd -I/root/下载/summer2021-77/src/cmd/isulad-shim -I/root/下载/summer2021-77/src -I/root/下载/summer2021-77/src/common -I/root/下载/summer2021-77/src/utils -I/root/下载/summer2021-77/src/utils/tar -I/root/下载/summer2021-77/src/utils/sha256 -I/root/下载/summer2021-77/src/utils/cutils -I/root/下载/summer2021-77/src/utils/cutils/map -I/root/下载/summer2021-77/src/utils/console -I/root/下载/summer2021-77/src/utils/buffer -I/root/下载/summer2021-77/src/utils/cpputils -I/root/下载/summer2021-77/build/conf 
 

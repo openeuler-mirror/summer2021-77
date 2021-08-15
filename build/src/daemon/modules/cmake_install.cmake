@@ -1,4 +1,4 @@
-# Install script for directory: /root/下载/iSulad/src/daemon/modules
+# Install script for directory: /root/下载/summer2021-77/src/daemon/modules
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,17 +39,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/下载/iSulad/build/src/daemon/modules/runtime/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/modules/image/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/modules/plugin/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/modules/spec/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/modules/container/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/modules/log/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/modules/events/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/modules/events_sender/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/modules/service/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/modules/api/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/modules/volume/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/runtime/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/image/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/plugin/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/spec/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/container/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/log/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/events/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/events_sender/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/service/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/api/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/volume/cmake_install.cmake")
 
 endif()
 

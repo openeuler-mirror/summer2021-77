@@ -1,4 +1,4 @@
-# Install script for directory: /root/下载/iSulad/src/daemon/modules/image
+# Install script for directory: /root/下载/summer2021-77/src/daemon/modules/image
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,12 +44,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libisulad_img.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE FILES "/root/下载/iSulad/build/src/daemon/modules/image/libisulad_img.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE FILES "/root/下载/summer2021-77/build/src/daemon/modules/image/libisulad_img.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libisulad_img.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libisulad_img.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libisulad_img.so"
-         OLD_RPATH "/root/下载/iSulad/build/src/utils/http:"
+         OLD_RPATH "/root/下载/summer2021-77/build/src/utils/http:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libisulad_img.so")
@@ -62,8 +62,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/下载/iSulad/build/src/daemon/modules/image/external/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/modules/image/oci/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/image/external/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/image/oci/cmake_install.cmake")
 
 endif()
 

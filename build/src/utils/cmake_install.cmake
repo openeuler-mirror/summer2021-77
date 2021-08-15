@@ -1,4 +1,4 @@
-# Install script for directory: /root/下载/iSulad/src/utils
+# Install script for directory: /root/下载/summer2021-77/src/utils
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,13 +39,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/下载/iSulad/build/src/utils/console/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/utils/cutils/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/utils/sha256/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/utils/tar/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/utils/http/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/utils/buffer/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/utils/cpputils/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/utils/console/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/utils/cutils/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/utils/sha256/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/utils/tar/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/utils/http/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/utils/buffer/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/utils/cpputils/cmake_install.cmake")
 
 endif()
 

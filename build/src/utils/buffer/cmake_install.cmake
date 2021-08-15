@@ -1,4 +1,4 @@
-# Install script for directory: /root/下载/iSulad/src/utils/buffer
+# Install script for directory: /root/下载/summer2021-77/src/utils/buffer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

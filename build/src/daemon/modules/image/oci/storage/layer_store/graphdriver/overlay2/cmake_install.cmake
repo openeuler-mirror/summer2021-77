@@ -1,4 +1,4 @@
-# Install script for directory: /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2
+# Install script for directory: /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

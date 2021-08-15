@@ -1,4 +1,4 @@
-# Install script for directory: /root/下载/iSulad/src/daemon/modules/image/oci/storage
+# Install script for directory: /root/下载/summer2021-77/src/daemon/modules/image/oci/storage
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/下载/iSulad/build/src/daemon/modules/image/oci/storage/image_store/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/modules/image/oci/storage/layer_store/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/modules/image/oci/storage/rootfs_store/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/image/oci/storage/image_store/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/image/oci/storage/layer_store/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/modules/image/oci/storage/rootfs_store/cmake_install.cmake")
 
 endif()
 

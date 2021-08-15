@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/isula.dir/cmd/command_parser.c.o"
-  "CMakeFiles/isula.dir/cmd/isula/base/checkpoint.c.o"
   "CMakeFiles/isula.dir/cmd/isula/base/create.c.o"
   "CMakeFiles/isula.dir/cmd/isula/base/kill.c.o"
   "CMakeFiles/isula.dir/cmd/isula/base/rename.c.o"

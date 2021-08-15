@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/下载/iSulad
+CMAKE_SOURCE_DIR = /root/下载/summer2021-77
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/下载/iSulad/build
+CMAKE_BINARY_DIR = /root/下载/summer2021-77/build
 
 # Include any dependencies generated for this target.
 include src/daemon/modules/image/CMakeFiles/libisulad_img.dir/depend.make
@@ -59,770 +59,770 @@ include src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image.c.o: ../src/daemon/modules/image/image.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/image.c.o   -c /root/下载/iSulad/src/daemon/modules/image/image.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/image.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/image.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/image.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/image.c > CMakeFiles/libisulad_img.dir/image.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/image.c > CMakeFiles/libisulad_img.dir/image.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/image.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/image.c -o CMakeFiles/libisulad_img.dir/image.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/image.c -o CMakeFiles/libisulad_img.dir/image.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image_rootfs_handler.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image_rootfs_handler.c.o: ../src/daemon/modules/image/image_rootfs_handler.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image_rootfs_handler.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/image_rootfs_handler.c.o   -c /root/下载/iSulad/src/daemon/modules/image/image_rootfs_handler.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image_rootfs_handler.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/image_rootfs_handler.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/image_rootfs_handler.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image_rootfs_handler.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/image_rootfs_handler.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/image_rootfs_handler.c > CMakeFiles/libisulad_img.dir/image_rootfs_handler.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/image_rootfs_handler.c > CMakeFiles/libisulad_img.dir/image_rootfs_handler.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image_rootfs_handler.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/image_rootfs_handler.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/image_rootfs_handler.c -o CMakeFiles/libisulad_img.dir/image_rootfs_handler.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/image_rootfs_handler.c -o CMakeFiles/libisulad_img.dir/image_rootfs_handler.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image_spec_merge.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image_spec_merge.c.o: ../src/daemon/modules/image/image_spec_merge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image_spec_merge.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/image_spec_merge.c.o   -c /root/下载/iSulad/src/daemon/modules/image/image_spec_merge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image_spec_merge.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/image_spec_merge.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/image_spec_merge.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image_spec_merge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/image_spec_merge.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/image_spec_merge.c > CMakeFiles/libisulad_img.dir/image_spec_merge.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/image_spec_merge.c > CMakeFiles/libisulad_img.dir/image_spec_merge.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/image_spec_merge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/image_spec_merge.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/image_spec_merge.c -o CMakeFiles/libisulad_img.dir/image_spec_merge.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/image_spec_merge.c -o CMakeFiles/libisulad_img.dir/image_spec_merge.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/external/ext_image.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/external/ext_image.c.o: ../src/daemon/modules/image/external/ext_image.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/external/ext_image.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/external/ext_image.c.o   -c /root/下载/iSulad/src/daemon/modules/image/external/ext_image.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/external/ext_image.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/external/ext_image.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/external/ext_image.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/external/ext_image.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/external/ext_image.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/external/ext_image.c > CMakeFiles/libisulad_img.dir/external/ext_image.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/external/ext_image.c > CMakeFiles/libisulad_img.dir/external/ext_image.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/external/ext_image.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/external/ext_image.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/external/ext_image.c -o CMakeFiles/libisulad_img.dir/external/ext_image.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/external/ext_image.c -o CMakeFiles/libisulad_img.dir/external/ext_image.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/storage.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/storage.c.o: ../src/daemon/modules/image/oci/storage/storage.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/storage.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/storage.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/storage/storage.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/storage.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/storage.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/storage.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/storage.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/storage/storage.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/storage/storage.c > CMakeFiles/libisulad_img.dir/oci/storage/storage.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/storage.c > CMakeFiles/libisulad_img.dir/oci/storage/storage.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/storage.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/storage/storage.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/storage/storage.c -o CMakeFiles/libisulad_img.dir/oci/storage/storage.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/storage.c -o CMakeFiles/libisulad_img.dir/oci/storage/storage.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_store.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_store.c.o: ../src/daemon/modules/image/oci/storage/image_store/image_store.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_store.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_store.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/storage/image_store/image_store.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_store.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_store.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/image_store/image_store.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_store.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_store.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/storage/image_store/image_store.c > CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_store.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/image_store/image_store.c > CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_store.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_store.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_store.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/storage/image_store/image_store.c -o CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_store.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/image_store/image_store.c -o CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_store.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_type.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_type.c.o: ../src/daemon/modules/image/oci/storage/image_store/image_type.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_type.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_type.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/storage/image_store/image_type.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_type.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_type.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/image_store/image_type.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_type.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_type.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/storage/image_store/image_type.c > CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_type.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/image_store/image_type.c > CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_type.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_type.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_type.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/storage/image_store/image_type.c -o CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_type.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/image_store/image_type.c -o CMakeFiles/libisulad_img.dir/oci/storage/image_store/image_type.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer.c.o: ../src/daemon/modules/image/oci/storage/layer_store/layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/layer.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/layer.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/layer.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/layer.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/layer.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer_store.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer_store.c.o: ../src/daemon/modules/image/oci/storage/layer_store/layer_store.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer_store.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer_store.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/layer_store.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer_store.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer_store.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/layer_store.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer_store.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer_store.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/layer_store.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer_store.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/layer_store.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer_store.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer_store.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer_store.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/layer_store.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer_store.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/layer_store.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/layer_store.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/driver.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/driver.c.o: ../src/daemon/modules/image/oci/storage/layer_store/graphdriver/driver.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/driver.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/driver.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/driver.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/driver.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/driver.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/driver.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/driver.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/driver.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/driver.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/driver.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/driver.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/driver.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/driver.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/driver.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/driver.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/driver.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/driver.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/driver.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.o: ../src/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.o: ../src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/deviceset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/deviceset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/deviceset.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/deviceset.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/deviceset.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/deviceset.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/deviceset.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.o: ../src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.o: ../src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.o: ../src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/quota/project_quota.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/quota/project_quota.c.o: ../src/daemon/modules/image/oci/storage/layer_store/graphdriver/quota/project_quota.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/quota/project_quota.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/quota/project_quota.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/quota/project_quota.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/quota/project_quota.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/quota/project_quota.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/quota/project_quota.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/quota/project_quota.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/quota/project_quota.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/quota/project_quota.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/quota/project_quota.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/quota/project_quota.c > CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/quota/project_quota.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/quota/project_quota.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/quota/project_quota.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/storage/layer_store/graphdriver/quota/project_quota.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/quota/project_quota.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/quota/project_quota.c -o CMakeFiles/libisulad_img.dir/oci/storage/layer_store/graphdriver/quota/project_quota.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs.c.o: ../src/daemon/modules/image/oci/storage/rootfs_store/rootfs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/storage/rootfs_store/rootfs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/rootfs_store/rootfs.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/storage/rootfs_store/rootfs.c > CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/rootfs_store/rootfs.c > CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/storage/rootfs_store/rootfs.c -o CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/rootfs_store/rootfs.c -o CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs_store.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs_store.c.o: ../src/daemon/modules/image/oci/storage/rootfs_store/rootfs_store.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs_store.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs_store.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/storage/rootfs_store/rootfs_store.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs_store.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs_store.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/rootfs_store/rootfs_store.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs_store.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs_store.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/storage/rootfs_store/rootfs_store.c > CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs_store.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/rootfs_store/rootfs_store.c > CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs_store.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs_store.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs_store.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/storage/rootfs_store/rootfs_store.c -o CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs_store.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/rootfs_store/rootfs_store.c -o CMakeFiles/libisulad_img.dir/oci/storage/rootfs_store/rootfs_store.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_common_operators.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_common_operators.c.o: ../src/daemon/modules/image/oci/oci_common_operators.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_common_operators.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_common_operators.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/oci_common_operators.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_common_operators.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_common_operators.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_common_operators.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_common_operators.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/oci_common_operators.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/oci_common_operators.c > CMakeFiles/libisulad_img.dir/oci/oci_common_operators.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_common_operators.c > CMakeFiles/libisulad_img.dir/oci/oci_common_operators.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_common_operators.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/oci_common_operators.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/oci_common_operators.c -o CMakeFiles/libisulad_img.dir/oci/oci_common_operators.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_common_operators.c -o CMakeFiles/libisulad_img.dir/oci/oci_common_operators.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_config_merge.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_config_merge.c.o: ../src/daemon/modules/image/oci/oci_config_merge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_config_merge.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_config_merge.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/oci_config_merge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_config_merge.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_config_merge.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_config_merge.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_config_merge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/oci_config_merge.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/oci_config_merge.c > CMakeFiles/libisulad_img.dir/oci/oci_config_merge.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_config_merge.c > CMakeFiles/libisulad_img.dir/oci/oci_config_merge.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_config_merge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/oci_config_merge.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/oci_config_merge.c -o CMakeFiles/libisulad_img.dir/oci/oci_config_merge.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_config_merge.c -o CMakeFiles/libisulad_img.dir/oci/oci_config_merge.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_export.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_export.c.o: ../src/daemon/modules/image/oci/oci_export.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_export.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_export.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/oci_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_export.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_export.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_export.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_export.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/oci_export.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/oci_export.c > CMakeFiles/libisulad_img.dir/oci/oci_export.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_export.c > CMakeFiles/libisulad_img.dir/oci/oci_export.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_export.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/oci_export.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/oci_export.c -o CMakeFiles/libisulad_img.dir/oci/oci_export.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_export.c -o CMakeFiles/libisulad_img.dir/oci/oci_export.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_image.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_image.c.o: ../src/daemon/modules/image/oci/oci_image.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_image.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_image.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/oci_image.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_image.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_image.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_image.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_image.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/oci_image.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/oci_image.c > CMakeFiles/libisulad_img.dir/oci/oci_image.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_image.c > CMakeFiles/libisulad_img.dir/oci/oci_image.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_image.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/oci_image.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/oci_image.c -o CMakeFiles/libisulad_img.dir/oci/oci_image.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_image.c -o CMakeFiles/libisulad_img.dir/oci/oci_image.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_import.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_import.c.o: ../src/daemon/modules/image/oci/oci_import.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_import.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_import.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/oci_import.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_import.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_import.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_import.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_import.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/oci_import.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/oci_import.c > CMakeFiles/libisulad_img.dir/oci/oci_import.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_import.c > CMakeFiles/libisulad_img.dir/oci/oci_import.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_import.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/oci_import.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/oci_import.c -o CMakeFiles/libisulad_img.dir/oci/oci_import.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_import.c -o CMakeFiles/libisulad_img.dir/oci/oci_import.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_load.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_load.c.o: ../src/daemon/modules/image/oci/oci_load.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_load.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_load.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/oci_load.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_load.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_load.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_load.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_load.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/oci_load.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/oci_load.c > CMakeFiles/libisulad_img.dir/oci/oci_load.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_load.c > CMakeFiles/libisulad_img.dir/oci/oci_load.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_load.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/oci_load.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/oci_load.c -o CMakeFiles/libisulad_img.dir/oci/oci_load.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_load.c -o CMakeFiles/libisulad_img.dir/oci/oci_load.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_login.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_login.c.o: ../src/daemon/modules/image/oci/oci_login.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_login.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_login.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/oci_login.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_login.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_login.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_login.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_login.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/oci_login.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/oci_login.c > CMakeFiles/libisulad_img.dir/oci/oci_login.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_login.c > CMakeFiles/libisulad_img.dir/oci/oci_login.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_login.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/oci_login.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/oci_login.c -o CMakeFiles/libisulad_img.dir/oci/oci_login.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_login.c -o CMakeFiles/libisulad_img.dir/oci/oci_login.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_logout.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_logout.c.o: ../src/daemon/modules/image/oci/oci_logout.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_logout.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_logout.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/oci_logout.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_logout.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_logout.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_logout.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_logout.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/oci_logout.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/oci_logout.c > CMakeFiles/libisulad_img.dir/oci/oci_logout.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_logout.c > CMakeFiles/libisulad_img.dir/oci/oci_logout.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_logout.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/oci_logout.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/oci_logout.c -o CMakeFiles/libisulad_img.dir/oci/oci_logout.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_logout.c -o CMakeFiles/libisulad_img.dir/oci/oci_logout.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_pull.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_pull.c.o: ../src/daemon/modules/image/oci/oci_pull.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_pull.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_pull.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/oci_pull.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_pull.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/oci_pull.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_pull.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_pull.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/oci_pull.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/oci_pull.c > CMakeFiles/libisulad_img.dir/oci/oci_pull.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_pull.c > CMakeFiles/libisulad_img.dir/oci/oci_pull.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/oci_pull.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/oci_pull.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/oci_pull.c -o CMakeFiles/libisulad_img.dir/oci/oci_pull.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_pull.c -o CMakeFiles/libisulad_img.dir/oci/oci_pull.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry_type.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry_type.c.o: ../src/daemon/modules/image/oci/registry_type.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry_type.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/registry_type.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/registry_type.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry_type.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/registry_type.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/registry_type.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry_type.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/registry_type.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/registry_type.c > CMakeFiles/libisulad_img.dir/oci/registry_type.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/registry_type.c > CMakeFiles/libisulad_img.dir/oci/registry_type.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry_type.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/registry_type.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/registry_type.c -o CMakeFiles/libisulad_img.dir/oci/registry_type.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/registry_type.c -o CMakeFiles/libisulad_img.dir/oci/registry_type.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/utils_images.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/utils_images.c.o: ../src/daemon/modules/image/oci/utils_images.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/utils_images.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/utils_images.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/utils_images.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/utils_images.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/utils_images.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/utils_images.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/utils_images.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/utils_images.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/utils_images.c > CMakeFiles/libisulad_img.dir/oci/utils_images.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/utils_images.c > CMakeFiles/libisulad_img.dir/oci/utils_images.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/utils_images.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/utils_images.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/utils_images.c -o CMakeFiles/libisulad_img.dir/oci/utils_images.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/utils_images.c -o CMakeFiles/libisulad_img.dir/oci/utils_images.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/aes.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/aes.c.o: ../src/daemon/modules/image/oci/registry/aes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/aes.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/registry/aes.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/registry/aes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/aes.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/registry/aes.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/aes.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/aes.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/registry/aes.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/registry/aes.c > CMakeFiles/libisulad_img.dir/oci/registry/aes.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/aes.c > CMakeFiles/libisulad_img.dir/oci/registry/aes.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/aes.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/registry/aes.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/registry/aes.c -o CMakeFiles/libisulad_img.dir/oci/registry/aes.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/aes.c -o CMakeFiles/libisulad_img.dir/oci/registry/aes.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/auths.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/auths.c.o: ../src/daemon/modules/image/oci/registry/auths.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/auths.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/registry/auths.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/registry/auths.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/auths.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/registry/auths.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/auths.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/auths.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/registry/auths.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/registry/auths.c > CMakeFiles/libisulad_img.dir/oci/registry/auths.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/auths.c > CMakeFiles/libisulad_img.dir/oci/registry/auths.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/auths.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/registry/auths.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/registry/auths.c -o CMakeFiles/libisulad_img.dir/oci/registry/auths.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/auths.c -o CMakeFiles/libisulad_img.dir/oci/registry/auths.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/certs.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/certs.c.o: ../src/daemon/modules/image/oci/registry/certs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/certs.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/registry/certs.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/registry/certs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/certs.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/registry/certs.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/certs.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/certs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/registry/certs.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/registry/certs.c > CMakeFiles/libisulad_img.dir/oci/registry/certs.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/certs.c > CMakeFiles/libisulad_img.dir/oci/registry/certs.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/certs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/registry/certs.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/registry/certs.c -o CMakeFiles/libisulad_img.dir/oci/registry/certs.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/certs.c -o CMakeFiles/libisulad_img.dir/oci/registry/certs.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/http_request.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/http_request.c.o: ../src/daemon/modules/image/oci/registry/http_request.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/http_request.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/registry/http_request.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/registry/http_request.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/http_request.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/registry/http_request.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/http_request.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/http_request.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/registry/http_request.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/registry/http_request.c > CMakeFiles/libisulad_img.dir/oci/registry/http_request.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/http_request.c > CMakeFiles/libisulad_img.dir/oci/registry/http_request.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/http_request.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/registry/http_request.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/registry/http_request.c -o CMakeFiles/libisulad_img.dir/oci/registry/http_request.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/http_request.c -o CMakeFiles/libisulad_img.dir/oci/registry/http_request.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/registry.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/registry.c.o: ../src/daemon/modules/image/oci/registry/registry.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/registry.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/registry/registry.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/registry/registry.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/registry.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/registry/registry.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/registry.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/registry.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/registry/registry.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/registry/registry.c > CMakeFiles/libisulad_img.dir/oci/registry/registry.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/registry.c > CMakeFiles/libisulad_img.dir/oci/registry/registry.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/registry.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/registry/registry.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/registry/registry.c -o CMakeFiles/libisulad_img.dir/oci/registry/registry.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/registry.c -o CMakeFiles/libisulad_img.dir/oci/registry/registry.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/registry_apiv2.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/registry_apiv2.c.o: ../src/daemon/modules/image/oci/registry/registry_apiv2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/registry_apiv2.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/registry/registry_apiv2.c.o   -c /root/下载/iSulad/src/daemon/modules/image/oci/registry/registry_apiv2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/registry_apiv2.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/oci/registry/registry_apiv2.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/registry_apiv2.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/registry_apiv2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/oci/registry/registry_apiv2.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/modules/image/oci/registry/registry_apiv2.c > CMakeFiles/libisulad_img.dir/oci/registry/registry_apiv2.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/registry_apiv2.c > CMakeFiles/libisulad_img.dir/oci/registry/registry_apiv2.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/oci/registry/registry_apiv2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/oci/registry/registry_apiv2.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/modules/image/oci/registry/registry_apiv2.c -o CMakeFiles/libisulad_img.dir/oci/registry/registry_apiv2.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/registry_apiv2.c -o CMakeFiles/libisulad_img.dir/oci/registry/registry_apiv2.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils.c.o: ../src/utils/cutils/utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils.c.o   -c /root/下载/iSulad/src/utils/cutils/utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/utils.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/utils.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/utils.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/utils.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_regex.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_regex.c.o: ../src/utils/cutils/utils_regex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_regex.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_regex.c.o   -c /root/下载/iSulad/src/utils/cutils/utils_regex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_regex.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_regex.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_regex.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_regex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_regex.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/utils_regex.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_regex.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/utils_regex.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_regex.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_regex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_regex.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/utils_regex.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_regex.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/utils_regex.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_regex.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_file.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_file.c.o: ../src/utils/cutils/utils_file.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_file.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_file.c.o   -c /root/下载/iSulad/src/utils/cutils/utils_file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_file.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_file.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_file.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_file.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/utils_file.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_file.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/utils_file.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_file.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_file.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/utils_file.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_file.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/utils_file.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_file.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_verify.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_verify.c.o: ../src/utils/cutils/utils_verify.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_verify.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_verify.c.o   -c /root/下载/iSulad/src/utils/cutils/utils_verify.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_verify.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_verify.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_verify.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_verify.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_verify.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/utils_verify.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_verify.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/utils_verify.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_verify.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_verify.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_verify.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/utils_verify.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_verify.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/utils_verify.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_verify.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_array.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_array.c.o: ../src/utils/cutils/utils_array.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_array.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_array.c.o   -c /root/下载/iSulad/src/utils/cutils/utils_array.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_array.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_array.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_array.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_array.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_array.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/utils_array.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_array.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/utils_array.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_array.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_array.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_array.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/utils_array.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_array.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/utils_array.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_array.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_convert.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_convert.c.o: ../src/utils/cutils/utils_convert.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_convert.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_convert.c.o   -c /root/下载/iSulad/src/utils/cutils/utils_convert.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_convert.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_convert.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_convert.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_convert.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_convert.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/utils_convert.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_convert.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/utils_convert.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_convert.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_convert.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_convert.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/utils_convert.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_convert.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/utils_convert.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_convert.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_string.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_string.c.o: ../src/utils/cutils/utils_string.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_string.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_string.c.o   -c /root/下载/iSulad/src/utils/cutils/utils_string.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_string.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_string.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_string.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_string.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_string.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/utils_string.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_string.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/utils_string.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_string.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_string.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_string.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/utils_string.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_string.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/utils_string.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_string.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_base64.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_base64.c.o: ../src/utils/cutils/utils_base64.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_base64.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_base64.c.o   -c /root/下载/iSulad/src/utils/cutils/utils_base64.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_base64.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_base64.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_base64.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_base64.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_base64.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/utils_base64.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_base64.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/utils_base64.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_base64.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_base64.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_base64.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/utils_base64.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_base64.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/utils_base64.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_base64.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_timestamp.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_timestamp.c.o: ../src/utils/cutils/utils_timestamp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_timestamp.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_timestamp.c.o   -c /root/下载/iSulad/src/utils/cutils/utils_timestamp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_timestamp.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_timestamp.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_timestamp.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_timestamp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_timestamp.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/utils_timestamp.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_timestamp.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/utils_timestamp.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_timestamp.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_timestamp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_timestamp.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/utils_timestamp.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_timestamp.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/utils_timestamp.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_timestamp.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_fs.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_fs.c.o: ../src/utils/cutils/utils_fs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_fs.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_fs.c.o   -c /root/下载/iSulad/src/utils/cutils/utils_fs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_fs.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_fs.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_fs.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_fs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_fs.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/utils_fs.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_fs.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/utils_fs.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_fs.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_fs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_fs.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/utils_fs.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_fs.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/utils_fs.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_fs.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_aes.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_aes.c.o: ../src/utils/cutils/utils_aes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_aes.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_aes.c.o   -c /root/下载/iSulad/src/utils/cutils/utils_aes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_aes.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_aes.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_aes.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_aes.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_aes.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/utils_aes.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_aes.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/utils_aes.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_aes.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_aes.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_aes.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/utils_aes.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_aes.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/utils_aes.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/utils_aes.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/util_atomic.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/util_atomic.c.o: ../src/utils/cutils/util_atomic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/util_atomic.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/util_atomic.c.o   -c /root/下载/iSulad/src/utils/cutils/util_atomic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/util_atomic.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/util_atomic.c.o   -c /root/下载/summer2021-77/src/utils/cutils/util_atomic.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/util_atomic.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/util_atomic.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/util_atomic.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/util_atomic.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/util_atomic.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/util_atomic.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/util_atomic.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/util_atomic.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/util_atomic.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/util_atomic.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/util_atomic.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/util_atomic.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/filters.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/filters.c.o: ../src/utils/cutils/filters.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/filters.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/filters.c.o   -c /root/下载/iSulad/src/utils/cutils/filters.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/filters.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/filters.c.o   -c /root/下载/summer2021-77/src/utils/cutils/filters.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/filters.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/filters.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/filters.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/filters.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/filters.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/filters.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/filters.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/filters.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/filters.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/filters.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/filters.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/filters.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/path.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/path.c.o: ../src/utils/cutils/path.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/path.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/path.c.o   -c /root/下载/iSulad/src/utils/cutils/path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/path.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/path.c.o   -c /root/下载/summer2021-77/src/utils/cutils/path.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/path.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/path.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/path.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/path.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/path.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/path.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/path.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/path.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/path.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/path.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/path.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/path.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/map.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/map.c.o: ../src/utils/cutils/map/map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/map.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/map.c.o   -c /root/下载/iSulad/src/utils/cutils/map/map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/map.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/map.c.o   -c /root/下载/summer2021-77/src/utils/cutils/map/map.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/map.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/map.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/map/map.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/map.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/map/map.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/map.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/map.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/map/map.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/map.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/map/map.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/map.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/rb_tree.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/rb_tree.c.o: ../src/utils/cutils/map/rb_tree.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/rb_tree.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/rb_tree.c.o   -c /root/下载/iSulad/src/utils/cutils/map/rb_tree.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/rb_tree.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/rb_tree.c.o   -c /root/下载/summer2021-77/src/utils/cutils/map/rb_tree.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/rb_tree.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/rb_tree.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/cutils/map/rb_tree.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/rb_tree.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/cutils/map/rb_tree.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/rb_tree.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/rb_tree.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/rb_tree.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/cutils/map/rb_tree.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/rb_tree.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/cutils/map/rb_tree.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/cutils/map/rb_tree.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/sha256/sha256.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/sha256/sha256.c.o: ../src/utils/sha256/sha256.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/sha256/sha256.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/sha256/sha256.c.o   -c /root/下载/iSulad/src/utils/sha256/sha256.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/sha256/sha256.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/sha256/sha256.c.o   -c /root/下载/summer2021-77/src/utils/sha256/sha256.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/sha256/sha256.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/sha256/sha256.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/sha256/sha256.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/sha256/sha256.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/sha256/sha256.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/sha256/sha256.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/sha256/sha256.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/sha256/sha256.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/sha256/sha256.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/sha256/sha256.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/sha256/sha256.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/sha256/sha256.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/buffer/buffer.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/buffer/buffer.c.o: ../src/utils/buffer/buffer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/buffer/buffer.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/buffer/buffer.c.o   -c /root/下载/iSulad/src/utils/buffer/buffer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/buffer/buffer.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/buffer/buffer.c.o   -c /root/下载/summer2021-77/src/utils/buffer/buffer.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/buffer/buffer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/buffer/buffer.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/buffer/buffer.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/buffer/buffer.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/buffer/buffer.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/buffer/buffer.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/buffer/buffer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/buffer/buffer.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/buffer/buffer.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/buffer/buffer.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/buffer/buffer.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/buffer/buffer.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/err_msg.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/err_msg.c.o: ../src/daemon/common/err_msg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/err_msg.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/common/err_msg.c.o   -c /root/下载/iSulad/src/daemon/common/err_msg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/err_msg.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/common/err_msg.c.o   -c /root/下载/summer2021-77/src/daemon/common/err_msg.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/err_msg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/common/err_msg.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/common/err_msg.c > CMakeFiles/libisulad_img.dir/__/__/common/err_msg.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/common/err_msg.c > CMakeFiles/libisulad_img.dir/__/__/common/err_msg.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/err_msg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/common/err_msg.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/common/err_msg.c -o CMakeFiles/libisulad_img.dir/__/__/common/err_msg.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/common/err_msg.c -o CMakeFiles/libisulad_img.dir/__/__/common/err_msg.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/selinux_label.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/selinux_label.c.o: ../src/daemon/common/selinux_label.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/selinux_label.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/common/selinux_label.c.o   -c /root/下载/iSulad/src/daemon/common/selinux_label.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/selinux_label.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/common/selinux_label.c.o   -c /root/下载/summer2021-77/src/daemon/common/selinux_label.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/selinux_label.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/common/selinux_label.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/common/selinux_label.c > CMakeFiles/libisulad_img.dir/__/__/common/selinux_label.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/common/selinux_label.c > CMakeFiles/libisulad_img.dir/__/__/common/selinux_label.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/selinux_label.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/common/selinux_label.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/common/selinux_label.c -o CMakeFiles/libisulad_img.dir/__/__/common/selinux_label.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/common/selinux_label.c -o CMakeFiles/libisulad_img.dir/__/__/common/selinux_label.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/sysinfo.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/sysinfo.c.o: ../src/daemon/common/sysinfo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/sysinfo.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/common/sysinfo.c.o   -c /root/下载/iSulad/src/daemon/common/sysinfo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/sysinfo.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/common/sysinfo.c.o   -c /root/下载/summer2021-77/src/daemon/common/sysinfo.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/sysinfo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/common/sysinfo.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/daemon/common/sysinfo.c > CMakeFiles/libisulad_img.dir/__/__/common/sysinfo.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/daemon/common/sysinfo.c > CMakeFiles/libisulad_img.dir/__/__/common/sysinfo.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/common/sysinfo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/common/sysinfo.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/daemon/common/sysinfo.c -o CMakeFiles/libisulad_img.dir/__/__/common/sysinfo.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/common/sysinfo.c -o CMakeFiles/libisulad_img.dir/__/__/common/sysinfo.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/isulad_tar.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/isulad_tar.c.o: ../src/utils/tar/isulad_tar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/isulad_tar.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/isulad_tar.c.o   -c /root/下载/iSulad/src/utils/tar/isulad_tar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/isulad_tar.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/isulad_tar.c.o   -c /root/下载/summer2021-77/src/utils/tar/isulad_tar.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/isulad_tar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/isulad_tar.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/tar/isulad_tar.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/isulad_tar.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/tar/isulad_tar.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/isulad_tar.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/isulad_tar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/isulad_tar.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/tar/isulad_tar.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/isulad_tar.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/tar/isulad_tar.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/isulad_tar.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_archive.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_archive.c.o: ../src/utils/tar/util_archive.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_archive.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_archive.c.o   -c /root/下载/iSulad/src/utils/tar/util_archive.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_archive.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_archive.c.o   -c /root/下载/summer2021-77/src/utils/tar/util_archive.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_archive.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_archive.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/tar/util_archive.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_archive.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/tar/util_archive.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_archive.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_archive.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_archive.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/tar/util_archive.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_archive.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/tar/util_archive.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_archive.c.s
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_gzip.c.o: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/flags.make
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_gzip.c.o: ../src/utils/tar/util_gzip.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_gzip.c.o"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_gzip.c.o   -c /root/下载/iSulad/src/utils/tar/util_gzip.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_gzip.c.o"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_gzip.c.o   -c /root/下载/summer2021-77/src/utils/tar/util_gzip.c
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_gzip.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_gzip.c.i"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/iSulad/src/utils/tar/util_gzip.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_gzip.c.i
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/下载/summer2021-77/src/utils/tar/util_gzip.c > CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_gzip.c.i
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_gzip.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_gzip.c.s"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/iSulad/src/utils/tar/util_gzip.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_gzip.c.s
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/utils/tar/util_gzip.c -o CMakeFiles/libisulad_img.dir/__/__/__/utils/tar/util_gzip.c.s
 
 # Object files for target libisulad_img
 libisulad_img_OBJECTS = \
@@ -956,8 +956,8 @@ src/daemon/modules/image/libisulad_img.so: src/utils/http/libhttpclient.so
 src/daemon/modules/image/libisulad_img.so: /usr/lib64/libhttp_parser.so
 src/daemon/modules/image/libisulad_img.so: /usr/lib64/libcurl.so
 src/daemon/modules/image/libisulad_img.so: src/daemon/modules/image/CMakeFiles/libisulad_img.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Linking C shared library libisulad_img.so"
-	cd /root/下载/iSulad/build/src/daemon/modules/image && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libisulad_img.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Linking C shared library libisulad_img.so"
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libisulad_img.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/build: src/daemon/modules/image/libisulad_img.so
@@ -965,10 +965,10 @@ src/daemon/modules/image/CMakeFiles/libisulad_img.dir/build: src/daemon/modules/
 .PHONY : src/daemon/modules/image/CMakeFiles/libisulad_img.dir/build
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/clean:
-	cd /root/下载/iSulad/build/src/daemon/modules/image && $(CMAKE_COMMAND) -P CMakeFiles/libisulad_img.dir/cmake_clean.cmake
+	cd /root/下载/summer2021-77/build/src/daemon/modules/image && $(CMAKE_COMMAND) -P CMakeFiles/libisulad_img.dir/cmake_clean.cmake
 .PHONY : src/daemon/modules/image/CMakeFiles/libisulad_img.dir/clean
 
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/depend:
-	cd /root/下载/iSulad/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/下载/iSulad /root/下载/iSulad/src/daemon/modules/image /root/下载/iSulad/build /root/下载/iSulad/build/src/daemon/modules/image /root/下载/iSulad/build/src/daemon/modules/image/CMakeFiles/libisulad_img.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/下载/summer2021-77/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/下载/summer2021-77 /root/下载/summer2021-77/src/daemon/modules/image /root/下载/summer2021-77/build /root/下载/summer2021-77/build/src/daemon/modules/image /root/下载/summer2021-77/build/src/daemon/modules/image/CMakeFiles/libisulad_img.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/daemon/modules/image/CMakeFiles/libisulad_img.dir/depend
 

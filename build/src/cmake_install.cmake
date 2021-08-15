@@ -1,4 +1,4 @@
-# Install script for directory: /root/下载/iSulad/src
+# Install script for directory: /root/下载/summer2021-77/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libisula.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "/root/下载/iSulad/build/src/libisula.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "/root/下载/summer2021-77/build/src/libisula.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libisula.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libisula.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -63,12 +63,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/isula"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "/root/下载/iSulad/build/src/isula")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "/root/下载/summer2021-77/build/src/isula")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/isula" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/isula")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/isula"
-         OLD_RPATH "/root/下载/iSulad/build/src:"
+         OLD_RPATH "/root/下载/summer2021-77/build/src:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/isula")
@@ -83,7 +83,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/isulad-shim"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE FILES "/root/下载/iSulad/build/src/isulad-shim")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE FILES "/root/下载/summer2021-77/build/src/isulad-shim")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/isulad-shim" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/isulad-shim")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -99,12 +99,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/isulad"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE FILES "/root/下载/iSulad/build/src/isulad")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE FILES "/root/下载/summer2021-77/build/src/isulad")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/isulad" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/isulad")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/isulad"
-         OLD_RPATH "/root/下载/iSulad/build/src/utils/http:"
+         OLD_RPATH "/root/下载/summer2021-77/build/src/utils/http:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/isulad")
@@ -114,11 +114,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/下载/iSulad/build/src/utils/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/common/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/client/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/cmd/cmake_install.cmake")
-  include("/root/下载/iSulad/build/src/daemon/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/utils/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/common/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/client/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/cmd/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/daemon/cmake_install.cmake")
 
 endif()
 

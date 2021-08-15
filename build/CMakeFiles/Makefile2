@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/下载/iSulad
+CMAKE_SOURCE_DIR = /root/下载/summer2021-77
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/下载/iSulad/build
+CMAKE_BINARY_DIR = /root/下载/summer2021-77/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -1485,14 +1485,14 @@ src/utils/tar/clean:
 src/CMakeFiles/isulad.dir/all: src/utils/http/CMakeFiles/libhttpclient.dir/all
 	$(MAKE) -f src/CMakeFiles/isulad.dir/build.make src/CMakeFiles/isulad.dir/depend
 	$(MAKE) -f src/CMakeFiles/isulad.dir/build.make src/CMakeFiles/isulad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58 "Built target isulad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58 "Built target isulad"
 .PHONY : src/CMakeFiles/isulad.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/isulad.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/iSulad/build/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/summer2021-77/build/CMakeFiles 46
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/isulad.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/iSulad/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/summer2021-77/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/isulad.dir/rule
 
 # Convenience name for target.
@@ -1512,14 +1512,14 @@ src/CMakeFiles/isulad.dir/clean:
 src/CMakeFiles/libisula.dir/all:
 	$(MAKE) -f src/CMakeFiles/libisula.dir/build.make src/CMakeFiles/libisula.dir/depend
 	$(MAKE) -f src/CMakeFiles/libisula.dir/build.make src/CMakeFiles/libisula.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=71,72,73,74,75,76,77,78,79,80,81,82,83 "Built target libisula"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=71,72,73,74,75,76,77,78,79,80,81,82,83 "Built target libisula"
 .PHONY : src/CMakeFiles/libisula.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/libisula.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/iSulad/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/summer2021-77/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/libisula.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/iSulad/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/summer2021-77/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/libisula.dir/rule
 
 # Convenience name for target.
@@ -1539,14 +1539,14 @@ src/CMakeFiles/libisula.dir/clean:
 src/CMakeFiles/isulad-shim.dir/all:
 	$(MAKE) -f src/CMakeFiles/isulad-shim.dir/build.make src/CMakeFiles/isulad-shim.dir/depend
 	$(MAKE) -f src/CMakeFiles/isulad-shim.dir/build.make src/CMakeFiles/isulad-shim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=59,60,61,62,63,64,65,66,67,68 "Built target isulad-shim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=59,60,61,62,63,64,65,66,67,68 "Built target isulad-shim"
 .PHONY : src/CMakeFiles/isulad-shim.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/isulad-shim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/iSulad/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/summer2021-77/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/isulad-shim.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/iSulad/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/summer2021-77/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/isulad-shim.dir/rule
 
 # Convenience name for target.
@@ -1566,14 +1566,14 @@ src/CMakeFiles/isulad-shim.dir/clean:
 src/CMakeFiles/isula.dir/all: src/CMakeFiles/libisula.dir/all
 	$(MAKE) -f src/CMakeFiles/isula.dir/build.make src/CMakeFiles/isula.dir/depend
 	$(MAKE) -f src/CMakeFiles/isula.dir/build.make src/CMakeFiles/isula.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target isula"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target isula"
 .PHONY : src/CMakeFiles/isula.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/isula.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/iSulad/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/summer2021-77/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/isula.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/iSulad/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/summer2021-77/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/isula.dir/rule
 
 # Convenience name for target.
@@ -1593,14 +1593,14 @@ src/CMakeFiles/isula.dir/clean:
 src/utils/http/CMakeFiles/libhttpclient.dir/all:
 	$(MAKE) -f src/utils/http/CMakeFiles/libhttpclient.dir/build.make src/utils/http/CMakeFiles/libhttpclient.dir/depend
 	$(MAKE) -f src/utils/http/CMakeFiles/libhttpclient.dir/build.make src/utils/http/CMakeFiles/libhttpclient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=69,70 "Built target libhttpclient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=69,70 "Built target libhttpclient"
 .PHONY : src/utils/http/CMakeFiles/libhttpclient.dir/all
 
 # Build rule for subdir invocation for target.
 src/utils/http/CMakeFiles/libhttpclient.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/iSulad/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/summer2021-77/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 src/utils/http/CMakeFiles/libhttpclient.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/iSulad/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/summer2021-77/build/CMakeFiles 0
 .PHONY : src/utils/http/CMakeFiles/libhttpclient.dir/rule
 
 # Convenience name for target.
@@ -1620,14 +1620,14 @@ src/utils/http/CMakeFiles/libhttpclient.dir/clean:
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/all: src/utils/http/CMakeFiles/libhttpclient.dir/all
 	$(MAKE) -f src/daemon/modules/image/CMakeFiles/libisulad_img.dir/build.make src/daemon/modules/image/CMakeFiles/libisulad_img.dir/depend
 	$(MAKE) -f src/daemon/modules/image/CMakeFiles/libisulad_img.dir/build.make src/daemon/modules/image/CMakeFiles/libisulad_img.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/下载/iSulad/build/CMakeFiles --progress-num=84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target libisulad_img"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target libisulad_img"
 .PHONY : src/daemon/modules/image/CMakeFiles/libisulad_img.dir/all
 
 # Build rule for subdir invocation for target.
 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/iSulad/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/summer2021-77/build/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 src/daemon/modules/image/CMakeFiles/libisulad_img.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/iSulad/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/下载/summer2021-77/build/CMakeFiles 0
 .PHONY : src/daemon/modules/image/CMakeFiles/libisulad_img.dir/rule
 
 # Convenience name for target.

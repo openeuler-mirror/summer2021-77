@@ -1,4 +1,4 @@
-# Install script for directory: /root/下载/iSulad
+# Install script for directory: /root/下载/summer2021-77
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,11 +38,11 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ GROUP_WRITE FILES "/root/下载/iSulad/build/conf/isulad.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ GROUP_WRITE FILES "/root/下载/summer2021-77/build/conf/isulad.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/isulad" TYPE FILE FILES "/root/下载/iSulad/src/daemon/modules/api/image_api.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/isulad" TYPE FILE FILES "/root/下载/summer2021-77/src/daemon/modules/api/image_api.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -54,7 +54,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/etc/isulad" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ GROUP_WRITE FILES "/root/下载/iSulad/src/contrib/config/daemon.json")
+file(INSTALL DESTINATION "/etc/isulad" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ GROUP_WRITE FILES "/root/下载/summer2021-77/src/contrib/config/daemon.json")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -67,8 +67,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/etc/default/isulad" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ GROUP_WRITE FILES
-    "/root/下载/iSulad/src/contrib/config/config.json"
-    "/root/下载/iSulad/src/contrib/config/systemcontainer_config.json"
+    "/root/下载/summer2021-77/src/contrib/config/config.json"
+    "/root/下载/summer2021-77/src/contrib/config/systemcontainer_config.json"
     )
 endif()
 
@@ -81,7 +81,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/etc/isulad" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ GROUP_WRITE FILES "/root/下载/iSulad/src/contrib/config/seccomp_default.json")
+file(INSTALL DESTINATION "/etc/isulad" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ GROUP_WRITE FILES "/root/下载/summer2021-77/src/contrib/config/seccomp_default.json")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -93,7 +93,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/etc/default/isulad/hooks" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ GROUP_WRITE FILES "/root/下载/iSulad/src/contrib/config/hooks/default.json")
+file(INSTALL DESTINATION "/etc/default/isulad/hooks" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ GROUP_WRITE FILES "/root/下载/summer2021-77/src/contrib/config/hooks/default.json")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -105,7 +105,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/etc/default/isulad" TYPE FILE PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE FILES "/root/下载/iSulad/src/contrib/sysmonitor/isulad-check.sh")
+file(INSTALL DESTINATION "/etc/default/isulad" TYPE FILE PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE FILES "/root/下载/summer2021-77/src/contrib/sysmonitor/isulad-check.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -117,12 +117,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/etc/sysmonitor/process" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE FILES "/root/下载/iSulad/src/contrib/sysmonitor/isulad-monit")
+file(INSTALL DESTINATION "/etc/sysmonitor/process" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE FILES "/root/下载/summer2021-77/src/contrib/sysmonitor/isulad-monit")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/下载/iSulad/build/src/cmake_install.cmake")
+  include("/root/下载/summer2021-77/build/src/cmake_install.cmake")
 
 endif()
 
@@ -134,5 +134,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/下载/iSulad/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/下载/summer2021-77/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
