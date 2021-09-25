@@ -10,17 +10,6 @@
 #include "utils.h"
 #include "grpc_server_tls_auth.h"
 
-typedef struct {
-    char* container;
-    char* checkpoint;
-    char* dir;
-}checkpoint_create_checkpoint_request;
-
-typedef struct{
-    uint32_t cc;
-    uint32_t server_errono;
-    char *errmsg;
-}checkpoint_create_checkpoint_response
 
 
 //获取请求
@@ -52,9 +41,9 @@ int CheckpointServiceImpl::checkpoint_create_response_to_grpc(checkpoint_create_
         gresponse->set_errmsg(response->errmsg);
     }
 
-    for (size_t i {}; i < response->checkpoints_len; i++) {
-        gresponse->add_checkpoints(response->checkpoints[i]);
-    }
+   // for (size_t i {}; i < response->checkpoints_len; i++) {
+     //   gresponse->add_checkpoints(response->checkpoints[i]);
+    //}
 
     return 0;
 }
@@ -90,8 +79,8 @@ Status CheckpointServiceImpl::Create(ServerContext *context, const CreateCheckpo
     int ret = cb->checkpoint.create(checkpoint_req, &checkpoint_res);
     //发送响应
     tret = checkpoint_create_response_to_grpc(checkpoint_res, reply);
-    free_checkpoint_create_checkpoint_request(checkpoint_req);
-    free_checkpoint_create_checkpoint_response(checkpoint_res);
+    //free_checkpoint_create_checkpoint_request(checkpoint_req);
+    //free_checkpoint_create_checkpoint_response(checkpoint_res);
     if (tret != 0) {
         reply->set_errmsg(util_strdup_s(errno_to_error_message(ISULAD_ERR_INTERNAL)));
         reply->set_cc(ISULAD_ERR_INPUT);

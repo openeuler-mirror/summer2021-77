@@ -272,10 +272,29 @@ typedef struct {
     int (*prune)(const volume_prune_volume_request *request, volume_prune_volume_response **response);
 } service_volume_callback_t;
 
+
+typedef struct {
+    char* container;
+    char* checkpoint;
+    char* dir;
+}checkpoint_create_checkpoint_request;
+
+typedef struct{
+    uint32_t cc;
+    uint32_t server_errono;
+    char *errmsg;
+}checkpoint_create_checkpoint_response;
+
+typedef struct{
+    int (*create)(const checkpoint_create_checkpoint_request *request,checkpoint_create_checkpoint_response **response);
+
+}service_checkpoint_callback_t;
+
 typedef struct {
     service_container_callback_t container;
     service_image_callback_t image;
     service_volume_callback_t volume;
+    service_checkpoint_callback_t checkpoint;
 } service_executor_t;
 
 int service_callback_init(void);

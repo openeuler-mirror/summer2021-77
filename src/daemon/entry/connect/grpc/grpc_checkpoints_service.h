@@ -3,14 +3,17 @@
 
 #include <grpc++/grpc++.h>
 
-#include "checkpoints.grpc.pb.h"
+
 #include "callback.h"
 #include "error.h"
+#include "checkpoints.grpc.pb.h"
 
 using grpc::ServerContext;
 using grpc::Status;
 
 using namespace checkpoint;
+
+
 
 // Implement of checkpoint service
 class CheckpointServiceImpl final : public CheckpointService::Service {
