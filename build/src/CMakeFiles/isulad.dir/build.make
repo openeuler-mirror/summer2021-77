@@ -200,9 +200,22 @@ src/CMakeFiles/isulad.dir/daemon/entry/connect/service_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/isulad.dir/daemon/entry/connect/service_common.c.s"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/下载/summer2021-77/src/daemon/entry/connect/service_common.c -o CMakeFiles/isulad.dir/daemon/entry/connect/service_common.c.s
 
+src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.o: src/CMakeFiles/isulad.dir/flags.make
+src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.o: ../src/daemon/entry/connect/grpc/grpc_checkpoints_service.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.o"
+	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.o -c /root/下载/summer2021-77/src/daemon/entry/connect/grpc/grpc_checkpoints_service.cc
+
+src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.i"
+	cd /root/下载/summer2021-77/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/下载/summer2021-77/src/daemon/entry/connect/grpc/grpc_checkpoints_service.cc > CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.i
+
+src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.s"
+	cd /root/下载/summer2021-77/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/下载/summer2021-77/src/daemon/entry/connect/grpc/grpc_checkpoints_service.cc -o CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.s
+
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service.cc.o: ../src/daemon/entry/connect/grpc/grpc_containers_service.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service.cc.o -c /root/下载/summer2021-77/src/daemon/entry/connect/grpc/grpc_containers_service.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service.cc.i: cmake_force
@@ -215,7 +228,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service.cc.s
 
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service_private.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service_private.cc.o: ../src/daemon/entry/connect/grpc/grpc_containers_service_private.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service_private.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service_private.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service_private.cc.o -c /root/下载/summer2021-77/src/daemon/entry/connect/grpc/grpc_containers_service_private.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service_private.cc.i: cmake_force
@@ -228,7 +241,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service_priv
 
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_images_service.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_images_service.cc.o: ../src/daemon/entry/connect/grpc/grpc_images_service.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_images_service.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_images_service.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_images_service.cc.o -c /root/下载/summer2021-77/src/daemon/entry/connect/grpc/grpc_images_service.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_images_service.cc.i: cmake_force
@@ -241,7 +254,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_images_service.cc.s: cm
 
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_server_tls_auth.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_server_tls_auth.cc.o: ../src/daemon/entry/connect/grpc/grpc_server_tls_auth.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_server_tls_auth.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_server_tls_auth.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_server_tls_auth.cc.o -c /root/下载/summer2021-77/src/daemon/entry/connect/grpc/grpc_server_tls_auth.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_server_tls_auth.cc.i: cmake_force
@@ -254,7 +267,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_server_tls_auth.cc.s: c
 
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: ../src/daemon/entry/connect/grpc/grpc_service.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o -c /root/下载/summer2021-77/src/daemon/entry/connect/grpc/grpc_service.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.i: cmake_force
@@ -267,7 +280,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.s: cmake_for
 
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_volumes_service.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_volumes_service.cc.o: ../src/daemon/entry/connect/grpc/grpc_volumes_service.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_volumes_service.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_volumes_service.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_volumes_service.cc.o -c /root/下载/summer2021-77/src/daemon/entry/connect/grpc/grpc_volumes_service.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_volumes_service.cc.i: cmake_force
@@ -280,7 +293,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_volumes_service.cc.s: c
 
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/runtime_image_service.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/runtime_image_service.cc.o: ../src/daemon/entry/connect/grpc/runtime_image_service.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/runtime_image_service.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/runtime_image_service.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/connect/grpc/runtime_image_service.cc.o -c /root/下载/summer2021-77/src/daemon/entry/connect/grpc/runtime_image_service.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/runtime_image_service.cc.i: cmake_force
@@ -293,7 +306,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/runtime_image_service.cc.s: 
 
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/runtime_runtime_service.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/runtime_runtime_service.cc.o: ../src/daemon/entry/connect/grpc/runtime_runtime_service.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/runtime_runtime_service.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/runtime_runtime_service.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/connect/grpc/runtime_runtime_service.cc.o -c /root/下载/summer2021-77/src/daemon/entry/connect/grpc/runtime_runtime_service.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/runtime_runtime_service.cc.i: cmake_force
@@ -306,7 +319,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/runtime_runtime_service.cc.s
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/containers/container.grpc.pb.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/containers/container.grpc.pb.cc.o: grpc/src/api/services/containers/container.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/containers/container.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/containers/container.grpc.pb.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/__/grpc/src/api/services/containers/container.grpc.pb.cc.o -c /root/下载/summer2021-77/build/grpc/src/api/services/containers/container.grpc.pb.cc
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/containers/container.grpc.pb.cc.i: cmake_force
@@ -319,7 +332,7 @@ src/CMakeFiles/isulad.dir/__/grpc/src/api/services/containers/container.grpc.pb.
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/containers/container.pb.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/containers/container.pb.cc.o: grpc/src/api/services/containers/container.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/containers/container.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/containers/container.pb.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/__/grpc/src/api/services/containers/container.pb.cc.o -c /root/下载/summer2021-77/build/grpc/src/api/services/containers/container.pb.cc
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/containers/container.pb.cc.i: cmake_force
@@ -332,7 +345,7 @@ src/CMakeFiles/isulad.dir/__/grpc/src/api/services/containers/container.pb.cc.s:
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/images/images.grpc.pb.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/images/images.grpc.pb.cc.o: grpc/src/api/services/images/images.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/images/images.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/images/images.grpc.pb.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/__/grpc/src/api/services/images/images.grpc.pb.cc.o -c /root/下载/summer2021-77/build/grpc/src/api/services/images/images.grpc.pb.cc
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/images/images.grpc.pb.cc.i: cmake_force
@@ -345,7 +358,7 @@ src/CMakeFiles/isulad.dir/__/grpc/src/api/services/images/images.grpc.pb.cc.s: c
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/images/images.pb.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/images/images.pb.cc.o: grpc/src/api/services/images/images.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/images/images.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/images/images.pb.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/__/grpc/src/api/services/images/images.pb.cc.o -c /root/下载/summer2021-77/build/grpc/src/api/services/images/images.pb.cc
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/images/images.pb.cc.i: cmake_force
@@ -358,7 +371,7 @@ src/CMakeFiles/isulad.dir/__/grpc/src/api/services/images/images.pb.cc.s: cmake_
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/volumes/volumes.grpc.pb.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/volumes/volumes.grpc.pb.cc.o: grpc/src/api/services/volumes/volumes.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/volumes/volumes.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/volumes/volumes.grpc.pb.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/__/grpc/src/api/services/volumes/volumes.grpc.pb.cc.o -c /root/下载/summer2021-77/build/grpc/src/api/services/volumes/volumes.grpc.pb.cc
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/volumes/volumes.grpc.pb.cc.i: cmake_force
@@ -371,7 +384,7 @@ src/CMakeFiles/isulad.dir/__/grpc/src/api/services/volumes/volumes.grpc.pb.cc.s:
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/volumes/volumes.pb.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/volumes/volumes.pb.cc.o: grpc/src/api/services/volumes/volumes.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/volumes/volumes.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/volumes/volumes.pb.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/__/grpc/src/api/services/volumes/volumes.pb.cc.o -c /root/下载/summer2021-77/build/grpc/src/api/services/volumes/volumes.pb.cc
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/volumes/volumes.pb.cc.i: cmake_force
@@ -384,7 +397,7 @@ src/CMakeFiles/isulad.dir/__/grpc/src/api/services/volumes/volumes.pb.cc.s: cmak
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/cri/api.grpc.pb.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/cri/api.grpc.pb.cc.o: grpc/src/api/services/cri/api.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/cri/api.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/cri/api.grpc.pb.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/__/grpc/src/api/services/cri/api.grpc.pb.cc.o -c /root/下载/summer2021-77/build/grpc/src/api/services/cri/api.grpc.pb.cc
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/cri/api.grpc.pb.cc.i: cmake_force
@@ -397,7 +410,7 @@ src/CMakeFiles/isulad.dir/__/grpc/src/api/services/cri/api.grpc.pb.cc.s: cmake_f
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/cri/api.pb.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/cri/api.pb.cc.o: grpc/src/api/services/cri/api.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/cri/api.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/isulad.dir/__/grpc/src/api/services/cri/api.pb.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/__/grpc/src/api/services/cri/api.pb.cc.o -c /root/下载/summer2021-77/build/grpc/src/api/services/cri/api.pb.cc
 
 src/CMakeFiles/isulad.dir/__/grpc/src/api/services/cri/api.pb.cc.i: cmake_force
@@ -410,7 +423,7 @@ src/CMakeFiles/isulad.dir/__/grpc/src/api/services/cri/api.pb.cc.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/checkpoint_handler.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/checkpoint_handler.cc.o: ../src/daemon/entry/cri/checkpoint_handler.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/checkpoint_handler.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/checkpoint_handler.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/checkpoint_handler.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/checkpoint_handler.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/checkpoint_handler.cc.i: cmake_force
@@ -423,7 +436,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/checkpoint_handler.cc.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cni_network_plugin.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cni_network_plugin.cc.o: ../src/daemon/entry/cri/cni_network_plugin.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cni_network_plugin.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cni_network_plugin.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/cni_network_plugin.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/cni_network_plugin.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cni_network_plugin.cc.i: cmake_force
@@ -436,7 +449,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/cni_network_plugin.cc.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_constants.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_constants.cc.o: ../src/daemon/entry/cri/cri_constants.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_constants.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_constants.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/cri_constants.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/cri_constants.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_constants.cc.i: cmake_force
@@ -449,7 +462,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_constants.cc.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_container_manager_service_impl.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_container_manager_service_impl.cc.o: ../src/daemon/entry/cri/cri_container_manager_service_impl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_container_manager_service_impl.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_container_manager_service_impl.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/cri_container_manager_service_impl.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/cri_container_manager_service_impl.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_container_manager_service_impl.cc.i: cmake_force
@@ -462,7 +475,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_container_manager_service_impl.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_helpers.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_helpers.cc.o: ../src/daemon/entry/cri/cri_helpers.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_helpers.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_helpers.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/cri_helpers.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/cri_helpers.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_helpers.cc.i: cmake_force
@@ -475,7 +488,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_helpers.cc.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_image_manager_service_impl.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_image_manager_service_impl.cc.o: ../src/daemon/entry/cri/cri_image_manager_service_impl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_image_manager_service_impl.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_image_manager_service_impl.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/cri_image_manager_service_impl.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/cri_image_manager_service_impl.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_image_manager_service_impl.cc.i: cmake_force
@@ -488,7 +501,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_image_manager_service_impl.cc.s: 
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_pod_sandbox_manager_service_impl.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_pod_sandbox_manager_service_impl.cc.o: ../src/daemon/entry/cri/cri_pod_sandbox_manager_service_impl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_pod_sandbox_manager_service_impl.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_pod_sandbox_manager_service_impl.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/cri_pod_sandbox_manager_service_impl.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/cri_pod_sandbox_manager_service_impl.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_pod_sandbox_manager_service_impl.cc.i: cmake_force
@@ -501,7 +514,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_pod_sandbox_manager_service_impl.
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_manager_service_impl.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_manager_service_impl.cc.o: ../src/daemon/entry/cri/cri_runtime_manager_service_impl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_manager_service_impl.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_manager_service_impl.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_manager_service_impl.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/cri_runtime_manager_service_impl.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_manager_service_impl.cc.i: cmake_force
@@ -514,7 +527,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_manager_service_impl.cc.s
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_service_impl.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_service_impl.cc.o: ../src/daemon/entry/cri/cri_runtime_service_impl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_service_impl.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_service_impl.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_service_impl.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/cri_runtime_service_impl.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_service_impl.cc.i: cmake_force
@@ -527,7 +540,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_service_impl.cc.s: cmake_
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_versioner_service_impl.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_versioner_service_impl.cc.o: ../src/daemon/entry/cri/cri_runtime_versioner_service_impl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_versioner_service_impl.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_versioner_service_impl.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_versioner_service_impl.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/cri_runtime_versioner_service_impl.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_versioner_service_impl.cc.i: cmake_force
@@ -540,7 +553,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_runtime_versioner_service_impl.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_security_context.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_security_context.cc.o: ../src/daemon/entry/cri/cri_security_context.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_security_context.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_security_context.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/cri_security_context.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/cri_security_context.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_security_context.cc.i: cmake_force
@@ -553,7 +566,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/cri_security_context.cc.s: cmake_forc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/errors.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/errors.cc.o: ../src/daemon/entry/cri/errors.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/errors.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/errors.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/errors.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/errors.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/errors.cc.i: cmake_force
@@ -566,7 +579,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/errors.cc.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/naming.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/naming.cc.o: ../src/daemon/entry/cri/naming.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/naming.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/naming.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/naming.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/naming.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/naming.cc.i: cmake_force
@@ -579,7 +592,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/naming.cc.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/network_plugin.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/network_plugin.cc.o: ../src/daemon/entry/cri/network_plugin.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/network_plugin.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/network_plugin.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/network_plugin.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/network_plugin.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/network_plugin.cc.i: cmake_force
@@ -592,7 +605,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/network_plugin.cc.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/request_cache.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/request_cache.cc.o: ../src/daemon/entry/cri/request_cache.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/request_cache.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/request_cache.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/request_cache.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/request_cache.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/request_cache.cc.i: cmake_force
@@ -605,7 +618,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/request_cache.cc.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/sysctl_tools.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/sysctl_tools.c.o: ../src/daemon/entry/cri/sysctl_tools.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object src/CMakeFiles/isulad.dir/daemon/entry/cri/sysctl_tools.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object src/CMakeFiles/isulad.dir/daemon/entry/cri/sysctl_tools.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/sysctl_tools.c.o   -c /root/下载/summer2021-77/src/daemon/entry/cri/sysctl_tools.c
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/sysctl_tools.c.i: cmake_force
@@ -618,7 +631,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/sysctl_tools.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/attach_serve.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/attach_serve.cc.o: ../src/daemon/entry/cri/websocket/service/attach_serve.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/attach_serve.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/attach_serve.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/attach_serve.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/websocket/service/attach_serve.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/attach_serve.cc.i: cmake_force
@@ -631,7 +644,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/attach_serve.cc.s: 
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/exec_serve.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/exec_serve.cc.o: ../src/daemon/entry/cri/websocket/service/exec_serve.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/exec_serve.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/exec_serve.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/exec_serve.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/websocket/service/exec_serve.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/exec_serve.cc.i: cmake_force
@@ -644,7 +657,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/exec_serve.cc.s: cm
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/stream_server.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/stream_server.cc.o: ../src/daemon/entry/cri/websocket/service/stream_server.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/stream_server.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/stream_server.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/stream_server.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/websocket/service/stream_server.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/stream_server.cc.i: cmake_force
@@ -657,7 +670,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/stream_server.cc.s:
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/ws_server.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/ws_server.cc.o: ../src/daemon/entry/cri/websocket/service/ws_server.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/ws_server.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/ws_server.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/ws_server.cc.o -c /root/下载/summer2021-77/src/daemon/entry/cri/websocket/service/ws_server.cc
 
 src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/ws_server.cc.i: cmake_force
@@ -670,7 +683,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/cri/websocket/service/ws_server.cc.s: cma
 
 src/CMakeFiles/isulad.dir/daemon/modules/runtime/runtime.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/runtime/runtime.c.o: ../src/daemon/modules/runtime/runtime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/runtime/runtime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/runtime/runtime.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/runtime/runtime.c.o   -c /root/下载/summer2021-77/src/daemon/modules/runtime/runtime.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/runtime/runtime.c.i: cmake_force
@@ -683,7 +696,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/runtime/runtime.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/engine.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/engine.c.o: ../src/daemon/modules/runtime/engines/engine.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/engine.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/engine.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/runtime/engines/engine.c.o   -c /root/下载/summer2021-77/src/daemon/modules/runtime/engines/engine.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/engine.c.i: cmake_force
@@ -696,7 +709,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/engine.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/lcr/lcr_engine.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/lcr/lcr_engine.c.o: ../src/daemon/modules/runtime/engines/lcr/lcr_engine.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/lcr/lcr_engine.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/lcr/lcr_engine.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/runtime/engines/lcr/lcr_engine.c.o   -c /root/下载/summer2021-77/src/daemon/modules/runtime/engines/lcr/lcr_engine.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/lcr/lcr_engine.c.i: cmake_force
@@ -709,7 +722,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/lcr/lcr_engine.c.s: cma
 
 src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/lcr/lcr_rt_ops.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/lcr/lcr_rt_ops.c.o: ../src/daemon/modules/runtime/engines/lcr/lcr_rt_ops.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/lcr/lcr_rt_ops.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/lcr/lcr_rt_ops.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/runtime/engines/lcr/lcr_rt_ops.c.o   -c /root/下载/summer2021-77/src/daemon/modules/runtime/engines/lcr/lcr_rt_ops.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/lcr/lcr_rt_ops.c.i: cmake_force
@@ -722,7 +735,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/runtime/engines/lcr/lcr_rt_ops.c.s: cma
 
 src/CMakeFiles/isulad.dir/daemon/modules/runtime/isula/isula_rt_ops.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/runtime/isula/isula_rt_ops.c.o: ../src/daemon/modules/runtime/isula/isula_rt_ops.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/runtime/isula/isula_rt_ops.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/runtime/isula/isula_rt_ops.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/runtime/isula/isula_rt_ops.c.o   -c /root/下载/summer2021-77/src/daemon/modules/runtime/isula/isula_rt_ops.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/runtime/isula/isula_rt_ops.c.i: cmake_force
@@ -735,7 +748,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/runtime/isula/isula_rt_ops.c.s: cmake_f
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/image.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/image.c.o: ../src/daemon/modules/image/image.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/image.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/image.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/image.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/image.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/image.c.i: cmake_force
@@ -748,7 +761,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/image.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/image_rootfs_handler.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/image_rootfs_handler.c.o: ../src/daemon/modules/image/image_rootfs_handler.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/image_rootfs_handler.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/image_rootfs_handler.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/image_rootfs_handler.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/image_rootfs_handler.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/image_rootfs_handler.c.i: cmake_force
@@ -761,7 +774,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/image_rootfs_handler.c.s: cmake_f
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/image_spec_merge.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/image_spec_merge.c.o: ../src/daemon/modules/image/image_spec_merge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/image_spec_merge.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/image_spec_merge.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/image_spec_merge.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/image_spec_merge.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/image_spec_merge.c.i: cmake_force
@@ -774,7 +787,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/image_spec_merge.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/external/ext_image.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/external/ext_image.c.o: ../src/daemon/modules/image/external/ext_image.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/external/ext_image.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/external/ext_image.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/external/ext_image.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/external/ext_image.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/external/ext_image.c.i: cmake_force
@@ -787,7 +800,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/external/ext_image.c.s: cmake_for
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/storage.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/storage.c.o: ../src/daemon/modules/image/oci/storage/storage.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/storage.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/storage.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/storage.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/storage.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/storage.c.i: cmake_force
@@ -800,7 +813,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/storage.c.s: cmake_fo
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/image_store/image_store.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/image_store/image_store.c.o: ../src/daemon/modules/image/oci/storage/image_store/image_store.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/image_store/image_store.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/image_store/image_store.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/image_store/image_store.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/image_store/image_store.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/image_store/image_store.c.i: cmake_force
@@ -813,7 +826,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/image_store/image_sto
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/image_store/image_type.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/image_store/image_type.c.o: ../src/daemon/modules/image/oci/storage/image_store/image_type.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/image_store/image_type.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/image_store/image_type.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/image_store/image_type.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/image_store/image_type.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/image_store/image_type.c.i: cmake_force
@@ -826,7 +839,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/image_store/image_typ
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/layer.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/layer.c.o: ../src/daemon/modules/image/oci/storage/layer_store/layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/layer.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/layer.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/layer.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/layer.c.i: cmake_force
@@ -839,7 +852,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/layer.c.s
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/layer_store.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/layer_store.c.o: ../src/daemon/modules/image/oci/storage/layer_store/layer_store.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/layer_store.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/layer_store.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/layer_store.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/layer_store.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/layer_store.c.i: cmake_force
@@ -852,7 +865,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/layer_sto
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/driver.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/driver.c.o: ../src/daemon/modules/image/oci/storage/layer_store/graphdriver/driver.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/driver.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/driver.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/driver.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/driver.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/driver.c.i: cmake_force
@@ -865,7 +878,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriv
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.o: ../src/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/overlay2/driver_overlay2.c.i: cmake_force
@@ -878,7 +891,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriv
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.o: ../src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/deviceset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/deviceset.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/deviceset.c.i: cmake_force
@@ -891,7 +904,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriv
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.o: ../src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/driver_devmapper.c.i: cmake_force
@@ -904,7 +917,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriv
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.o: ../src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/metadata_store.c.i: cmake_force
@@ -917,7 +930,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriv
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.o: ../src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/devmapper/wrapper_devmapper.c.i: cmake_force
@@ -930,7 +943,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriv
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/quota/project_quota.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/quota/project_quota.c.o: ../src/daemon/modules/image/oci/storage/layer_store/graphdriver/quota/project_quota.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/quota/project_quota.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/quota/project_quota.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/quota/project_quota.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/layer_store/graphdriver/quota/project_quota.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriver/quota/project_quota.c.i: cmake_force
@@ -943,7 +956,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/layer_store/graphdriv
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/rootfs_store/rootfs.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/rootfs_store/rootfs.c.o: ../src/daemon/modules/image/oci/storage/rootfs_store/rootfs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/rootfs_store/rootfs.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/rootfs_store/rootfs.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/rootfs_store/rootfs.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/rootfs_store/rootfs.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/rootfs_store/rootfs.c.i: cmake_force
@@ -956,7 +969,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/rootfs_store/rootfs.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/rootfs_store/rootfs_store.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/rootfs_store/rootfs_store.c.o: ../src/daemon/modules/image/oci/storage/rootfs_store/rootfs_store.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/rootfs_store/rootfs_store.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/rootfs_store/rootfs_store.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/rootfs_store/rootfs_store.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/storage/rootfs_store/rootfs_store.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/rootfs_store/rootfs_store.c.i: cmake_force
@@ -969,7 +982,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/storage/rootfs_store/rootfs_s
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_common_operators.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_common_operators.c.o: ../src/daemon/modules/image/oci/oci_common_operators.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_common_operators.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_common_operators.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_common_operators.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_common_operators.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_common_operators.c.i: cmake_force
@@ -982,7 +995,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_common_operators.c.s: cma
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_config_merge.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_config_merge.c.o: ../src/daemon/modules/image/oci/oci_config_merge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_config_merge.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_config_merge.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_config_merge.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_config_merge.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_config_merge.c.i: cmake_force
@@ -995,7 +1008,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_config_merge.c.s: cmake_f
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_export.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_export.c.o: ../src/daemon/modules/image/oci/oci_export.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_export.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_export.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_export.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_export.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_export.c.i: cmake_force
@@ -1008,7 +1021,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_export.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_image.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_image.c.o: ../src/daemon/modules/image/oci/oci_image.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_image.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_image.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_image.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_image.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_image.c.i: cmake_force
@@ -1021,7 +1034,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_image.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_import.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_import.c.o: ../src/daemon/modules/image/oci/oci_import.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_import.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_import.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_import.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_import.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_import.c.i: cmake_force
@@ -1034,7 +1047,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_import.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_load.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_load.c.o: ../src/daemon/modules/image/oci/oci_load.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_load.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_load.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_load.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_load.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_load.c.i: cmake_force
@@ -1047,7 +1060,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_load.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_login.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_login.c.o: ../src/daemon/modules/image/oci/oci_login.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_login.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_login.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_login.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_login.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_login.c.i: cmake_force
@@ -1060,7 +1073,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_login.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_logout.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_logout.c.o: ../src/daemon/modules/image/oci/oci_logout.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_logout.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_logout.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_logout.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_logout.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_logout.c.i: cmake_force
@@ -1073,7 +1086,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_logout.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_pull.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_pull.c.o: ../src/daemon/modules/image/oci/oci_pull.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_pull.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_pull.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_pull.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/oci_pull.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_pull.c.i: cmake_force
@@ -1086,7 +1099,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/oci_pull.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry_type.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry_type.c.o: ../src/daemon/modules/image/oci/registry_type.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry_type.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry_type.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/registry_type.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/registry_type.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry_type.c.i: cmake_force
@@ -1099,7 +1112,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry_type.c.s: cmake_forc
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/utils_images.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/utils_images.c.o: ../src/daemon/modules/image/oci/utils_images.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/utils_images.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/utils_images.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/utils_images.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/utils_images.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/utils_images.c.i: cmake_force
@@ -1112,7 +1125,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/utils_images.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/aes.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/aes.c.o: ../src/daemon/modules/image/oci/registry/aes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/aes.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/aes.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/aes.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/aes.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/aes.c.i: cmake_force
@@ -1125,7 +1138,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/aes.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/auths.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/auths.c.o: ../src/daemon/modules/image/oci/registry/auths.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/auths.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/auths.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/auths.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/auths.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/auths.c.i: cmake_force
@@ -1138,7 +1151,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/auths.c.s: cmake_for
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/certs.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/certs.c.o: ../src/daemon/modules/image/oci/registry/certs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/certs.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/certs.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/certs.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/certs.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/certs.c.i: cmake_force
@@ -1151,7 +1164,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/certs.c.s: cmake_for
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/http_request.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/http_request.c.o: ../src/daemon/modules/image/oci/registry/http_request.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/http_request.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/http_request.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/http_request.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/http_request.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/http_request.c.i: cmake_force
@@ -1164,7 +1177,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/http_request.c.s: cm
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/registry.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/registry.c.o: ../src/daemon/modules/image/oci/registry/registry.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/registry.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/registry.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/registry.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/registry.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/registry.c.i: cmake_force
@@ -1177,7 +1190,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/registry.c.s: cmake_
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/registry_apiv2.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/registry_apiv2.c.o: ../src/daemon/modules/image/oci/registry/registry_apiv2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/registry_apiv2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/registry_apiv2.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/registry_apiv2.c.o   -c /root/下载/summer2021-77/src/daemon/modules/image/oci/registry/registry_apiv2.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/registry_apiv2.c.i: cmake_force
@@ -1190,7 +1203,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/image/oci/registry/registry_apiv2.c.s: 
 
 src/CMakeFiles/isulad.dir/daemon/modules/plugin/plugin.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/plugin/plugin.c.o: ../src/daemon/modules/plugin/plugin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/plugin/plugin.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/plugin/plugin.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/plugin/plugin.c.o   -c /root/下载/summer2021-77/src/daemon/modules/plugin/plugin.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/plugin/plugin.c.i: cmake_force
@@ -1203,7 +1216,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/plugin/plugin.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/plugin/pspec.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/plugin/pspec.c.o: ../src/daemon/modules/plugin/pspec.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/plugin/pspec.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/plugin/pspec.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/plugin/pspec.c.o   -c /root/下载/summer2021-77/src/daemon/modules/plugin/pspec.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/plugin/pspec.c.i: cmake_force
@@ -1216,7 +1229,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/plugin/pspec.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/spec/parse_volume.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/spec/parse_volume.c.o: ../src/daemon/modules/spec/parse_volume.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/spec/parse_volume.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/spec/parse_volume.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/spec/parse_volume.c.o   -c /root/下载/summer2021-77/src/daemon/modules/spec/parse_volume.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/spec/parse_volume.c.i: cmake_force
@@ -1229,7 +1242,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/spec/parse_volume.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/spec/specs.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/spec/specs.c.o: ../src/daemon/modules/spec/specs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/spec/specs.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/spec/specs.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/spec/specs.c.o   -c /root/下载/summer2021-77/src/daemon/modules/spec/specs.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/spec/specs.c.i: cmake_force
@@ -1242,7 +1255,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/spec/specs.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_extend.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_extend.c.o: ../src/daemon/modules/spec/specs_extend.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_extend.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_extend.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/spec/specs_extend.c.o   -c /root/下载/summer2021-77/src/daemon/modules/spec/specs_extend.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_extend.c.i: cmake_force
@@ -1255,7 +1268,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_extend.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_mount.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_mount.c.o: ../src/daemon/modules/spec/specs_mount.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_mount.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_mount.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/spec/specs_mount.c.o   -c /root/下载/summer2021-77/src/daemon/modules/spec/specs_mount.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_mount.c.i: cmake_force
@@ -1268,7 +1281,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_mount.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_namespace.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_namespace.c.o: ../src/daemon/modules/spec/specs_namespace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_namespace.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_namespace.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/spec/specs_namespace.c.o   -c /root/下载/summer2021-77/src/daemon/modules/spec/specs_namespace.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_namespace.c.i: cmake_force
@@ -1281,7 +1294,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_namespace.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_security.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_security.c.o: ../src/daemon/modules/spec/specs_security.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_security.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_security.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/spec/specs_security.c.o   -c /root/下载/summer2021-77/src/daemon/modules/spec/specs_security.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_security.c.i: cmake_force
@@ -1294,7 +1307,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/spec/specs_security.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/spec/verify.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/spec/verify.c.o: ../src/daemon/modules/spec/verify.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/spec/verify.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/spec/verify.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/spec/verify.c.o   -c /root/下载/summer2021-77/src/daemon/modules/spec/verify.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/spec/verify.c.i: cmake_force
@@ -1307,7 +1320,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/spec/verify.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/container_events_handler.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/container/container_events_handler.c.o: ../src/daemon/modules/container/container_events_handler.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/container_events_handler.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/container_events_handler.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/container/container_events_handler.c.o   -c /root/下载/summer2021-77/src/daemon/modules/container/container_events_handler.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/container_events_handler.c.i: cmake_force
@@ -1320,7 +1333,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/container/container_events_handler.c.s:
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/container_state.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/container/container_state.c.o: ../src/daemon/modules/container/container_state.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/container_state.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/container_state.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/container/container_state.c.o   -c /root/下载/summer2021-77/src/daemon/modules/container/container_state.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/container_state.c.i: cmake_force
@@ -1333,7 +1346,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/container/container_state.c.s: cmake_fo
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/container_unix.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/container/container_unix.c.o: ../src/daemon/modules/container/container_unix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/container_unix.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/container_unix.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/container/container_unix.c.o   -c /root/下载/summer2021-77/src/daemon/modules/container/container_unix.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/container_unix.c.i: cmake_force
@@ -1346,7 +1359,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/container/container_unix.c.s: cmake_for
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/containers_store.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/container/containers_store.c.o: ../src/daemon/modules/container/containers_store.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/containers_store.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/containers_store.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/container/containers_store.c.o   -c /root/下载/summer2021-77/src/daemon/modules/container/containers_store.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/containers_store.c.i: cmake_force
@@ -1359,7 +1372,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/container/containers_store.c.s: cmake_f
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/restore/restore.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/container/restore/restore.c.o: ../src/daemon/modules/container/restore/restore.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/restore/restore.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/restore/restore.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/container/restore/restore.c.o   -c /root/下载/summer2021-77/src/daemon/modules/container/restore/restore.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/restore/restore.c.i: cmake_force
@@ -1372,7 +1385,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/container/restore/restore.c.s: cmake_fo
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/supervisor/supervisor.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/container/supervisor/supervisor.c.o: ../src/daemon/modules/container/supervisor/supervisor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/supervisor/supervisor.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/supervisor/supervisor.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/container/supervisor/supervisor.c.o   -c /root/下载/summer2021-77/src/daemon/modules/container/supervisor/supervisor.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/supervisor/supervisor.c.i: cmake_force
@@ -1385,7 +1398,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/container/supervisor/supervisor.c.s: cm
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/health_check/health_check.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/container/health_check/health_check.c.o: ../src/daemon/modules/container/health_check/health_check.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/health_check/health_check.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/health_check/health_check.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/container/health_check/health_check.c.o   -c /root/下载/summer2021-77/src/daemon/modules/container/health_check/health_check.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/health_check/health_check.c.i: cmake_force
@@ -1398,7 +1411,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/container/health_check/health_check.c.s
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/container_gc/containers_gc.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/container/container_gc/containers_gc.c.o: ../src/daemon/modules/container/container_gc/containers_gc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/container_gc/containers_gc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/container_gc/containers_gc.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/container/container_gc/containers_gc.c.o   -c /root/下载/summer2021-77/src/daemon/modules/container/container_gc/containers_gc.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/container_gc/containers_gc.c.i: cmake_force
@@ -1411,7 +1424,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/container/container_gc/containers_gc.c.
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/restart_manager/restartmanager.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/container/restart_manager/restartmanager.c.o: ../src/daemon/modules/container/restart_manager/restartmanager.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/restart_manager/restartmanager.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/container/restart_manager/restartmanager.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/container/restart_manager/restartmanager.c.o   -c /root/下载/summer2021-77/src/daemon/modules/container/restart_manager/restartmanager.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/container/restart_manager/restartmanager.c.i: cmake_force
@@ -1424,7 +1437,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/container/restart_manager/restartmanage
 
 src/CMakeFiles/isulad.dir/daemon/modules/log/log_gather.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/log/log_gather.c.o: ../src/daemon/modules/log/log_gather.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/log/log_gather.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/log/log_gather.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/log/log_gather.c.o   -c /root/下载/summer2021-77/src/daemon/modules/log/log_gather.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/log/log_gather.c.i: cmake_force
@@ -1437,7 +1450,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/log/log_gather.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/events/collector.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/events/collector.c.o: ../src/daemon/modules/events/collector.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/events/collector.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/events/collector.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/events/collector.c.o   -c /root/下载/summer2021-77/src/daemon/modules/events/collector.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/events/collector.c.i: cmake_force
@@ -1450,7 +1463,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/events/collector.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/events/monitord.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/events/monitord.c.o: ../src/daemon/modules/events/monitord.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/events/monitord.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/events/monitord.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/events/monitord.c.o   -c /root/下载/summer2021-77/src/daemon/modules/events/monitord.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/events/monitord.c.i: cmake_force
@@ -1463,7 +1476,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/events/monitord.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/events_sender/event_sender.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/events_sender/event_sender.c.o: ../src/daemon/modules/events_sender/event_sender.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/events_sender/event_sender.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/events_sender/event_sender.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/events_sender/event_sender.c.o   -c /root/下载/summer2021-77/src/daemon/modules/events_sender/event_sender.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/events_sender/event_sender.c.i: cmake_force
@@ -1476,7 +1489,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/events_sender/event_sender.c.s: cmake_f
 
 src/CMakeFiles/isulad.dir/daemon/modules/service/inspect_container.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/service/inspect_container.c.o: ../src/daemon/modules/service/inspect_container.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/service/inspect_container.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/service/inspect_container.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/service/inspect_container.c.o   -c /root/下载/summer2021-77/src/daemon/modules/service/inspect_container.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/service/inspect_container.c.i: cmake_force
@@ -1489,7 +1502,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/service/inspect_container.c.s: cmake_fo
 
 src/CMakeFiles/isulad.dir/daemon/modules/service/io_handler.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/service/io_handler.c.o: ../src/daemon/modules/service/io_handler.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/service/io_handler.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/service/io_handler.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/service/io_handler.c.o   -c /root/下载/summer2021-77/src/daemon/modules/service/io_handler.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/service/io_handler.c.i: cmake_force
@@ -1502,7 +1515,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/service/io_handler.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/service/service_container.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/service/service_container.c.o: ../src/daemon/modules/service/service_container.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/service/service_container.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/service/service_container.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/service/service_container.c.o   -c /root/下载/summer2021-77/src/daemon/modules/service/service_container.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/service/service_container.c.i: cmake_force
@@ -1515,7 +1528,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/service/service_container.c.s: cmake_fo
 
 src/CMakeFiles/isulad.dir/daemon/modules/service/service_image.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/service/service_image.c.o: ../src/daemon/modules/service/service_image.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/service/service_image.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/service/service_image.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/service/service_image.c.o   -c /root/下载/summer2021-77/src/daemon/modules/service/service_image.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/service/service_image.c.i: cmake_force
@@ -1528,7 +1541,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/service/service_image.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/volume/local.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/volume/local.c.o: ../src/daemon/modules/volume/local.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/volume/local.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/volume/local.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/volume/local.c.o   -c /root/下载/summer2021-77/src/daemon/modules/volume/local.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/volume/local.c.i: cmake_force
@@ -1541,7 +1554,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/volume/local.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/modules/volume/volume.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/modules/volume/volume.c.o: ../src/daemon/modules/volume/volume.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/volume/volume.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object src/CMakeFiles/isulad.dir/daemon/modules/volume/volume.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/modules/volume/volume.c.o   -c /root/下载/summer2021-77/src/daemon/modules/volume/volume.c
 
 src/CMakeFiles/isulad.dir/daemon/modules/volume/volume.c.i: cmake_force
@@ -1554,7 +1567,7 @@ src/CMakeFiles/isulad.dir/daemon/modules/volume/volume.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/config/daemon_arguments.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/config/daemon_arguments.c.o: ../src/daemon/config/daemon_arguments.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object src/CMakeFiles/isulad.dir/daemon/config/daemon_arguments.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object src/CMakeFiles/isulad.dir/daemon/config/daemon_arguments.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/config/daemon_arguments.c.o   -c /root/下载/summer2021-77/src/daemon/config/daemon_arguments.c
 
 src/CMakeFiles/isulad.dir/daemon/config/daemon_arguments.c.i: cmake_force
@@ -1567,7 +1580,7 @@ src/CMakeFiles/isulad.dir/daemon/config/daemon_arguments.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/config/isulad_config.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/config/isulad_config.c.o: ../src/daemon/config/isulad_config.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object src/CMakeFiles/isulad.dir/daemon/config/isulad_config.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object src/CMakeFiles/isulad.dir/daemon/config/isulad_config.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/config/isulad_config.c.o   -c /root/下载/summer2021-77/src/daemon/config/isulad_config.c
 
 src/CMakeFiles/isulad.dir/daemon/config/isulad_config.c.i: cmake_force
@@ -1580,7 +1593,7 @@ src/CMakeFiles/isulad.dir/daemon/config/isulad_config.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/common/err_msg.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/common/err_msg.c.o: ../src/daemon/common/err_msg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object src/CMakeFiles/isulad.dir/daemon/common/err_msg.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object src/CMakeFiles/isulad.dir/daemon/common/err_msg.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/common/err_msg.c.o   -c /root/下载/summer2021-77/src/daemon/common/err_msg.c
 
 src/CMakeFiles/isulad.dir/daemon/common/err_msg.c.i: cmake_force
@@ -1593,7 +1606,7 @@ src/CMakeFiles/isulad.dir/daemon/common/err_msg.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/common/events_format.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/common/events_format.c.o: ../src/daemon/common/events_format.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object src/CMakeFiles/isulad.dir/daemon/common/events_format.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object src/CMakeFiles/isulad.dir/daemon/common/events_format.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/common/events_format.c.o   -c /root/下载/summer2021-77/src/daemon/common/events_format.c
 
 src/CMakeFiles/isulad.dir/daemon/common/events_format.c.i: cmake_force
@@ -1606,7 +1619,7 @@ src/CMakeFiles/isulad.dir/daemon/common/events_format.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/common/selinux_label.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/common/selinux_label.c.o: ../src/daemon/common/selinux_label.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object src/CMakeFiles/isulad.dir/daemon/common/selinux_label.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object src/CMakeFiles/isulad.dir/daemon/common/selinux_label.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/common/selinux_label.c.o   -c /root/下载/summer2021-77/src/daemon/common/selinux_label.c
 
 src/CMakeFiles/isulad.dir/daemon/common/selinux_label.c.i: cmake_force
@@ -1619,7 +1632,7 @@ src/CMakeFiles/isulad.dir/daemon/common/selinux_label.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/daemon/common/sysinfo.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/daemon/common/sysinfo.c.o: ../src/daemon/common/sysinfo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object src/CMakeFiles/isulad.dir/daemon/common/sysinfo.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object src/CMakeFiles/isulad.dir/daemon/common/sysinfo.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/daemon/common/sysinfo.c.o   -c /root/下载/summer2021-77/src/daemon/common/sysinfo.c
 
 src/CMakeFiles/isulad.dir/daemon/common/sysinfo.c.i: cmake_force
@@ -1632,7 +1645,7 @@ src/CMakeFiles/isulad.dir/daemon/common/sysinfo.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/tar/isulad_tar.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/tar/isulad_tar.c.o: ../src/utils/tar/isulad_tar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object src/CMakeFiles/isulad.dir/utils/tar/isulad_tar.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building C object src/CMakeFiles/isulad.dir/utils/tar/isulad_tar.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/tar/isulad_tar.c.o   -c /root/下载/summer2021-77/src/utils/tar/isulad_tar.c
 
 src/CMakeFiles/isulad.dir/utils/tar/isulad_tar.c.i: cmake_force
@@ -1645,7 +1658,7 @@ src/CMakeFiles/isulad.dir/utils/tar/isulad_tar.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/tar/util_archive.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/tar/util_archive.c.o: ../src/utils/tar/util_archive.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building C object src/CMakeFiles/isulad.dir/utils/tar/util_archive.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building C object src/CMakeFiles/isulad.dir/utils/tar/util_archive.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/tar/util_archive.c.o   -c /root/下载/summer2021-77/src/utils/tar/util_archive.c
 
 src/CMakeFiles/isulad.dir/utils/tar/util_archive.c.i: cmake_force
@@ -1658,7 +1671,7 @@ src/CMakeFiles/isulad.dir/utils/tar/util_archive.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/tar/util_gzip.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/tar/util_gzip.c.o: ../src/utils/tar/util_gzip.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building C object src/CMakeFiles/isulad.dir/utils/tar/util_gzip.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building C object src/CMakeFiles/isulad.dir/utils/tar/util_gzip.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/tar/util_gzip.c.o   -c /root/下载/summer2021-77/src/utils/tar/util_gzip.c
 
 src/CMakeFiles/isulad.dir/utils/tar/util_gzip.c.i: cmake_force
@@ -1671,7 +1684,7 @@ src/CMakeFiles/isulad.dir/utils/tar/util_gzip.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/sha256/sha256.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/sha256/sha256.c.o: ../src/utils/sha256/sha256.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building C object src/CMakeFiles/isulad.dir/utils/sha256/sha256.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building C object src/CMakeFiles/isulad.dir/utils/sha256/sha256.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/sha256/sha256.c.o   -c /root/下载/summer2021-77/src/utils/sha256/sha256.c
 
 src/CMakeFiles/isulad.dir/utils/sha256/sha256.c.i: cmake_force
@@ -1684,7 +1697,7 @@ src/CMakeFiles/isulad.dir/utils/sha256/sha256.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/error.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/error.c.o: ../src/utils/cutils/error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/error.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/error.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/error.c.o   -c /root/下载/summer2021-77/src/utils/cutils/error.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/error.c.i: cmake_force
@@ -1697,7 +1710,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/error.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/filters.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/filters.c.o: ../src/utils/cutils/filters.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/filters.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/filters.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/filters.c.o   -c /root/下载/summer2021-77/src/utils/cutils/filters.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/filters.c.i: cmake_force
@@ -1710,7 +1723,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/filters.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/mainloop.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/mainloop.c.o: ../src/utils/cutils/mainloop.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/mainloop.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/mainloop.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/mainloop.c.o   -c /root/下载/summer2021-77/src/utils/cutils/mainloop.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/mainloop.c.i: cmake_force
@@ -1723,7 +1736,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/mainloop.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/namespace.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/namespace.c.o: ../src/utils/cutils/namespace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/namespace.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/namespace.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/namespace.c.o   -c /root/下载/summer2021-77/src/utils/cutils/namespace.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/namespace.c.i: cmake_force
@@ -1736,7 +1749,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/namespace.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/path.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/path.c.o: ../src/utils/cutils/path.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/path.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/path.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/path.c.o   -c /root/下载/summer2021-77/src/utils/cutils/path.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/path.c.i: cmake_force
@@ -1749,7 +1762,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/path.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/util_atomic.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/util_atomic.c.o: ../src/utils/cutils/util_atomic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/util_atomic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/util_atomic.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/util_atomic.c.o   -c /root/下载/summer2021-77/src/utils/cutils/util_atomic.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/util_atomic.c.i: cmake_force
@@ -1762,7 +1775,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/util_atomic.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/utils.c.o: ../src/utils/cutils/utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/utils.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils.c.i: cmake_force
@@ -1775,7 +1788,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/utils.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_aes.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/utils_aes.c.o: ../src/utils/cutils/utils_aes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_aes.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_aes.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/utils_aes.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_aes.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_aes.c.i: cmake_force
@@ -1788,7 +1801,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/utils_aes.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_array.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/utils_array.c.o: ../src/utils/cutils/utils_array.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_array.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_array.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/utils_array.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_array.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_array.c.i: cmake_force
@@ -1801,7 +1814,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/utils_array.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_base64.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/utils_base64.c.o: ../src/utils/cutils/utils_base64.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_base64.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_base64.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/utils_base64.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_base64.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_base64.c.i: cmake_force
@@ -1814,7 +1827,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/utils_base64.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_convert.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/utils_convert.c.o: ../src/utils/cutils/utils_convert.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_convert.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_convert.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/utils_convert.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_convert.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_convert.c.i: cmake_force
@@ -1827,7 +1840,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/utils_convert.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_file.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/utils_file.c.o: ../src/utils/cutils/utils_file.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_file.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_file.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/utils_file.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_file.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_file.c.i: cmake_force
@@ -1840,7 +1853,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/utils_file.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_fs.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/utils_fs.c.o: ../src/utils/cutils/utils_fs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_fs.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_fs.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/utils_fs.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_fs.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_fs.c.i: cmake_force
@@ -1853,7 +1866,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/utils_fs.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_mount_spec.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/utils_mount_spec.c.o: ../src/utils/cutils/utils_mount_spec.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_mount_spec.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_mount_spec.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/utils_mount_spec.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_mount_spec.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_mount_spec.c.i: cmake_force
@@ -1866,7 +1879,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/utils_mount_spec.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_regex.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/utils_regex.c.o: ../src/utils/cutils/utils_regex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_regex.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_regex.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/utils_regex.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_regex.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_regex.c.i: cmake_force
@@ -1879,7 +1892,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/utils_regex.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_string.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/utils_string.c.o: ../src/utils/cutils/utils_string.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_string.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_string.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/utils_string.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_string.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_string.c.i: cmake_force
@@ -1892,7 +1905,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/utils_string.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_timestamp.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/utils_timestamp.c.o: ../src/utils/cutils/utils_timestamp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_timestamp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_timestamp.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/utils_timestamp.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_timestamp.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_timestamp.c.i: cmake_force
@@ -1905,7 +1918,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/utils_timestamp.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_verify.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/utils_verify.c.o: ../src/utils/cutils/utils_verify.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_verify.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/utils_verify.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/utils_verify.c.o   -c /root/下载/summer2021-77/src/utils/cutils/utils_verify.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/utils_verify.c.i: cmake_force
@@ -1918,7 +1931,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/utils_verify.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/map/map.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/map/map.c.o: ../src/utils/cutils/map/map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/map/map.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/map/map.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/map/map.c.o   -c /root/下载/summer2021-77/src/utils/cutils/map/map.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/map/map.c.i: cmake_force
@@ -1931,7 +1944,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/map/map.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cutils/map/rb_tree.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cutils/map/rb_tree.c.o: ../src/utils/cutils/map/rb_tree.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/map/rb_tree.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object src/CMakeFiles/isulad.dir/utils/cutils/map/rb_tree.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/cutils/map/rb_tree.c.o   -c /root/下载/summer2021-77/src/utils/cutils/map/rb_tree.c
 
 src/CMakeFiles/isulad.dir/utils/cutils/map/rb_tree.c.i: cmake_force
@@ -1944,7 +1957,7 @@ src/CMakeFiles/isulad.dir/utils/cutils/map/rb_tree.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/console/console.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/console/console.c.o: ../src/utils/console/console.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object src/CMakeFiles/isulad.dir/utils/console/console.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object src/CMakeFiles/isulad.dir/utils/console/console.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/console/console.c.o   -c /root/下载/summer2021-77/src/utils/console/console.c
 
 src/CMakeFiles/isulad.dir/utils/console/console.c.i: cmake_force
@@ -1957,7 +1970,7 @@ src/CMakeFiles/isulad.dir/utils/console/console.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/buffer/buffer.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/buffer/buffer.c.o: ../src/utils/buffer/buffer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object src/CMakeFiles/isulad.dir/utils/buffer/buffer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object src/CMakeFiles/isulad.dir/utils/buffer/buffer.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/utils/buffer/buffer.c.o   -c /root/下载/summer2021-77/src/utils/buffer/buffer.c
 
 src/CMakeFiles/isulad.dir/utils/buffer/buffer.c.i: cmake_force
@@ -1970,7 +1983,7 @@ src/CMakeFiles/isulad.dir/utils/buffer/buffer.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cpputils/cxxutils.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cpputils/cxxutils.cc.o: ../src/utils/cpputils/cxxutils.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building CXX object src/CMakeFiles/isulad.dir/utils/cpputils/cxxutils.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building CXX object src/CMakeFiles/isulad.dir/utils/cpputils/cxxutils.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/utils/cpputils/cxxutils.cc.o -c /root/下载/summer2021-77/src/utils/cpputils/cxxutils.cc
 
 src/CMakeFiles/isulad.dir/utils/cpputils/cxxutils.cc.i: cmake_force
@@ -1983,7 +1996,7 @@ src/CMakeFiles/isulad.dir/utils/cpputils/cxxutils.cc.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cpputils/read_write_lock.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cpputils/read_write_lock.cc.o: ../src/utils/cpputils/read_write_lock.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building CXX object src/CMakeFiles/isulad.dir/utils/cpputils/read_write_lock.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building CXX object src/CMakeFiles/isulad.dir/utils/cpputils/read_write_lock.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/utils/cpputils/read_write_lock.cc.o -c /root/下载/summer2021-77/src/utils/cpputils/read_write_lock.cc
 
 src/CMakeFiles/isulad.dir/utils/cpputils/read_write_lock.cc.i: cmake_force
@@ -1996,7 +2009,7 @@ src/CMakeFiles/isulad.dir/utils/cpputils/read_write_lock.cc.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cpputils/stoppable_thread.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cpputils/stoppable_thread.cc.o: ../src/utils/cpputils/stoppable_thread.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building CXX object src/CMakeFiles/isulad.dir/utils/cpputils/stoppable_thread.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building CXX object src/CMakeFiles/isulad.dir/utils/cpputils/stoppable_thread.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/utils/cpputils/stoppable_thread.cc.o -c /root/下载/summer2021-77/src/utils/cpputils/stoppable_thread.cc
 
 src/CMakeFiles/isulad.dir/utils/cpputils/stoppable_thread.cc.i: cmake_force
@@ -2009,7 +2022,7 @@ src/CMakeFiles/isulad.dir/utils/cpputils/stoppable_thread.cc.s: cmake_force
 
 src/CMakeFiles/isulad.dir/utils/cpputils/url.cc.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/utils/cpputils/url.cc.o: ../src/utils/cpputils/url.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building CXX object src/CMakeFiles/isulad.dir/utils/cpputils/url.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building CXX object src/CMakeFiles/isulad.dir/utils/cpputils/url.cc.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isulad.dir/utils/cpputils/url.cc.o -c /root/下载/summer2021-77/src/utils/cpputils/url.cc
 
 src/CMakeFiles/isulad.dir/utils/cpputils/url.cc.i: cmake_force
@@ -2022,7 +2035,7 @@ src/CMakeFiles/isulad.dir/utils/cpputils/url.cc.s: cmake_force
 
 src/CMakeFiles/isulad.dir/cmd/command_parser.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/cmd/command_parser.c.o: ../src/cmd/command_parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object src/CMakeFiles/isulad.dir/cmd/command_parser.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object src/CMakeFiles/isulad.dir/cmd/command_parser.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/cmd/command_parser.c.o   -c /root/下载/summer2021-77/src/cmd/command_parser.c
 
 src/CMakeFiles/isulad.dir/cmd/command_parser.c.i: cmake_force
@@ -2035,7 +2048,7 @@ src/CMakeFiles/isulad.dir/cmd/command_parser.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/cmd/options/opt_log.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/cmd/options/opt_log.c.o: ../src/cmd/options/opt_log.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object src/CMakeFiles/isulad.dir/cmd/options/opt_log.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object src/CMakeFiles/isulad.dir/cmd/options/opt_log.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/cmd/options/opt_log.c.o   -c /root/下载/summer2021-77/src/cmd/options/opt_log.c
 
 src/CMakeFiles/isulad.dir/cmd/options/opt_log.c.i: cmake_force
@@ -2048,7 +2061,7 @@ src/CMakeFiles/isulad.dir/cmd/options/opt_log.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/cmd/options/opt_ulimit.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/cmd/options/opt_ulimit.c.o: ../src/cmd/options/opt_ulimit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object src/CMakeFiles/isulad.dir/cmd/options/opt_ulimit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object src/CMakeFiles/isulad.dir/cmd/options/opt_ulimit.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/cmd/options/opt_ulimit.c.o   -c /root/下载/summer2021-77/src/cmd/options/opt_ulimit.c
 
 src/CMakeFiles/isulad.dir/cmd/options/opt_ulimit.c.i: cmake_force
@@ -2061,7 +2074,7 @@ src/CMakeFiles/isulad.dir/cmd/options/opt_ulimit.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/cmd/isulad/isulad_commands.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/cmd/isulad/isulad_commands.c.o: ../src/cmd/isulad/isulad_commands.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object src/CMakeFiles/isulad.dir/cmd/isulad/isulad_commands.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object src/CMakeFiles/isulad.dir/cmd/isulad/isulad_commands.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/cmd/isulad/isulad_commands.c.o   -c /root/下载/summer2021-77/src/cmd/isulad/isulad_commands.c
 
 src/CMakeFiles/isulad.dir/cmd/isulad/isulad_commands.c.i: cmake_force
@@ -2074,7 +2087,7 @@ src/CMakeFiles/isulad.dir/cmd/isulad/isulad_commands.c.s: cmake_force
 
 src/CMakeFiles/isulad.dir/cmd/isulad/main.c.o: src/CMakeFiles/isulad.dir/flags.make
 src/CMakeFiles/isulad.dir/cmd/isulad/main.c.o: ../src/cmd/isulad/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object src/CMakeFiles/isulad.dir/cmd/isulad/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object src/CMakeFiles/isulad.dir/cmd/isulad/main.c.o"
 	cd /root/下载/summer2021-77/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/isulad.dir/cmd/isulad/main.c.o   -c /root/下载/summer2021-77/src/cmd/isulad/main.c
 
 src/CMakeFiles/isulad.dir/cmd/isulad/main.c.i: cmake_force
@@ -2098,6 +2111,7 @@ isulad_OBJECTS = \
 "CMakeFiles/isulad.dir/daemon/executor/image_cb/image_cb.c.o" \
 "CMakeFiles/isulad.dir/daemon/executor/volume_cb/volume_cb.c.o" \
 "CMakeFiles/isulad.dir/daemon/entry/connect/service_common.c.o" \
+"CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.o" \
 "CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service.cc.o" \
 "CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service_private.cc.o" \
 "CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_images_service.cc.o" \
@@ -2258,6 +2272,7 @@ src/isulad: src/CMakeFiles/isulad.dir/daemon/executor/container_cb/list.c.o
 src/isulad: src/CMakeFiles/isulad.dir/daemon/executor/image_cb/image_cb.c.o
 src/isulad: src/CMakeFiles/isulad.dir/daemon/executor/volume_cb/volume_cb.c.o
 src/isulad: src/CMakeFiles/isulad.dir/daemon/entry/connect/service_common.c.o
+src/isulad: src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.o
 src/isulad: src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service.cc.o
 src/isulad: src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service_private.cc.o
 src/isulad: src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_images_service.cc.o
@@ -2428,7 +2443,7 @@ src/isulad: /usr/lib64/libclibcni.so
 src/isulad: /usr/lib64/libhttp_parser.so
 src/isulad: /usr/lib64/libcurl.so
 src/isulad: src/CMakeFiles/isulad.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Linking CXX executable isulad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/下载/summer2021-77/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Linking CXX executable isulad"
 	cd /root/下载/summer2021-77/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/isulad.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

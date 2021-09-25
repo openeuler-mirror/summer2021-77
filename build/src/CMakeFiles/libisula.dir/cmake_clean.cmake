@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/libisula.dir/__/grpc/src/api/services/images/images.pb.cc.o"
   "CMakeFiles/libisula.dir/__/grpc/src/api/services/volumes/volumes.grpc.pb.cc.o"
   "CMakeFiles/libisula.dir/__/grpc/src/api/services/volumes/volumes.pb.cc.o"
+  "CMakeFiles/libisula.dir/client/connect/grpc/grpc_checkpoints_client.cc.o"
   "CMakeFiles/libisula.dir/client/connect/grpc/grpc_client.cc.o"
   "CMakeFiles/libisula.dir/client/connect/grpc/grpc_containers_client.cc.o"
   "CMakeFiles/libisula.dir/client/connect/grpc/grpc_images_client.cc.o"

@@ -18,6 +18,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/isulad.dir/daemon/common/sysinfo.c.o"
   "CMakeFiles/isulad.dir/daemon/config/daemon_arguments.c.o"
   "CMakeFiles/isulad.dir/daemon/config/isulad_config.c.o"
+  "CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.o"
   "CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service.cc.o"
   "CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_containers_service_private.cc.o"
   "CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_images_service.cc.o"

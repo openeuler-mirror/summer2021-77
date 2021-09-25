@@ -63,7 +63,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
   "ENABLE_SELINUX=1"
   "GRPC_CONNECTOR"
   "HAVE_LIBCAP_H=1"
-  "ISULAD_BUILD_TIME=\"2021-08-15T12:18:43.067953491+08:00\""
+  "ISULAD_BUILD_TIME=\"2021-09-25T17:14:28.006727559+08:00\""
   "ISULAD_GIT_COMMIT=\"9aa57ef27d3719729097f75c65125519497b8b66\""
   "ISULAD_ROOT_PATH=\"/var/lib/isulad\""
   "ISULAD_STATE_PATH=\"/var/run/isulad\""
@@ -100,6 +100,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "grpc/src/api/services/containers"
   "grpc/src/api/services/images"
   "grpc/src/api/services/volumes"
+  "grpc/src/api/services/checkpoints"
   "grpc/src/api/services/cri"
   "../src/utils/http"
   )

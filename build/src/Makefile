@@ -456,6 +456,33 @@ __/grpc/src/api/services/volumes/volumes.pb.cc.s:
 	cd /root/下载/summer2021-77/build && $(MAKE) -f src/CMakeFiles/libisula.dir/build.make src/CMakeFiles/libisula.dir/__/grpc/src/api/services/volumes/volumes.pb.cc.s
 .PHONY : __/grpc/src/api/services/volumes/volumes.pb.cc.s
 
+client/connect/grpc/grpc_checkpoints_client.o: client/connect/grpc/grpc_checkpoints_client.cc.o
+
+.PHONY : client/connect/grpc/grpc_checkpoints_client.o
+
+# target to build an object file
+client/connect/grpc/grpc_checkpoints_client.cc.o:
+	cd /root/下载/summer2021-77/build && $(MAKE) -f src/CMakeFiles/libisula.dir/build.make src/CMakeFiles/libisula.dir/client/connect/grpc/grpc_checkpoints_client.cc.o
+.PHONY : client/connect/grpc/grpc_checkpoints_client.cc.o
+
+client/connect/grpc/grpc_checkpoints_client.i: client/connect/grpc/grpc_checkpoints_client.cc.i
+
+.PHONY : client/connect/grpc/grpc_checkpoints_client.i
+
+# target to preprocess a source file
+client/connect/grpc/grpc_checkpoints_client.cc.i:
+	cd /root/下载/summer2021-77/build && $(MAKE) -f src/CMakeFiles/libisula.dir/build.make src/CMakeFiles/libisula.dir/client/connect/grpc/grpc_checkpoints_client.cc.i
+.PHONY : client/connect/grpc/grpc_checkpoints_client.cc.i
+
+client/connect/grpc/grpc_checkpoints_client.s: client/connect/grpc/grpc_checkpoints_client.cc.s
+
+.PHONY : client/connect/grpc/grpc_checkpoints_client.s
+
+# target to generate assembly for a file
+client/connect/grpc/grpc_checkpoints_client.cc.s:
+	cd /root/下载/summer2021-77/build && $(MAKE) -f src/CMakeFiles/libisula.dir/build.make src/CMakeFiles/libisula.dir/client/connect/grpc/grpc_checkpoints_client.cc.s
+.PHONY : client/connect/grpc/grpc_checkpoints_client.cc.s
+
 client/connect/grpc/grpc_client.o: client/connect/grpc/grpc_client.cc.o
 
 .PHONY : client/connect/grpc/grpc_client.o
@@ -2300,6 +2327,33 @@ daemon/config/isulad_config.s: daemon/config/isulad_config.c.s
 daemon/config/isulad_config.c.s:
 	cd /root/下载/summer2021-77/build && $(MAKE) -f src/CMakeFiles/isulad.dir/build.make src/CMakeFiles/isulad.dir/daemon/config/isulad_config.c.s
 .PHONY : daemon/config/isulad_config.c.s
+
+daemon/entry/connect/grpc/grpc_checkpoints_service.o: daemon/entry/connect/grpc/grpc_checkpoints_service.cc.o
+
+.PHONY : daemon/entry/connect/grpc/grpc_checkpoints_service.o
+
+# target to build an object file
+daemon/entry/connect/grpc/grpc_checkpoints_service.cc.o:
+	cd /root/下载/summer2021-77/build && $(MAKE) -f src/CMakeFiles/isulad.dir/build.make src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.o
+.PHONY : daemon/entry/connect/grpc/grpc_checkpoints_service.cc.o
+
+daemon/entry/connect/grpc/grpc_checkpoints_service.i: daemon/entry/connect/grpc/grpc_checkpoints_service.cc.i
+
+.PHONY : daemon/entry/connect/grpc/grpc_checkpoints_service.i
+
+# target to preprocess a source file
+daemon/entry/connect/grpc/grpc_checkpoints_service.cc.i:
+	cd /root/下载/summer2021-77/build && $(MAKE) -f src/CMakeFiles/isulad.dir/build.make src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.i
+.PHONY : daemon/entry/connect/grpc/grpc_checkpoints_service.cc.i
+
+daemon/entry/connect/grpc/grpc_checkpoints_service.s: daemon/entry/connect/grpc/grpc_checkpoints_service.cc.s
+
+.PHONY : daemon/entry/connect/grpc/grpc_checkpoints_service.s
+
+# target to generate assembly for a file
+daemon/entry/connect/grpc/grpc_checkpoints_service.cc.s:
+	cd /root/下载/summer2021-77/build && $(MAKE) -f src/CMakeFiles/isulad.dir/build.make src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_checkpoints_service.cc.s
+.PHONY : daemon/entry/connect/grpc/grpc_checkpoints_service.cc.s
 
 daemon/entry/connect/grpc/grpc_containers_service.o: daemon/entry/connect/grpc/grpc_containers_service.cc.o
 
@@ -6247,6 +6301,9 @@ help:
 	@echo "... __/grpc/src/api/services/volumes/volumes.pb.o"
 	@echo "... __/grpc/src/api/services/volumes/volumes.pb.i"
 	@echo "... __/grpc/src/api/services/volumes/volumes.pb.s"
+	@echo "... client/connect/grpc/grpc_checkpoints_client.o"
+	@echo "... client/connect/grpc/grpc_checkpoints_client.i"
+	@echo "... client/connect/grpc/grpc_checkpoints_client.s"
 	@echo "... client/connect/grpc/grpc_client.o"
 	@echo "... client/connect/grpc/grpc_client.i"
 	@echo "... client/connect/grpc/grpc_client.s"
@@ -6451,6 +6508,9 @@ help:
 	@echo "... daemon/config/isulad_config.o"
 	@echo "... daemon/config/isulad_config.i"
 	@echo "... daemon/config/isulad_config.s"
+	@echo "... daemon/entry/connect/grpc/grpc_checkpoints_service.o"
+	@echo "... daemon/entry/connect/grpc/grpc_checkpoints_service.i"
+	@echo "... daemon/entry/connect/grpc/grpc_checkpoints_service.s"
 	@echo "... daemon/entry/connect/grpc/grpc_containers_service.o"
 	@echo "... daemon/entry/connect/grpc/grpc_containers_service.i"
 	@echo "... daemon/entry/connect/grpc/grpc_containers_service.s"
