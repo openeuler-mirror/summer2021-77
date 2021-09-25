@@ -27,19 +27,6 @@ public:
 
     auto response_from_grpc(CreateCheckpointResponse *gresponse, isula_create_checkpoint_response *response) -> int override
     {
-        auto size = gresponse->checkpoints_size();
-        if (size != 0) {
-            response->checkpoints = static_cast<char **>(util_common_calloc_s(sizeof(char *) * size));
-            if (response->checkpoints == NULL) {
-                return -1;
-            }
-
-            for (int i {}; i < size; i++) {
-                response->checkpoints[i] = util_strdup_s(gresponse->checkpoints(i).c_str());
-                response->checkpoints_len++;
-            }
-        }
-
         response->server_errono = static_cast<uint32_t>(gresponse->cc());
 
         if (!gresponse->errmsg().empty()) {

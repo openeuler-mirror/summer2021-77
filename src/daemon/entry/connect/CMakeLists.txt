@@ -20,7 +20,7 @@ if (GRPC_CONNECTOR)
     aux_source_directory(${CMAKE_BINARY_DIR}/grpc/src/api/services/volumes CONNECT_API_VOLUMES)
     aux_source_directory(${CMAKE_BINARY_DIR}/grpc/src/api/services/checkpoints CONNECT_API_CHECKPOINTS)
     aux_source_directory(${CMAKE_BINARY_DIR}/grpc/src/api/services/cri CONNECT_API_CRI)
-    set(CONNECT_API ${CONNECT_API_CONTAINERS} ${CONNECT_API_IMAGES} ${CONNECT_API_VOLUMES} ${CONNECT_API_CRI})
+    set(CONNECT_API ${CONNECT_API_CONTAINERS} ${CONNECT_API_IMAGES} ${CONNECT_API_VOLUMES} ${CONNECT_API_CHECKPOINTS} ${CONNECT_API_CRI})
     list(APPEND local_server_connect_srcs ${CONNECT_API})
 
     list(APPEND local_server_connect_incs
