@@ -4,7 +4,37 @@ option optimize_for = CODE_SIZE;
 package checkpoint;
 
 service CheckpointService {
+    //list
+	rpc List(ListCheckpointRequest) returns (ListCheckpointResponse);
+    //remove
+	rpc Remove(RemoveCheckpointRequest) returns (RemoveCheckpointResponse);
+    //create
 	rpc Create(CreateCheckpointRequest) returns (CreateCheckpointResponse);
+}
+
+message Checkpoint {
+	string name = 1;
+	string dir = 2;
+    string container =3;
+}
+
+message ListCheckpointRequest {
+    string container =1;
+    string dir=2;
+}
+
+message ListCheckpointResponse {
+	uint32 cc = 1;
+	string errmsg = 2;
+}
+
+message RemoveCheckpointRequest {
+	string name = 1;
+}
+
+message RemoveCheckpointResponse {
+	uint32 cc = 1;
+	string errmsg = 2;
 }
 
 message CreateCheckpointRequest {
@@ -14,6 +44,7 @@ message CreateCheckpointRequest {
 }
 
 message CreateCheckpointResponse {
-	uint32 cc = 1;
-	string errmsg = 2;
+	uint32 cc = 3;
+	string errmsg = 4;
 }
+

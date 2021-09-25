@@ -1,1 +1,0 @@
-protoc --grpc_out=/root/下载/summer2021-77/build/grpc/src/api/services/checkpoints --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` checkpoints.proto
