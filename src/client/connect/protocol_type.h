@@ -619,6 +619,18 @@ struct isula_prune_volume_response {
     char *errmsg;
 };
 
+struct isula_create_checkpoint_request {
+    char* container;
+    char* checkpoint;
+    char* dir;
+};
+
+struct isula_create_checkpoint_response {
+    uint32_t cc;
+    uint32_t server_errono;
+    char *errmsg;
+};
+
 void container_events_format_free(container_events_format_t *value);
 
 struct isula_filters *isula_filters_parse_args(const char **array, size_t len);

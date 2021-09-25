@@ -10,9 +10,17 @@
 #include "utils.h"
 #include "grpc_server_tls_auth.h"
 
+typedef struct {
+    char* container;
+    char* checkpoint;
+    char* dir;
+}checkpoint_create_checkpoint_request;
 
-
-
+typedef struct{
+    uint32_t cc;
+    uint32_t server_errono;
+    char *errmsg;
+}checkpoint_create_checkpoint_response
 
 
 //获取请求

@@ -1,5 +1,5 @@
-#ifndef DAEMON_ENTRY_CONNECT_GRPC_GRPC_VOLUMES_SERVICE_H
-#define DAEMON_ENTRY_CONNECT_GRPC_GRPC_VOLUMES_SERVICE_H
+#ifndef DAEMON_ENTRY_CONNECT_GRPC_GRPC_CHECKPOINTS_SERVICE_H
+#define DAEMON_ENTRY_CONNECT_GRPC_GRPC_CHECKPOINTS_SERVICE_H
 
 #include <grpc++/grpc++.h>
 
@@ -42,4 +42,4 @@ private:
     int checkpoint_create_response_to_grpc(checkpoint_create_checkpoint_response *response, CreateCheckpointResponse *gresponse);
 };
 
-#endif // DAEMON_ENTRY_CONNECT_GRPC_GRPC_VOLUMES_SERVICE_H
+#endif // DAEMON_ENTRY_CONNECT_GRPC_GRPC_CHECKPOINTS_SERVICE_H

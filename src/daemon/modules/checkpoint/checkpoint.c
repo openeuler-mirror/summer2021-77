@@ -26,7 +26,7 @@ int checkpoint_create(char* container,char* checkpoint,char* dir)
 	}
     //容器未定义
     if (!c->is_defined(c)) {
-		ERROR("Error response from daemon: No such container:%s\n",container);
+		ERROR("(deamon modules)Error response from daemon: No such container:%s\n",container);
 		return 0;
 	}
     //容器未运行
