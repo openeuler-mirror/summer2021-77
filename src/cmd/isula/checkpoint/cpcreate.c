@@ -36,7 +36,7 @@ struct client_arguments g_cmd_checkpoint_create_args;
     { CMD_OPT_TYPE_STRING, false, "checkpoint-dir", 0, &(cmdargs).checkpoint_dir, "Use a custom checkpoint storage directory", NULL },
 
 static int client_checkpoint_create(const struct client_arguments *args, char ***volumes, size_t *volumes_len){
-    printf("%s\n",args->checkpoint_dir);
+    //printf("%s\n",args->checkpoint_dir);
     struct lxc_container *c;
     c=lxc_container_new(args->name,"/var/lib/isulad/engines/lcr/");
     if (!c) {
