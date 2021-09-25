@@ -36,36 +36,39 @@ struct client_arguments g_cmd_checkpoint_create_args;
     { CMD_OPT_TYPE_STRING, false, "checkpoint-dir", 0, &(cmdargs).checkpoint_dir, "Use a custom checkpoint storage directory", NULL },
 
 static int client_checkpoint_create(const struct client_arguments *args, char ***volumes, size_t *volumes_len){
-    //printf("%s\n",args->checkpoint_dir);
-    struct lxc_container *c;
-    c=lxc_container_new(args->name,"/var/lib/isulad/engines/lcr/");
-    if (!c) {
-		printf("System error loading %s\n", args->name);
-		return 0;
-	}
-    if (!c->is_defined(c)) {
-		printf("Error response from daemon: No such container:%s\n", args->name);
-		return 0;
-	}
-    if (!c->is_running(c)) {
-		printf("%s not running, not checkpointing\n", args->name);
-		return 0;
-	}
-   
-    char checkpoint_dir[1000]="/tmp/isula-criu/";
-    strcat(checkpoint_dir,c->name);
-    bool res;
-    if(args->checkpoint_dir){
-        res = c->checkpoint(c,args->checkpoint_dir,true,false);
-    }else{
-        res =  c->checkpoint(c,checkpoint_dir,true,false);
+    isula_connect_ops *pos =NULL;
+    struct isula_create_checkpoint_request request ={0};
+    struct isula_create_checkpoint_response *response =NULL;
+    client_connect_config_t config ={0};
+    int ret = 0
+
+    response = util_common_calloc_s(sizeof(struct isula_create_checkpoint_response));
+    if (response==NULL){
+        ERROR("Out of memory");
+        return -1;
     }
-    if(!res){
-        printf("Checkpointing %s failed",args->name);
-    }else{
-        printf("%s\n",args->name);
+
+    ops = get_connect_client_ops();
+    if(ops==NULL)||(ops->checkpoint.create==NULL){
+        ERROR("Unimplemented ops");
+        ret=-1;
+        goto out
     }
-    return res;
+    //把参数放到了config里
+    config = get_connect_config(args);
+    //把config传递给了grpc，不知道行不行呢
+    ret=ops->checkpoint.create(&request,response,&config);
+    if(ret!=0){
+        client_print_error(response->cc,response->server_errono,response->errmsg);
+        if(response->server_errono){
+            ret=ESERVERERROR
+        }
+        goto out;
+    }
+
+out:
+    isula_create_checkpoint_response_free(response);
+    return ret
 }
 
 int cmd_checkpoint_create_main(int argc, const char **argv)

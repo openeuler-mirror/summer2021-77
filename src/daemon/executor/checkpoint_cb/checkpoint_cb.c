@@ -36,139 +36,30 @@
 #include "isula_libutils/log.h"
 #include "volume_api.h"
 
-/* chekpoint list cb */
-static int checkpoint_list_cb(const volume_list_volume_request *request, volume_list_volume_response **response)
-{
-    uint32_t cc = ISULAD_SUCCESS;
-    struct volumes *list = NULL;
-    size_t i = 0;
-    volume_volume *vol = NULL;
-
-    DAEMON_CLEAR_ERRMSG();
-    //check
-    if (request == NULL || response == NULL) {
-        ERROR("Invalid input arguments");
-        return EINVALIDARGS;
-    }
-    //response
-    *response = util_common_calloc_s(sizeof(checkpoint_list_checkpoint_response));
-    if (*response == NULL) {
-        ERROR("Out of memory");
-        cc = ISULAD_ERR_MEMOUT;
-        goto err_out;
-    }
-
-    EVENT("Volume Event: {Object: list volumes, Type: listing}");
-
-    list = checkpoint_list();
-    if (list == NULL) {
-        cc = ISULAD_ERR_EXEC;
-        goto err_out;
-    }
-
-    if (list->vols_len == 0) {
-        goto out;
-    }
-
-    (*response)->volumes = util_smart_calloc_s(sizeof(volume_volume *), list->vols_len);
-    if ((*response)->volumes == NULL) {
-        ERROR("out of memory");
-        cc = ISULAD_ERR_MEMOUT;
-        goto err_out;
-    }
-
-    for (i = 0; i < list->vols_len; i++) {
-        vol = util_common_calloc_s(sizeof(volume_volume));
-        if (vol == NULL) {
-            ERROR("out of memory");
-            cc = ISULAD_ERR_MEMOUT;
-            goto err_out;
-        }
-        vol->driver = util_strdup_s(list->vols[i]->driver);
-        vol->name = util_strdup_s(list->vols[i]->name);
-        (*response)->volumes[i] = vol;
-        (*response)->volumes_len++;
-    }
-
-out:
-    EVENT("Volume Event: {Object: list volumes, Type: listed");
-
-err_out:
-    if (*response != NULL) {
-        (*response)->cc = cc;
-        if (g_isulad_errmsg != NULL) {
-            (*response)->errmsg = util_strdup_s(g_isulad_errmsg);
-            DAEMON_CLEAR_ERRMSG();
-        }
-    }
-    free_volumes(list);
-
-    return (cc != ISULAD_SUCCESS) ? ECOMMON : 0;
-}
-
-/* checkpoint remove cb */
-static int checkpoint_remove_cb(const volume_remove_volume_request *request, volume_remove_volume_response **response)
-{
-    uint32_t cc = ISULAD_SUCCESS;
-
-    DAEMON_CLEAR_ERRMSG();
-
-    if (request == NULL || request->name == NULL || response == NULL) {
-        ERROR("Invalid input arguments");
-        return EINVALIDARGS;
-    }
-
-    *response = util_common_calloc_s(sizeof(volume_remove_volume_response));
-    if (*response == NULL) {
-        ERROR("Out of memory");
-        cc = ISULAD_ERR_MEMOUT;
-        goto out;
-    }
-
-    EVENT("Volume Event: {Object: %s, Type: Deleting}", request->name);
-
-    if (volume_remove(request->name) != 0) {
-        cc = ISULAD_ERR_EXEC;
-        goto out;
-    }
-
-    EVENT("Volume Event: {Object: %s, Type: Deleted}", request->name);
-
-out:
-    if (*response != NULL) {
-        (*response)->cc = cc;
-        if (g_isulad_errmsg != NULL) {
-            (*response)->errmsg = util_strdup_s(g_isulad_errmsg);
-            DAEMON_CLEAR_ERRMSG();
-        }
-    }
-
-    return (cc != ISULAD_SUCCESS) ? ECOMMON : 0;
-}
 
 /* checkpoint create cb */
-static int volume_prune_cb(const volume_prune_volume_request *request, volume_prune_volume_response **response)
+static int volume_create_cb(const volume_prune_volume_request *request, volume_prune_volume_response **response)
 {
     uint32_t cc = ISULAD_SUCCESS;
-    struct volume_names *pruned = NULL;
+
 
     DAEMON_CLEAR_ERRMSG();
 
-    if (request == NULL || response == NULL) {
+    if (request == NULL || request->container==NULL || response == NULL) {
         ERROR("Invalid input arguments");
         return EINVALIDARGS;
     }
 
-    *response = util_common_calloc_s(sizeof(volume_prune_volume_response));
+    *response = util_common_calloc_s(sizeof(checkpoint_create_checkpoint_response));
     if (*response == NULL) {
         ERROR("Out of memory");
         cc = ISULAD_ERR_MEMOUT;
         goto out;
     }
 
-    EVENT("Volume Event: {Object: prune volumes, Type: Prune}");
+    EVENT("Checkpoint Event: {Object: create checkpoint, Type: Create}");
 
-    if (volume_prune(&pruned) != 0) {
+    if (volume_prune(request->container,request->checkpoint,request->dir) != 0) {
         cc = ISULAD_ERR_EXEC;
         goto out;
     }
@@ -201,7 +92,5 @@ void checkpoint_callback_init(service_checkpoint_callback_t *cb)
         return;
     }
 
-    cb->list = checkpoint_list_cb;
-    cb->remove = checkpoint_remove_cb;
-    cb->prune = checkpoint_remove_cb;
+    cb->create = checkpoint_create_cb;
 }

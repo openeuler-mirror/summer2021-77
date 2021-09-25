@@ -3,42 +3,17 @@ option optimize_for = CODE_SIZE;
 
 package checkpoint;
 
-service CheckPointService {
-	rpc List(ListCheckPointRequest) returns (ListCheckPointResponse);
-
-	rpc Remove(RemoveCheckPointRequest) returns (RemoveCheckPointResponse);
-
-	rpc Create(CreateCheckPointRequest) returns (CreateCheckPointResponse);
+service CheckpointService {
+	rpc Create(CreateCheckpointRequest) returns (CreateCheckpointResponse);
 }
 
-message CheckPoint {
-	string driver = 1;
-	string name = 2;
+message CreateCheckpointRequest {
+    string container =1;
+    string checkpoint =2;
+    string dir =3;
 }
 
-message ListCheckPointRequest {
-}
-
-message ListCheckPointResponse {
-	repeated CheckPoint checkpoints = 1;
-	uint32 cc = 2;
-	string errmsg = 3;
-}
-
-message RemoveCheckPointRequest {
-	string name = 1;
-}
-
-message RemoveCheckPointResponse {
+message CreateCheckpointResponse {
 	uint32 cc = 1;
 	string errmsg = 2;
-}
-
-message CreateCheckPointRequest {
-}
-
-message CreateCheckPointResponse {
-	repeated string volumes = 2;
-	uint32 cc = 3;
-	string errmsg = 4;
 }
