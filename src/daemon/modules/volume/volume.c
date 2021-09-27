@@ -472,11 +472,13 @@ out:
 
 struct volumes * volume_list(void)
 {
+    
     struct volumes *vols = NULL;
 
     mutex_lock(&g_vs.mutex);
     vols = list_all_driver_volumes();
     mutex_unlock(&g_vs.mutex);
+    ERROR("struct volumes * volume_list(void)\n");
 
     return vols;
 }

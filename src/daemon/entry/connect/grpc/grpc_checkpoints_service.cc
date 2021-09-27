@@ -16,6 +16,7 @@
 int CheckpointServiceImpl::checkpoint_create_request_from_grpc(const CreateCheckpointRequest *grequest,
                                                       checkpoint_create_checkpoint_request **request)
 {
+    printf("获取请求\n");
     checkpoint_create_checkpoint_request *tmpreq =
         static_cast<checkpoint_create_checkpoint_request *>(util_common_calloc_s(sizeof(checkpoint_create_checkpoint_request)));
     if (tmpreq == nullptr) {
@@ -31,6 +32,7 @@ int CheckpointServiceImpl::checkpoint_create_request_from_grpc(const CreateCheck
 int CheckpointServiceImpl::checkpoint_create_response_to_grpc(checkpoint_create_checkpoint_response *response,
                                                      CreateCheckpointResponse *gresponse)
 {
+    printf("发送响应\n");
     if (response == nullptr) {
         gresponse->set_cc(ISULAD_ERR_MEMOUT);
         return 0;

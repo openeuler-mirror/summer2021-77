@@ -2680,6 +2680,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: ../src/ut
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: ../src/utils/cutils/utils_string.h
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: ../src/utils/cutils/utils_timestamp.h
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: ../src/utils/cutils/utils_verify.h
+src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: ../src/daemon/entry/connect/grpc/grpc_checkpoints_service.h
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: ../src/daemon/entry/connect/grpc/grpc_containers_service.h
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: ../src/daemon/entry/connect/grpc/grpc_images_service.h
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: ../src/daemon/entry/connect/grpc/grpc_server_tls_auth.h
@@ -2688,6 +2689,8 @@ src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: ../src/da
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: ../src/daemon/entry/connect/grpc/grpc_volumes_service.h
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: ../src/daemon/entry/connect/grpc/runtime_image_service.h
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: ../src/daemon/entry/connect/grpc/runtime_runtime_service.h
+src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: grpc/src/api/services/checkpoints/checkpoints.grpc.pb.h
+src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: grpc/src/api/services/checkpoints/checkpoints.pb.h
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: grpc/src/api/services/containers/container.grpc.pb.h
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: grpc/src/api/services/containers/container.pb.h
 src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o: grpc/src/api/services/cri/api.grpc.pb.h

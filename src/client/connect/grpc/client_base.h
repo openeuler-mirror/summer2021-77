@@ -117,6 +117,7 @@ public:
         }
 
         ret = request_to_grpc(request, &req);
+        printf("request_to_grpc\n");
         if (ret != 0) {
             ERROR("Failed to translate request to grpc");
             response->cc = ISULAD_ERR_INPUT;
@@ -129,6 +130,7 @@ public:
         }
 
         status = grpc_call(&context, req, &reply);
+        printf("grpc_call\n");
         if (!status.ok()) {
             ERROR("error_code: %d: %s", status.error_code(), status.error_message().c_str());
             unpackStatus(status, response);
@@ -136,6 +138,7 @@ public:
         }
 
         ret = response_from_grpc(&reply, response);
+        printf("response_from_grpc\n");
         if (ret != 0) {
             ERROR("Failed to transform grpc response");
             response->cc = ISULAD_ERR_EXEC;

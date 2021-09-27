@@ -44,6 +44,7 @@ public:
 
 auto grpc_checkpoints_client_ops_init(isula_connect_ops *ops) -> int
 {
+
     if (ops == nullptr) {
         return -1;
     }

@@ -2681,6 +2681,7 @@ src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o
  ../src/utils/cutils/utils_string.h
  ../src/utils/cutils/utils_timestamp.h
  ../src/utils/cutils/utils_verify.h
+ /root/下载/summer2021-77/src/daemon/entry/connect/grpc/grpc_checkpoints_service.h
  /root/下载/summer2021-77/src/daemon/entry/connect/grpc/grpc_containers_service.h
  /root/下载/summer2021-77/src/daemon/entry/connect/grpc/grpc_images_service.h
  /root/下载/summer2021-77/src/daemon/entry/connect/grpc/grpc_server_tls_auth.h
@@ -2689,6 +2690,8 @@ src/CMakeFiles/isulad.dir/daemon/entry/connect/grpc/grpc_service.cc.o
  /root/下载/summer2021-77/src/daemon/entry/connect/grpc/grpc_volumes_service.h
  /root/下载/summer2021-77/src/daemon/entry/connect/grpc/runtime_image_service.h
  /root/下载/summer2021-77/src/daemon/entry/connect/grpc/runtime_runtime_service.h
+ grpc/src/api/services/checkpoints/checkpoints.grpc.pb.h
+ grpc/src/api/services/checkpoints/checkpoints.pb.h
  grpc/src/api/services/containers/container.grpc.pb.h
  grpc/src/api/services/containers/container.pb.h
  grpc/src/api/services/cri/api.grpc.pb.h
