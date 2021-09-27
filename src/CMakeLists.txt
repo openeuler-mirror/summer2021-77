@@ -79,6 +79,7 @@ target_link_libraries(libisula
     ${LIBTAR_LIBRARY}
     ${WEBSOCKET_LIBRARY}
     ${CRYPTO_LIBRARY}
+    liblxc.so
    )
 
 if (ENABLE_SHIM_V2)
@@ -93,6 +94,9 @@ if (GRPC_CONNECTOR)
 else()
     target_link_libraries(libisula ${EVHTP_LIBRARY} ${EVENT_LIBRARY} ${ZLIB_LIBRARY} -ldl libhttpclient)
 endif()
+
+
+
 # ------ build libisula finish -----
 
 add_subdirectory(cmd)
@@ -110,7 +114,7 @@ add_executable(isulad-shim
     ${SHARED_SRCS}
     )
 target_include_directories(isulad-shim PUBLIC ${ISULAD_SHIM_INCS} ${SHARED_INCS})
-target_link_libraries(isulad-shim ${LIBYAJL_LIBRARY} ${ISULA_LIBUTILS_LIBRARY} ${LIBARCHIVE_LIBRARY} ${LIBTAR_LIBRARY} ${ZLIB_LIBRARY} ${CRYPTO_LIBRARY} -lpthread)
+target_link_libraries(isulad-shim ${LIBYAJL_LIBRARY} ${ISULA_LIBUTILS_LIBRARY} ${LIBARCHIVE_LIBRARY} ${LIBTAR_LIBRARY} ${ZLIB_LIBRARY} ${CRYPTO_LIBRARY} -lpthread liblxc.so)
 
 # ------ build isula-shim finish -------
 
@@ -134,7 +138,7 @@ target_include_directories(isulad PUBLIC
 
 target_link_libraries(isulad ${LIBYAJL_LIBRARY} ${SYSTEMD_LIBRARY} ${SELINUX_LIBRARY} ${LIBARCHIVE_LIBRARY} ${LIBTAR_LIBRARY} ${WEBSOCKET_LIBRARY} ${CRYPTO_LIBRARY})
 
-target_link_libraries(isulad -ldl ${ZLIB_LIBRARY} ${ISULA_LIBUTILS_LIBRARY} -lpthread libhttpclient)
+target_link_libraries(isulad -ldl ${ZLIB_LIBRARY} ${ISULA_LIBUTILS_LIBRARY} -lpthread libhttpclient liblxc.so)
 
 if (ENABLE_SHIM_V2)
     target_link_libraries(isulad ${LIBSHIM_V2_LIBRARY})
@@ -168,6 +172,8 @@ if (ISULAD_GCOV)
     target_link_libraries(isulad -lgcov)
 endif()
 
+
+
 # ------ build isulad finish -------
 
 # ------ install binary --------
@@ -181,4 +187,3 @@ install(TARGETS isulad
 	RUNTIME DESTINATION bin PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE)
 
 
-target_link_libraries(isula liblxc.so)

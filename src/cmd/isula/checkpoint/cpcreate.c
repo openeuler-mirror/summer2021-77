@@ -36,39 +36,49 @@ struct client_arguments g_cmd_checkpoint_create_args;
     { CMD_OPT_TYPE_STRING, false, "checkpoint-dir", 0, &(cmdargs).checkpoint_dir, "Use a custom checkpoint storage directory", NULL },
 
 static int client_checkpoint_create(const struct client_arguments *args, char ***volumes, size_t *volumes_len){
-    isula_connect_ops *pos =NULL;
+    //printf("info:enter cmd checkpoint");
+    isula_connect_ops *ops = NULL;
     struct isula_create_checkpoint_request request ={0};
     struct isula_create_checkpoint_response *response =NULL;
     client_connect_config_t config ={0};
-    int ret = 0
+    int ret = 0;
+    
 
     response = util_common_calloc_s(sizeof(struct isula_create_checkpoint_response));
     if (response==NULL){
         ERROR("Out of memory");
         return -1;
     }
+    
 
     ops = get_connect_client_ops();
-    if(ops==NULL)||(ops->checkpoint.create==NULL){
+    
+    printf("test point %d\n",ops->checkpoint.aabb==NULL);
+    
+    
+    if(ops==NULL ||ops->checkpoint.create==NULL){
+        printf("test point\n");
         ERROR("Unimplemented ops");
         ret=-1;
-        goto out
+        goto out;
     }
+    
     //把参数放到了config里
     config = get_connect_config(args);
     //把config传递给了grpc，不知道行不行呢
     ret=ops->checkpoint.create(&request,response,&config);
+    printf("res from checkpoint create %d",ret);
     if(ret!=0){
         client_print_error(response->cc,response->server_errono,response->errmsg);
         if(response->server_errono){
-            ret=ESERVERERROR
+            ret=ESERVERERROR;
         }
         goto out;
     }
 
 out:
-    isula_create_checkpoint_response_free(response);
-    return ret
+    //isula_create_checkpoint_response_free(response);
+    return ret;
 }
 
 int cmd_checkpoint_create_main(int argc, const char **argv)
