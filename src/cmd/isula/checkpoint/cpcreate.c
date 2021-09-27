@@ -50,7 +50,7 @@ static int client_checkpoint_create(const struct client_arguments *args, char **
         return -1;
     }
     
-
+volume
     ops = get_connect_client_ops();
     
     printf("test point %d\n",ops->checkpoint.aabb==NULL);
