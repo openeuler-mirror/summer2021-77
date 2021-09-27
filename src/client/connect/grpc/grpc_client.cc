@@ -33,6 +33,9 @@ int grpc_ops_init(isula_connect_ops *ops)
     if (grpc_volumes_client_ops_init(ops) != 0) {
         return -1;
     }
+    if (grpc_checkpoints_client_ops_init(ops) != 0) {
+        return -1;
+    }
 
     return 0;
 }
