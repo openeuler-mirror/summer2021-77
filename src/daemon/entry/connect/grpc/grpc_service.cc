@@ -20,6 +20,7 @@
 #include <grpc++/grpc++.h>
 #include <sstream>
 #include <fstream>
+#include <syslog.h>
 #include "grpc_containers_service.h"
 #include "grpc_images_service.h"
 #include "grpc_volumes_service.h"
@@ -199,7 +200,10 @@ GRPCServerImpl *g_grpcserver { nullptr };
 
 int grpc_server_init(const struct service_arguments *args)
 {
-    printf("grpc_server_init\n");
+    openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
+	    syslog(LOG_DEBUG,"grpc_server_init\n");
+	    closelog();
+   
     if (args == nullptr) {
         return -1;
     }

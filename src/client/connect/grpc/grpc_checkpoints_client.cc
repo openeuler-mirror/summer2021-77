@@ -25,6 +25,20 @@ public:
     CheckpointCreate(const CheckpointCreate &) = delete;
     CheckpointCreate &operator=(const CheckpointCreate &) = delete;
 
+    auto request_to_grpc(const isula_create_checkpoint_request *request, CreateCheckpointRequest *grequest) -> int override
+    {
+        printf("requesttogrpc\n");
+        if (request == nullptr) {
+            return -1;
+        }
+
+        //if (request->name != nullptr) {
+        //    grequest->set_name(request->name);
+        //}
+
+        return 0;
+    }
+
     auto response_from_grpc(CreateCheckpointResponse *gresponse, isula_create_checkpoint_response *response) -> int override
     {
         response->server_errono = static_cast<uint32_t>(gresponse->cc());
@@ -38,6 +52,9 @@ public:
 
     auto grpc_call(ClientContext *context, const CreateCheckpointRequest &req, CreateCheckpointResponse *reply) -> Status override
     {
+        openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
+	    syslog(LOG_DEBUG,"stub_->Create(context, req, reply);\n");
+	    closelog();
         return stub_->Create(context, req, reply);
     }
 };
