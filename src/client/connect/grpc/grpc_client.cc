@@ -17,6 +17,7 @@
 #include "grpc_containers_client.h"
 #include "grpc_images_client.h"
 #include "grpc_volumes_client.h"
+#include "grpc_checkpoints_client.h"
 
 int grpc_ops_init(isula_connect_ops *ops)
 {
