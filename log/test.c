@@ -1,13 +1,11 @@
 /** test.c **/
  
-#include "stdio.h"
-#include "stdlib.h"
-#include "log.h"
-int main(int argv,char**argc){
-	printf("%s\n",argc[0]);
-	LogWrite(INFO,"%s","Hello World!");
-	LogWrite(DEBUG,"%s","H.e.l.l.o W.o.r.l.d!");
-	LogWrite(WARN,"%s","H e l l o W o r l d!");
-	LogWrite(ERROR,"%s","Hallo World!");
+
+#include <syslog.h>
+
+int main(int argc,char **argv){
+	openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
+	syslog(LOG_DEBUG,"THIS is a\n");
+	closelog();
 	return 0;
 }

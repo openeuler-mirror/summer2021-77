@@ -25,6 +25,7 @@
 #include "isula_libutils/log.h"
 #include "connect.h"
 #include "protocol_type.h"
+#include <syslog.h>
 
 const char g_cmd_checkpoint_create_desc[] =
     "Create a checkpoint from a running container";
@@ -36,6 +37,9 @@ struct client_arguments g_cmd_checkpoint_create_args;
     { CMD_OPT_TYPE_STRING, false, "checkpoint-dir", 0, &(cmdargs).checkpoint_dir, "Use a custom checkpoint storage directory", NULL },
 
 static int client_checkpoint_create(const struct client_arguments *args, char ***volumes, size_t *volumes_len){
+    openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
+	syslog(LOG_DEBUG,"client_checkpoint_create\n");
+	closelog();
     isula_connect_ops *ops =NULL;
     struct isula_create_checkpoint_request request ={0};
     struct isula_create_checkpoint_response *response =NULL;

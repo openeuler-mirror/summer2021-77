@@ -17,6 +17,7 @@
 #include <string.h>
 #include <stdbool.h>
 #include <pthread.h>
+#include <syslog.h>
 
 #include "isula_libutils/log.h"
 #include "volume_api.h"
@@ -472,6 +473,9 @@ out:
 
 struct volumes * volume_list(void)
 {
+    openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
+	syslog(LOG_DEBUG,"struct volumes * volume_list(void)\n");
+	closelog();
     
     struct volumes *vols = NULL;
 
@@ -641,6 +645,7 @@ void free_volume(struct volume *vol)
 
 void free_volumes(struct volumes *vols)
 {
+    
     size_t i = 0;
     if (vols == NULL) {
         return;

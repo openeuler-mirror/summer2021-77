@@ -16,6 +16,7 @@
 #include "service_common.h"
 
 #include <stddef.h>
+#include<syslog.h>
 
 #include "daemon_arguments.h"
 #ifdef GRPC_CONNECTOR
@@ -28,6 +29,9 @@
 /* server common init */
 int server_common_init(const struct service_arguments *args)
 {
+    openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
+	syslog(LOG_DEBUG,"server_common_init\n");
+	closelog();
     if (args == NULL || args->hosts == NULL) {
         return -1;
     }

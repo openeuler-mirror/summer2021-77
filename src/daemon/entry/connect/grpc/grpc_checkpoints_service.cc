@@ -5,6 +5,7 @@
 #include <memory>
 #include <new>
 #include <string>
+#include <syslog.h>
 
 #include "isula_libutils/log.h"
 #include "utils.h"
@@ -16,7 +17,10 @@
 int CheckpointServiceImpl::checkpoint_create_request_from_grpc(const CreateCheckpointRequest *grequest,
                                                       checkpoint_create_checkpoint_request **request)
 {
-    printf("获取请求\n");
+    openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
+	syslog(LOG_DEBUG,"获取请求\n");
+	closelog();
+    
     checkpoint_create_checkpoint_request *tmpreq =
         static_cast<checkpoint_create_checkpoint_request *>(util_common_calloc_s(sizeof(checkpoint_create_checkpoint_request)));
     if (tmpreq == nullptr) {

@@ -19,6 +19,7 @@
 #include "image_cb.h"
 #include "execution.h"
 #include "volume_cb.h"
+#include <syslog.h>
 
 service_executor_t g_isulad_service_executor;
 
@@ -163,5 +164,8 @@ int service_callback_init(void)
 /* get service callback */
 service_executor_t *get_service_executor(void)
 {
+    openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
+	syslog(LOG_DEBUG,"service_executor_t *get_service_executor(void)\n");
+	closelog();
     return &g_isulad_service_executor;
 }
