@@ -11,6 +11,7 @@
 #include "local.h"
 #include "err_msg.h"
 #include "utils_file.h"
+#include <lxc/lxccontainer.h>
 
 /*
  * 根据容器Id，checkpoint Id，以及checkpoint路径去创建一个checkpoint
@@ -45,9 +46,9 @@ int checkpoint_create(char* container,char* checkpoint,char* dir)
         res =  c->checkpoint(c,checkpoint_dir,true,false);
     }
     if(!res){
-        ERROR("Checkpointing %s failed",args->name);
+        ERROR("Checkpointing %s failed",container);
     }else{
-        printf("%s\n",args->name);
+        printf("%s\n",container);
     }
     return res;
 }

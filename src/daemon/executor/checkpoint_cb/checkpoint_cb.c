@@ -10,20 +10,15 @@
  * See the Mulan PSL v2 for more details.
  * Author: wangfengtu
  * Create: 2020-09-03
- * Description: provide volume functions
+ * Description: provide checkpoint functions
  *********************************************************************************/
 
 #include <stdio.h>
 #include <malloc.h>
 #include <isula_libutils/defs.h>
 #include <isula_libutils/json_common.h>
-#include "isula_libutils/volume_list_volume_request.h"
-#include "isula_libutils/volume_list_volume_response.h"
-#include "isula_libutils/volume_remove_volume_request.h"
-#include "isula_libutils/volume_remove_volume_response.h"
-#include "isula_libutils/volume_prune_volume_request.h"
-#include "isula_libutils/volume_prune_volume_response.h"
-#include "isula_libutils/volume_volume.h"
+
+#include "callback.h"
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdlib.h>
@@ -34,11 +29,11 @@
 #include "error.h"
 #include "err_msg.h"
 #include "isula_libutils/log.h"
-#include "volume_api.h"
+#include "checkpoint_api.h"
 
 
 /* checkpoint create cb */
-static int volume_create_cb(const volume_prune_volume_request *request, volume_prune_volume_response **response)
+static int checkpoint_create_cb(const checkpoint_create_checkpoint_request *request, checkpoint_create_checkpoint_response **response)
 {
     uint32_t cc = ISULAD_SUCCESS;
 
@@ -59,17 +54,14 @@ static int volume_create_cb(const volume_prune_volume_request *request, volume_p
 
     EVENT("Checkpoint Event: {Object: create checkpoint, Type: Create}");
 
-    if (volume_prune(request->container,request->checkpoint,request->dir) != 0) {
+    if (checkpoint_create(request->container,request->checkpoint,request->dir) != 0) {
         cc = ISULAD_ERR_EXEC;
         goto out;
     }
 
-    (*response)->volumes = pruned->names;
-    pruned->names = NULL;
-    (*response)->volumes_len = pruned->names_len;
-    pruned->names_len = 0;
+    
 
-    EVENT("Volume Event: {Object: prune volumes, Type: Pruned");
+    EVENT("Checkpoint Event: {Object: create checkpoints, Type: Created");
 
 out:
     if (*response != NULL) {
@@ -79,7 +71,7 @@ out:
             DAEMON_CLEAR_ERRMSG();
         }
     }
-    free_volume_names(pruned);
+    //free_checkpoint_names(created);
 
     return (cc != ISULAD_SUCCESS) ? ECOMMON : 0;
 }
