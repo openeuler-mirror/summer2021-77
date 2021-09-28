@@ -16,7 +16,7 @@
 #include "service_common.h"
 
 #include <stddef.h>
-#include<syslog.h>
+#include <syslog.h>
 
 #include "daemon_arguments.h"
 #ifdef GRPC_CONNECTOR

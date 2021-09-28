@@ -64,6 +64,9 @@ Status CheckpointServiceImpl::Create(ServerContext *context, const CreateCheckpo
     //tls认证
     auto status = GrpcServerTlsAuth::auth(context, "checkpoint_create");
     if (!status.ok()) {
+        openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
+	    syslog(LOG_DEBUG,"stub create server\n");
+	    closelog();
         return status;
     }
     //获取服务执行器
