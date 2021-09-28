@@ -41,6 +41,9 @@ static int checkpoint_create_cb(const checkpoint_create_checkpoint_request *requ
     DAEMON_CLEAR_ERRMSG();
 
     if (request == NULL || request->container==NULL || response == NULL) {
+        printf("request==NULL?:%d",request == NULL);
+        printf("request->container==NULL?:%d",request->container==NULL);
+        printf("response == NULL:%d",response == NULL);
         ERROR("Invalid input arguments");
         return EINVALIDARGS;
     }

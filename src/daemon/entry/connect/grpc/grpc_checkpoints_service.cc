@@ -17,13 +17,12 @@
 int CheckpointServiceImpl::checkpoint_create_request_from_grpc(const CreateCheckpointRequest *grequest,
                                                       checkpoint_create_checkpoint_request **request)
 {
-    openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
-	syslog(LOG_DEBUG,"获取请求\n");
-	closelog();
-    
+   
+    printf("checkpoint_create_request_from_grpc\n");
     checkpoint_create_checkpoint_request *tmpreq =
         static_cast<checkpoint_create_checkpoint_request *>(util_common_calloc_s(sizeof(checkpoint_create_checkpoint_request)));
     if (tmpreq == nullptr) {
+        printf("tmpreq == nullptr?:%d\n",tmpreq == nullptr);
         ERROR("Out of memory");
         return -1;
     }
@@ -58,9 +57,7 @@ int CheckpointServiceImpl::checkpoint_create_response_to_grpc(checkpoint_create_
 //处理逻辑
 Status CheckpointServiceImpl::Create(ServerContext *context, const CreateCheckpointRequest *request, CreateCheckpointResponse *reply)
 {
-    openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
-	syslog(LOG_DEBUG,"checkpoint服务端收到create请求\n");
-	closelog();
+    printf("checkpoint container:%s\n",request->container);
     //tls认证
     auto status = GrpcServerTlsAuth::auth(context, "checkpoint_create");
     if (!status.ok()) {
@@ -73,9 +70,6 @@ Status CheckpointServiceImpl::Create(ServerContext *context, const CreateCheckpo
     service_executor_t *cb = get_service_executor();
     //获取为空
     if (cb == nullptr || cb->checkpoint.create == nullptr) {
-        openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
-	    syslog(LOG_DEBUG,"获取服务执行器为空\n");
-	    closelog();
         return Status(StatusCode::UNIMPLEMENTED, "Unimplemented callback");
     }
     //声明请求
@@ -83,9 +77,6 @@ Status CheckpointServiceImpl::Create(ServerContext *context, const CreateCheckpo
     //填充请求
     int tret = checkpoint_create_request_from_grpc(request, &checkpoint_req);
     if (tret != 0) {
-        openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
-	    syslog(LOG_DEBUG,"获取请求失败\n");
-	    closelog();
         ERROR("Failed to transform grpc request");
         reply->set_cc(ISULAD_ERR_INPUT);
         return Status::OK;
