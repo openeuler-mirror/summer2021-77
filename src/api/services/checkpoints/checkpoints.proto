@@ -23,7 +23,7 @@ message ListCheckpointRequest {
 }
 
 message ListCheckpointResponse {
-	repeated Checkpoint checkpoints = 1;
+	string checkpoints = 1;
 	uint32 cc = 2;
 	string errmsg = 3;
 }

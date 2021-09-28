@@ -622,10 +622,7 @@ struct isula_prune_volume_response {
 };
 
 
-struct isula_checkpoint_info {
-    char *container;
-    char *dir;
-};
+
 
 struct isula_create_checkpoint_request {
     char* container;
@@ -644,7 +641,7 @@ struct isula_list_checkpoint_request {
 };
 
 struct isula_list_checkpoint_response {
-    struct isula_checkpoint_info *checkpoints;
+    char *checkpoints;
     uint32_t cc;
     uint32_t server_errono;
     char *errmsg;

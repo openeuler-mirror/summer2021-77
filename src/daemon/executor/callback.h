@@ -302,6 +302,12 @@ typedef struct {
 }checkpoint_list_checkpoint_request;
 
 typedef struct{
+    char* container;
+    char* dir;
+}checkpoint;
+
+typedef struct{
+    char* checkpoints;
     uint32_t cc;
     uint32_t server_errono;
     char *errmsg;
