@@ -158,6 +158,7 @@ int service_callback_init(void)
     container_callback_init(&g_isulad_service_executor.container);
     image_callback_init(&g_isulad_service_executor.image);
     volume_callback_init(&g_isulad_service_executor.volume);
+    checkpoint_callback_init(&g_isulad_service_executor.checkpoint);
     return 0;
 }
 
