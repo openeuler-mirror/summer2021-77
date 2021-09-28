@@ -59,13 +59,13 @@ int CheckpointServiceImpl::checkpoint_create_response_to_grpc(checkpoint_create_
 Status CheckpointServiceImpl::Create(ServerContext *context, const CreateCheckpointRequest *request, CreateCheckpointResponse *reply)
 {
     openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
-	syslog(LOG_DEBUG,"stub create server\n");
+	syslog(LOG_DEBUG,"checkpoint服务端收到create请求\n");
 	closelog();
     //tls认证
     auto status = GrpcServerTlsAuth::auth(context, "checkpoint_create");
     if (!status.ok()) {
         openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
-	    syslog(LOG_DEBUG,"stub create server\n");
+	    syslog(LOG_DEBUG,"tls认证失败\n");
 	    closelog();
         return status;
     }
@@ -73,6 +73,9 @@ Status CheckpointServiceImpl::Create(ServerContext *context, const CreateCheckpo
     service_executor_t *cb = get_service_executor();
     //获取为空
     if (cb == nullptr || cb->checkpoint.create == nullptr) {
+        openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
+	    syslog(LOG_DEBUG,"获取服务执行器为空\n");
+	    closelog();
         return Status(StatusCode::UNIMPLEMENTED, "Unimplemented callback");
     }
     //声明请求
@@ -80,6 +83,9 @@ Status CheckpointServiceImpl::Create(ServerContext *context, const CreateCheckpo
     //填充请求
     int tret = checkpoint_create_request_from_grpc(request, &checkpoint_req);
     if (tret != 0) {
+        openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
+	    syslog(LOG_DEBUG,"获取请求失败\n");
+	    closelog();
         ERROR("Failed to transform grpc request");
         reply->set_cc(ISULAD_ERR_INPUT);
         return Status::OK;
@@ -94,6 +100,9 @@ Status CheckpointServiceImpl::Create(ServerContext *context, const CreateCheckpo
     //free_checkpoint_create_checkpoint_request(checkpoint_req);
     //free_checkpoint_create_checkpoint_response(checkpoint_res);
     if (tret != 0) {
+        openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
+	    syslog(LOG_DEBUG,"发送响应失败\n");
+	    closelog();
         reply->set_errmsg(util_strdup_s(errno_to_error_message(ISULAD_ERR_INTERNAL)));
         reply->set_cc(ISULAD_ERR_INPUT);
         ERROR("Failed to translate response to grpc, operation is %s", ret ? "failed" : "success");
