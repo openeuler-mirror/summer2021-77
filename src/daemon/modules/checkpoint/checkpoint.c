@@ -79,7 +79,7 @@ void delete_file(const char *path)
         rmdir(path);
     }
 }
-int checkpoint_create(char* container,char* checkpoint,char* dir)
+int checkpoint_remove(char* container,char* dir)
 {
 
     strcat(dir,container);
@@ -89,7 +89,7 @@ int checkpoint_create(char* container,char* checkpoint,char* dir)
 
 
 
-int checkpoint_remove(char* container,char* checkpoint,char* dir)
+int checkpoint_create(char* container,char* dir)
 {
     struct lxc_container *c;
     c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
@@ -126,8 +126,7 @@ int checkpoint_remove(char* container,char* checkpoint,char* dir)
     return res;
 }
 
-int checkpoint_list(char* container,char* checkpoint,char* dir)
-{
+int checkpoint_list(){
     //printf("%s\n",);
     DIR *dirp;
     struct dirent *dp;

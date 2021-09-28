@@ -205,9 +205,7 @@ int CheckpointServiceImpl::checkpoint_list_request_from_grpc(const ListCheckpoin
         return -1;
     }
 
-    if (!grequest->container().empty()) {
-        tmpreq->container = util_strdup_s(grequest->container().c_str());
-    }
+   
     *request = tmpreq;
 
     return 0;
@@ -236,10 +234,10 @@ int CheckpointServiceImpl::checkpoint_list_response_to_grpc(checkpoint_list_chec
 
 
 //处理逻辑
-Status CheckpointServiceImpl::List(ServerContext *context, const CreateCheckpointRequest *request, CreateCheckpointResponse *reply)
+Status CheckpointServiceImpl::List(ServerContext *context, const ListCheckpointRequest *request, ListCheckpointResponse *reply)
 {
     //tls认证
-    auto status = GrpcServerTlsAuth::auth(context, "checkpoint_create");
+    auto status = GrpcServerTlsAuth::auth(context, "checkpoint_list");
     if (!status.ok()) {
         return status;
     }

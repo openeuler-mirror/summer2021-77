@@ -12,11 +12,6 @@ service CheckpointService {
 	rpc Create(CreateCheckpointRequest) returns (CreateCheckpointResponse);
 }
 
-message Checkpoint {
-	string container =1;
-	string dir = 2;
-    
-}
 
 message ListCheckpointRequest {
     string dir=1;

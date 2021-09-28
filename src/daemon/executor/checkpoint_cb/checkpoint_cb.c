@@ -41,9 +41,6 @@ static int checkpoint_create_cb(const checkpoint_create_checkpoint_request *requ
     DAEMON_CLEAR_ERRMSG();
 
     if (request == NULL || request->container==NULL || response == NULL) {
-        printf("request==NULL?:%d",request == NULL);
-        printf("request->container==NULL?:%d",request->container==NULL);
-        printf("response == NULL:%d",response == NULL);
         ERROR("Invalid input arguments");
         return EINVALIDARGS;
     }
@@ -57,7 +54,7 @@ static int checkpoint_create_cb(const checkpoint_create_checkpoint_request *requ
 
     EVENT("Checkpoint Event: {Object: create checkpoint, Type: Create}");
 
-    if (checkpoint_create(request->container,request->checkpoint,request->dir) != 0) {
+    if (checkpoint_create(request->container,request->dir) != 0) {
         cc = ISULAD_ERR_EXEC;
         goto out;
     }
@@ -100,7 +97,7 @@ static int checkpoint_remove_cb(const checkpoint_remove_checkpoint_request *requ
 
     EVENT("Checkpoint Event: {Object: create checkpoint, Type: Create}");
 
-    if (checkpoint_remove(request->container,request->checkpoint,request->dir) != 0) {
+    if (checkpoint_remove(request->container,request->dir) != 0) {
         cc = ISULAD_ERR_EXEC;
         goto out;
     }
@@ -129,7 +126,7 @@ static int checkpoint_list_cb(const checkpoint_list_checkpoint_request *request,
 
     DAEMON_CLEAR_ERRMSG();
 
-    if (request == NULL || request->container==NULL || response == NULL) {
+    if (request == NULL || response == NULL) {
         ERROR("Invalid input arguments");
         return EINVALIDARGS;
     }
@@ -143,7 +140,7 @@ static int checkpoint_list_cb(const checkpoint_list_checkpoint_request *request,
 
     EVENT("Checkpoint Event: {Object: create checkpoint, Type: Create}");
 
-    if (checkpoint_list(request->container,request->checkpoint,request->dir) != 0) {
+    if (checkpoint_list() != 0) {
         cc = ISULAD_ERR_EXEC;
         goto out;
     }
