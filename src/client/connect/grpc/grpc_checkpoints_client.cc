@@ -32,9 +32,9 @@ public:
             return -1;
         }
 
-        //if (request->name != nullptr) {
-        //    grequest->set_name(request->name);
-        //}
+        if (request->container != nullptr) {
+            grequest->set_container(request->container);
+        }
 
         return 0;
     }
@@ -52,7 +52,7 @@ public:
 
     auto grpc_call(ClientContext *context, const CreateCheckpointRequest &req, CreateCheckpointResponse *reply) -> Status override
     {
-        printf("grpc_call\n");
+        printf("grpc_call container is null %d\n",req.container().empty());
     
         return stub_->Create(context, req, reply);
     }

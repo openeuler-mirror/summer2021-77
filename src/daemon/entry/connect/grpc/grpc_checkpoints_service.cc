@@ -26,6 +26,7 @@ int CheckpointServiceImpl::checkpoint_create_request_from_grpc(const CreateCheck
         ERROR("Out of memory");
         return -1;
     }
+    printf("container is empty:%d\n",grequest->container().empty());
 
     if (!grequest->container().empty()) {
         tmpreq->container = util_strdup_s(grequest->container().c_str());
@@ -61,7 +62,7 @@ int CheckpointServiceImpl::checkpoint_create_response_to_grpc(checkpoint_create_
 //处理逻辑
 Status CheckpointServiceImpl::Create(ServerContext *context, const CreateCheckpointRequest *request, CreateCheckpointResponse *reply)
 {
-    //printf("checkpoint container:%s\n",request->container);
+    printf("server contianer is null:%d\n",request->container().empty());
     //tls认证
     auto status = GrpcServerTlsAuth::auth(context, "checkpoint_create");
     if (!status.ok()) {
