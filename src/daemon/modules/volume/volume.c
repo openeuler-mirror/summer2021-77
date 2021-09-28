@@ -473,9 +473,6 @@ out:
 
 struct volumes * volume_list(void)
 {
-    openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
-	syslog(LOG_DEBUG,"struct volumes * volume_list(void)\n");
-	closelog();
     
     struct volumes *vols = NULL;
 

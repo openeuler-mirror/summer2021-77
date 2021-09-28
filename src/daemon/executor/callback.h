@@ -301,10 +301,6 @@ typedef struct {
     char* dir;
 }checkpoint_list_checkpoint_request;
 
-typedef struct{
-    char* container;
-    char* dir;
-}checkpoint;
 
 typedef struct{
     char* checkpoints;

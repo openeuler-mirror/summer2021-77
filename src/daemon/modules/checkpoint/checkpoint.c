@@ -3,7 +3,10 @@
 #include <string.h>
 #include <stdbool.h>
 #include <pthread.h>
-
+#include <dirent.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <limits.h>
 #include "isula_libutils/log.h"
 #include "volume_api.h"
 #include "utils.h"
@@ -79,17 +82,25 @@ void delete_file(const char *path)
         rmdir(path);
     }
 }
-int checkpoint_remove(char* container,char* dir)
+char* checkpoint_remove(char* container,char* dir)
 {
 
+    printf("modules\n");
+    if(!dir){
+        dir="/tmp/isula-criu/";
+    }
     strcat(dir,container);
-    delete_file(dir)
+    
+    delete_file(dir);
+    printf("dir:%s\n",dir);
+    printf("modules\n");
+    return container;
     
 }
 
 
 
-int checkpoint_create(char* container,char* dir)
+char* checkpoint_create(char* container,char* dir)
 {
     struct lxc_container *c;
     c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
@@ -123,32 +134,44 @@ int checkpoint_create(char* container,char* dir)
     }else{
         printf("%s\n",container);
     }
-    return res;
+    return container;
 }
 
-int checkpoint_list(){
-    //printf("%s\n",);
+char* checkpoint_list(char* dir){
     DIR *dirp;
     struct dirent *dp;
-    if(args->checkpoint_dir){
-        //printf("%s\n",args->checkpoint_dir);
-        dirp=opendir(args->checkpoint_dir);
-        //dirp=opendir("/tmp/isula/");
-
-        //printf("error\n");
+    if(dir){
+        dirp=opendir(dir);
     }else{
         dirp=opendir("/tmp/isula-criu/");
     }
     
+    int sum=0;
     while((dp=readdir(dirp))!=NULL){
         if(strcmp(dp->d_name, ".") == 0 || strcmp(dp->d_name, "..") == 0){
             continue;
         }
-
+        sum++;
         printf("%s\n",dp->d_name);
     }
+  
+    if(dir){
+        dirp=opendir(dir);
+    }else{
+        dirp=opendir("/tmp/isula-criu/");
+    }
+    
+    char* checkpoints=(char*)malloc(sum*70);
+    while((dp=readdir(dirp))!=NULL){
+        if(strcmp(dp->d_name, ".") == 0 || strcmp(dp->d_name, "..") == 0){
+            continue;
+        }
+        sum++;
+        strcat(checkpoints,dp->d_name);
+        strcat(checkpoints,"\n");
+    }
     (void)closedir(dirp);
-    return 0;
+    return checkpoints;
 }
 
 

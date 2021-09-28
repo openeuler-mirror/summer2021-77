@@ -38,7 +38,7 @@ struct client_arguments g_cmd_checkpoint_ls_args;
 
 
 static int client_checkpoint_ls(const struct client_arguments *args, char ***volumes, size_t *volumes_len){
-
+    
     isula_connect_ops *ops =NULL;
     struct isula_list_checkpoint_request request ={0};
     struct isula_list_checkpoint_response *response =NULL;
@@ -51,18 +51,19 @@ static int client_checkpoint_ls(const struct client_arguments *args, char ***vol
         return -1;
     }
 
-    char checkpoint_dir[1000]="/tmp/isula-criu/";
-    strcat(checkpoint_dir,args->name);
+   
+    
+    
+    
     if(args->checkpoint_dir){
-         strcat(args->checkpoint_dir,args->name);
          request.dir=args->checkpoint_dir;
     }else{
-        request.dir=checkpoint_dir;
+        request.dir="/tmp/isula-criu/";
     }
     
 
     ops = get_connect_client_ops();
-    
+    printf("get ops\n");
     if(ops==NULL || ops->checkpoint.list==NULL){
         ERROR("Unimplemented ops");
         ret=-1;
@@ -72,6 +73,7 @@ static int client_checkpoint_ls(const struct client_arguments *args, char ***vol
     config = get_connect_config(args);
  
     ret=ops->checkpoint.list(&request,response,&config);
+    printf("\n%s\n",response->checkpoints);
     if(ret!=0){
         client_print_error(response->cc,response->server_errono,response->errmsg);
         if(response->server_errono){

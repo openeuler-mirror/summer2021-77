@@ -49,7 +49,7 @@ public:
         if (!gresponse->errmsg().empty()) {
             response->errmsg = util_strdup_s(gresponse->errmsg().c_str());
         }
-        response->contianer=util_strdup_s(gresponse->container().c_str());
+        response->container=util_strdup_s(gresponse->container().c_str());
 
         return 0;
     }
@@ -97,7 +97,7 @@ public:
         if (!gresponse->errmsg().empty()) {
             response->errmsg = util_strdup_s(gresponse->errmsg().c_str());
         }
-        response->contianer=util_strdup_s(gresponse->container().c_str());
+        response->container=util_strdup_s(gresponse->container().c_str());
 
         return 0;
     }
@@ -106,7 +106,7 @@ public:
     {
        
     
-        return stub_->Create(context, req, reply);
+        return stub_->Remove(context, req, reply);
     }
 };
 
@@ -138,14 +138,14 @@ public:
         if (!gresponse->errmsg().empty()) {
             response->errmsg = util_strdup_s(gresponse->errmsg().c_str());
         }
-        //response->checkpoint=
+        response->checkpoints=util_strdup_s(gresponse->checkpoints().c_str());
 
         return 0;
     }
 
     auto grpc_call(ClientContext *context, const ListCheckpointRequest &req, ListCheckpointResponse *reply) -> Status override
     {
-        return stub_->Create(context, req, reply);
+        return stub_->List(context, req, reply);
     }
 };
 
@@ -158,7 +158,7 @@ auto grpc_checkpoints_client_ops_init(isula_connect_ops *ops) -> int
     }
     ops->checkpoint.create = container_func<isula_create_checkpoint_request, isula_create_checkpoint_response, CheckpointCreate>;
     ops->checkpoint.remove = container_func<isula_remove_checkpoint_request, isula_remove_checkpoint_response, CheckpointRemove>;
-    ops->checkpoint.list = container_func<isula_list_checkpoint_request, isula_list_checkpoint_response, CheckpointList>;
+    ops->checkpoint.list   = container_func<isula_list_checkpoint_request  , isula_list_checkpoint_response  , CheckpointList>;
 
     return 0;
 }

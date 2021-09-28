@@ -115,7 +115,6 @@ int CheckpointServiceImpl::checkpoint_remove_request_from_grpc(const RemoveCheck
     checkpoint_remove_checkpoint_request *tmpreq =
         static_cast<checkpoint_remove_checkpoint_request *>(util_common_calloc_s(sizeof(checkpoint_remove_checkpoint_request)));
     if (tmpreq == nullptr) {
-        printf("tmpreq == nullptr?:%d\n",tmpreq == nullptr);
         ERROR("Out of memory");
         return -1;
     }
@@ -124,6 +123,7 @@ int CheckpointServiceImpl::checkpoint_remove_request_from_grpc(const RemoveCheck
     if (!grequest->container().empty()) {
         tmpreq->container = util_strdup_s(grequest->container().c_str());
     }
+    tmpreq->dir = util_strdup_s(grequest->dir().c_str());
     *request = tmpreq;
 
     return 0;
@@ -143,6 +143,7 @@ int CheckpointServiceImpl::checkpoint_remove_response_to_grpc(checkpoint_remove_
     if (response->errmsg != nullptr) {
         gresponse->set_errmsg(response->errmsg);
     }
+    gresponse->set_container(response->container);
 
    // for (size_t i {}; i < response->checkpoints_len; i++) {
      //   gresponse->add_checkpoints(response->checkpoints[i]);
@@ -169,6 +170,7 @@ Status CheckpointServiceImpl::Remove(ServerContext *context, const RemoveCheckpo
     }
     //声明请求
     checkpoint_remove_checkpoint_request *checkpoint_req = nullptr;
+    
     //填充请求
     int tret = checkpoint_remove_request_from_grpc(request, &checkpoint_req);
     if (tret != 0) {
@@ -181,11 +183,14 @@ Status CheckpointServiceImpl::Remove(ServerContext *context, const RemoveCheckpo
     checkpoint_remove_checkpoint_response *checkpoint_res = nullptr;
     //填充响应
     int ret = cb->checkpoint.remove(checkpoint_req, &checkpoint_res);
+    
     //发送响应
     tret = checkpoint_remove_response_to_grpc(checkpoint_res, reply);
+    printf("\nserver\n");
     //free_checkpoint_create_checkpoint_request(checkpoint_req);
     //free_checkpoint_create_checkpoint_response(checkpoint_res);
     if (tret != 0) {
+        
         reply->set_errmsg(util_strdup_s(errno_to_error_message(ISULAD_ERR_INTERNAL)));
         reply->set_cc(ISULAD_ERR_INPUT);
         ERROR("Failed to translate response to grpc, operation is %s", ret ? "failed" : "success");
@@ -224,6 +229,7 @@ int CheckpointServiceImpl::checkpoint_list_response_to_grpc(checkpoint_list_chec
     if (response->errmsg != nullptr) {
         gresponse->set_errmsg(response->errmsg);
     }
+    gresponse->set_checkpoints(response->checkpoints);
 
    // for (size_t i {}; i < response->checkpoints_len; i++) {
      //   gresponse->add_checkpoints(response->checkpoints[i]);

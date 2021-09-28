@@ -9,12 +9,12 @@ extern "C" {
 
 
 
-int checkpoint_create(char* container,char* dir);
+char* checkpoint_create(char* container,char* dir);
 
 
-int checkpoint_remove(char* container,char* dir);
+char* checkpoint_remove(char* container,char* dir);
 
-int checkpoint_list();
+char* checkpoint_list(char* dir);
 
 
 #ifdef __cplusplus

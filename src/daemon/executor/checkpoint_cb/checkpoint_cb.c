@@ -54,10 +54,12 @@ static int checkpoint_create_cb(const checkpoint_create_checkpoint_request *requ
 
     EVENT("Checkpoint Event: {Object: create checkpoint, Type: Create}");
 
-    if (checkpoint_create(request->container,request->dir) != 0) {
+    char* container=checkpoint_create(request->container,request->dir);
+    if (container==NULL) {
         cc = ISULAD_ERR_EXEC;
         goto out;
     }
+    (*response)->container = container;
 
     
 
@@ -97,10 +99,13 @@ static int checkpoint_remove_cb(const checkpoint_remove_checkpoint_request *requ
 
     EVENT("Checkpoint Event: {Object: create checkpoint, Type: Create}");
 
-    if (checkpoint_remove(request->container,request->dir) != 0) {
+    char* container = checkpoint_remove(request->container,request->dir);
+    if (container == NULL) {
         cc = ISULAD_ERR_EXEC;
         goto out;
     }
+    (*response)->container=container;
+
 
     
 
@@ -109,6 +114,7 @@ static int checkpoint_remove_cb(const checkpoint_remove_checkpoint_request *requ
 out:
     if (*response != NULL) {
         (*response)->cc = cc;
+        
         if (g_isulad_errmsg != NULL) {
             (*response)->errmsg = util_strdup_s(g_isulad_errmsg);
             DAEMON_CLEAR_ERRMSG();
@@ -140,10 +146,11 @@ static int checkpoint_list_cb(const checkpoint_list_checkpoint_request *request,
 
     EVENT("Checkpoint Event: {Object: create checkpoint, Type: Create}");
 
-    if (checkpoint_list() != 0) {
+    if (checkpoint_list(request->dir) == NULL) {
         cc = ISULAD_ERR_EXEC;
         goto out;
     }
+    
 
     
 
@@ -152,6 +159,7 @@ static int checkpoint_list_cb(const checkpoint_list_checkpoint_request *request,
 out:
     if (*response != NULL) {
         (*response)->cc = cc;
+        (*response)->checkpoints=checkpoint_list(request->dir);
         if (g_isulad_errmsg != NULL) {
             (*response)->errmsg = util_strdup_s(g_isulad_errmsg);
             DAEMON_CLEAR_ERRMSG();
