@@ -52,9 +52,8 @@ public:
 
     auto grpc_call(ClientContext *context, const CreateCheckpointRequest &req, CreateCheckpointResponse *reply) -> Status override
     {
-        openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
-	    syslog(LOG_DEBUG,"stub_->Create(context, req, reply);\n");
-	    closelog();
+        printf("grpc_call\n");
+        printf("container:%s",req.container);
         return stub_->Create(context, req, reply);
     }
 };
