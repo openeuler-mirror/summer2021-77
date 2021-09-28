@@ -38,29 +38,53 @@ struct client_arguments g_cmd_checkpoint_ls_args;
 
 
 static int client_checkpoint_ls(const struct client_arguments *args, char ***volumes, size_t *volumes_len){
-    
-    //printf("%s\n",);
-    DIR *dirp;
-    struct dirent *dp;
+
+    isula_connect_ops *ops =NULL;
+    struct isula_list_checkpoint_request request ={0};
+    struct isula_list_checkpoint_response *response =NULL;
+    client_connect_config_t config ={0};
+    int ret = 0;
+
+    response = util_common_calloc_s(sizeof(struct isula_list_checkpoint_response));
+    if (response==NULL){
+        ERROR("Out of memory");
+        return -1;
+    }
+
+    char checkpoint_dir[1000]="/tmp/isula-criu/";
+    strcat(checkpoint_dir,args->name);
     if(args->checkpoint_dir){
-        //printf("%s\n",args->checkpoint_dir);
-        dirp=opendir(args->checkpoint_dir);
-        //dirp=opendir("/tmp/isula/");
-
-        //printf("error\n");
+         strcat(args->checkpoint_dir,args->name);
+         request.dir=args->checkpoint_dir;
     }else{
-        dirp=opendir("/tmp/isula-criu/");
+        request.dir=checkpoint_dir;
     }
     
-    while((dp=readdir(dirp))!=NULL){
-        if(strcmp(dp->d_name, ".") == 0 || strcmp(dp->d_name, "..") == 0){
-            continue;
-        }
 
-        printf("%s\n",dp->d_name);
+    ops = get_connect_client_ops();
+    
+    if(ops==NULL || ops->checkpoint.list==NULL){
+        ERROR("Unimplemented ops");
+        ret=-1;
+        goto out;
     }
-    (void)closedir(dirp);
-    return 0;
+    //把参数放到了config里
+    config = get_connect_config(args);
+ 
+    ret=ops->checkpoint.list(&request,response,&config);
+    if(ret!=0){
+        client_print_error(response->cc,response->server_errono,response->errmsg);
+        if(response->server_errono){
+            ret=ESERVERERROR;
+        }
+        goto out;
+    }
+
+out:
+    //isula_create_checkpoint_response_free(response);
+    return ret;
+    
+   
 }
 
 int cmd_checkpoint_ls_main(int argc, const char **argv)

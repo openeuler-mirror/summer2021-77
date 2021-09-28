@@ -24,6 +24,8 @@ public:
     virtual ~CheckpointServiceImpl() = default;
 
     Status Create(ServerContext *context, const CreateCheckpointRequest *request, CreateCheckpointResponse *reply) override;
+    Status Remove(ServerContext *context, const RemoveCheckpointRequest *request, RemoveCheckpointResponse *reply) override;
+    Status List(ServerContext *context, const ListCheckpointRequest *request, ListCheckpointResponse *reply) override;
 
 private:
     template <class T1, class T2>
@@ -43,6 +45,14 @@ private:
     int checkpoint_create_request_from_grpc(const CreateCheckpointRequest *grequest, checkpoint_create_checkpoint_request **request);
 
     int checkpoint_create_response_to_grpc(checkpoint_create_checkpoint_response *response, CreateCheckpointResponse *gresponse);
+
+    int checkpoint_remove_request_from_grpc(const RemoveCheckpointRequest *grequest, checkpoint_remove_checkpoint_request **request);
+
+    int checkpoint_remove_response_to_grpc(checkpoint_remove_checkpoint_response *response, RemoveCheckpointResponse *gresponse);
+
+    int checkpoint_list_request_from_grpc(const ListCheckpointRequest *grequest, checkpoint_list_checkpoint_request **request);
+
+    int checkpoint_list_response_to_grpc(checkpoint_list_checkpoint_response *response, ListCheckpointResponse *gresponse);
 };
 
 #endif // DAEMON_ENTRY_CONNECT_GRPC_GRPC_CHECKPOINTS_SERVICE_H

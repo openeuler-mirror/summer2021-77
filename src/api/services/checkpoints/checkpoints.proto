@@ -13,38 +13,40 @@ service CheckpointService {
 }
 
 message Checkpoint {
-	string name = 1;
+	string container =1;
 	string dir = 2;
-    string container =3;
+    
 }
 
 message ListCheckpointRequest {
-    string container =1;
-    string dir=2;
+    string dir=1;
 }
 
 message ListCheckpointResponse {
-	uint32 cc = 1;
-	string errmsg = 2;
+	repeated Checkpoint checkpoints = 1;
+	uint32 cc = 2;
+	string errmsg = 3;
 }
 
 message RemoveCheckpointRequest {
-	string name = 1;
+	string container = 1;
+	string dir = 2;
 }
 
 message RemoveCheckpointResponse {
-	uint32 cc = 1;
-	string errmsg = 2;
+	string container =1;
+	uint32 cc = 2;
+	string errmsg = 3;
 }
 
 message CreateCheckpointRequest {
     string container =1;
-    string checkpoint =2;
-    string dir =3;
+    string dir =2;
 }
 
 message CreateCheckpointResponse {
-	uint32 cc = 3;
-	string errmsg = 4;
+	string container =1;
+	uint32 cc = 2;
+	string errmsg = 3;
 }
 

@@ -111,16 +111,52 @@ void delete_file(const char *path)
 
 static int client_checkpoint_rm(const struct client_arguments *args, char ***volumes, size_t *volumes_len){
    
+    isula_connect_ops *ops =NULL;
+    struct isula_remove_checkpoint_request request ={0};
+    struct isula_remove_checkpoint_response *response =NULL;
+    client_connect_config_t config ={0};
+    int ret = 0;
+
+    response = util_common_calloc_s(sizeof(struct isula_remove_checkpoint_response));
+    if (response==NULL){
+        ERROR("Out of memory");
+        return -1;
+    }
+
+    request.container = args->name;
     char checkpoint_dir[1000]="/tmp/isula-criu/";
     strcat(checkpoint_dir,args->name);
     if(args->checkpoint_dir){
          strcat(args->checkpoint_dir,args->name);
-        delete_file(args->checkpoint_dir);
+         request.dir=args->checkpoint_dir;
     }else{
-        delete_file(checkpoint_dir);
+        request.dir=checkpoint_dir;
     }
     
-    return 1;
+    
+
+    ops = get_connect_client_ops();
+    
+    if(ops==NULL || ops->checkpoint.remove==NULL){
+        ERROR("Unimplemented ops");
+        ret=-1;
+        goto out;
+    }
+    //把参数放到了config里
+    config = get_connect_config(args);
+ 
+    ret=ops->checkpoint.remove(&request,response,&config);
+    if(ret!=0){
+        client_print_error(response->cc,response->server_errono,response->errmsg);
+        if(response->server_errono){
+            ret=ESERVERERROR;
+        }
+        goto out;
+    }
+
+out:
+    //isula_create_checkpoint_response_free(response);
+    return ret;
 }
 
 int cmd_checkpoint_rm_main(int argc, const char **argv)

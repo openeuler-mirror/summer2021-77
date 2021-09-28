@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "list": "c",
-        "atomic": "c"
+        "atomic": "c",
+        "iterator": "cpp"
     }
 }

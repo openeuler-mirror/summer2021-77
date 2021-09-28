@@ -35,6 +35,9 @@ public:
         if (request->container != nullptr) {
             grequest->set_container(request->container);
         }
+        if (request->dir != nullptr) {
+            grequest->set_dir(request->dir);
+        }
 
         return 0;
     }
@@ -46,17 +49,106 @@ public:
         if (!gresponse->errmsg().empty()) {
             response->errmsg = util_strdup_s(gresponse->errmsg().c_str());
         }
+        response->contianer=util_strdup_s(gresponse->container().c_str());
 
         return 0;
     }
 
     auto grpc_call(ClientContext *context, const CreateCheckpointRequest &req, CreateCheckpointResponse *reply) -> Status override
     {
-        printf("grpc_call container is null %d\n",req.container().empty());
+       
     
         return stub_->Create(context, req, reply);
     }
 };
+
+class CheckpointRemove : public
+    ClientBase<CheckpointService, CheckpointService::Stub, isula_remove_checkpoint_request, RemoveCheckpointRequest,
+    isula_remove_checkpoint_response, RemoveCheckpointResponse> {
+public:
+    explicit CheckpointRemove(void *args)
+        : ClientBase(args)
+    {
+    }
+    ~CheckpointRemove() = default;
+    CheckpointRemove(const CheckpointRemove &) = delete;
+    CheckpointRemove &operator=(const CheckpointRemove &) = delete;
+
+    auto request_to_grpc(const isula_remove_checkpoint_request *request, RemoveCheckpointRequest *grequest) -> int override
+    {
+        if (request == nullptr) {
+            return -1;
+        }
+
+        if (request->container != nullptr) {
+            grequest->set_container(request->container);
+        }
+        if (request->dir != nullptr) {
+            grequest->set_dir(request->dir);
+        }
+
+        return 0;
+    }
+
+    auto response_from_grpc(RemoveCheckpointResponse *gresponse, isula_remove_checkpoint_response *response) -> int override
+    {
+        response->server_errono = static_cast<uint32_t>(gresponse->cc());
+
+        if (!gresponse->errmsg().empty()) {
+            response->errmsg = util_strdup_s(gresponse->errmsg().c_str());
+        }
+        response->contianer=util_strdup_s(gresponse->container().c_str());
+
+        return 0;
+    }
+
+    auto grpc_call(ClientContext *context, const RemoveCheckpointRequest &req, RemoveCheckpointResponse *reply) -> Status override
+    {
+       
+    
+        return stub_->Create(context, req, reply);
+    }
+};
+
+class CheckpointList : public
+    ClientBase<CheckpointService, CheckpointService::Stub, isula_list_checkpoint_request, ListCheckpointRequest,
+    isula_list_checkpoint_response, ListCheckpointResponse> {
+public:
+    explicit CheckpointList(void *args)
+        : ClientBase(args)
+    {
+    }
+    ~CheckpointList() = default;
+    CheckpointList(const CheckpointList &) = delete;
+    CheckpointList &operator=(const CheckpointList &) = delete;
+
+    auto request_to_grpc(const isula_list_checkpoint_request *request, ListCheckpointRequest *grequest) -> int override
+    {
+        if (request == nullptr) {
+            return -1;
+        }
+
+        return 0;
+    }
+
+    auto response_from_grpc(ListCheckpointResponse *gresponse, isula_list_checkpoint_response *response) -> int override
+    {
+        response->server_errono = static_cast<uint32_t>(gresponse->cc());
+
+        if (!gresponse->errmsg().empty()) {
+            response->errmsg = util_strdup_s(gresponse->errmsg().c_str());
+        }
+        //response->checkpoint=
+
+        return 0;
+    }
+
+    auto grpc_call(ClientContext *context, const ListCheckpointRequest &req, ListCheckpointResponse *reply) -> Status override
+    {
+        return stub_->Create(context, req, reply);
+    }
+};
+
 
 auto grpc_checkpoints_client_ops_init(isula_connect_ops *ops) -> int
 {
@@ -65,6 +157,8 @@ auto grpc_checkpoints_client_ops_init(isula_connect_ops *ops) -> int
         return -1;
     }
     ops->checkpoint.create = container_func<isula_create_checkpoint_request, isula_create_checkpoint_response, CheckpointCreate>;
+    ops->checkpoint.remove = container_func<isula_remove_checkpoint_request, isula_remove_checkpoint_response, CheckpointRemove>;
+    ops->checkpoint.list = container_func<isula_list_checkpoint_request, isula_list_checkpoint_response, CheckpointList>;
 
     return 0;
 }
