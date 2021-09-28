@@ -275,18 +275,42 @@ typedef struct {
 
 typedef struct {
     char* container;
-    char* checkpoint;
     char* dir;
 }checkpoint_create_checkpoint_request;
 
 typedef struct{
+    char* container;
     uint32_t cc;
     uint32_t server_errono;
     char *errmsg;
 }checkpoint_create_checkpoint_response;
 
+typedef struct {
+    char* container;
+    char* dir;
+}checkpoint_remove_checkpoint_request;
+
+typedef struct{
+    char* container;
+    uint32_t cc;
+    uint32_t server_errono;
+    char *errmsg;
+}checkpoint_remove_checkpoint_response;
+
+typedef struct {
+    char* dir;
+}checkpoint_list_checkpoint_request;
+
+typedef struct{
+    uint32_t cc;
+    uint32_t server_errono;
+    char *errmsg;
+}checkpoint_list_checkpoint_response;
+
 typedef struct{
     int (*create)(const checkpoint_create_checkpoint_request *request,checkpoint_create_checkpoint_response **response);
+    int (*remove)(const checkpoint_remove_checkpoint_request *request,checkpoint_remove_checkpoint_response **response);
+    int (*list)(const checkpoint_list_checkpoint_request *request,checkpoint_list_checkpoint_response **response);
 
 }service_checkpoint_callback_t;
 
