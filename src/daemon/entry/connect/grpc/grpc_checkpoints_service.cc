@@ -57,7 +57,7 @@ int CheckpointServiceImpl::checkpoint_create_response_to_grpc(checkpoint_create_
 //处理逻辑
 Status CheckpointServiceImpl::Create(ServerContext *context, const CreateCheckpointRequest *request, CreateCheckpointResponse *reply)
 {
-    printf("checkpoint container:%s\n",request->container);
+    //printf("checkpoint container:%s\n",request->container);
     //tls认证
     auto status = GrpcServerTlsAuth::auth(context, "checkpoint_create");
     if (!status.ok()) {
