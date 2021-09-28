@@ -19,6 +19,7 @@
 #include "image_cb.h"
 #include "execution.h"
 #include "volume_cb.h"
+#include "checkpoint_cb.h"
 #include <syslog.h>
 
 service_executor_t g_isulad_service_executor;
