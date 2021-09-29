@@ -658,7 +658,7 @@ static int verify_mounts(const container_t *cont)
 
     return 0;
 }
-
+/*
 static int checkpoint_restore_container(char* container){
     struct lxc_container *c;
     c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
@@ -687,7 +687,7 @@ static int checkpoint_restore_container(char* container){
     
     return res;
 }
-
+*/
 static int do_start_container(container_t *cont, const char *console_fifos[], bool reset_rm, pid_ppid_info_t *pid_info)
 {
     int ret = 0;
