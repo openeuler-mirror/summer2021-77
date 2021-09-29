@@ -5,6 +5,8 @@
         "iterator": "cpp",
         "__locale": "c",
         "ios": "c",
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "locale": "c",
+        "thread": "c"
     }
 }

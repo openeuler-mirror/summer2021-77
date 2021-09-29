@@ -54,7 +54,18 @@ static int checkpoint_create_cb(const checkpoint_create_checkpoint_request *requ
 
     EVENT("Checkpoint Event: {Object: create checkpoint, Type: Create}");
 
-    char* container=checkpoint_create(request->container,request->dir);
+    cont = containers_store_get(request->container);
+    if (cont == NULL) {
+        cc = ISULAD_ERR_EXEC;
+        ERROR("No such container:%s", request->id);
+        isulad_set_error_message("No such container:%s", request->id);
+        goto pack_response;
+    }
+
+
+    char* id = cont->common_config->id;
+
+    char* container=checkpoint_create(id,request->dir);
     if (container==NULL) {
         cc = ISULAD_ERR_EXEC;
         goto out;
@@ -99,7 +110,18 @@ static int checkpoint_restore_cb(const checkpoint_restore_checkpoint_request *re
 
     EVENT("Checkpoint Event: {Object: restore checkpoint, Type: Create}");
 
-    char* container=checkpoint_restore(request->container,request->dir);
+    cont = containers_store_get(request->container);
+    if (cont == NULL) {
+        cc = ISULAD_ERR_EXEC;
+        ERROR("No such container:%s", request->id);
+        isulad_set_error_message("No such container:%s", request->id);
+        goto pack_response;
+    }
+
+
+    char* id = cont->common_config->id;
+
+    char* container=checkpoint_restore(id,request->dir);
     if (container==NULL) {
         cc = ISULAD_ERR_EXEC;
         goto out;
@@ -144,7 +166,18 @@ static int checkpoint_remove_cb(const checkpoint_remove_checkpoint_request *requ
 
     EVENT("Checkpoint Event: {Object: create checkpoint, Type: Create}");
 
-    char* container = checkpoint_remove(request->container,request->dir);
+    cont = containers_store_get(request->container);
+    if (cont == NULL) {
+        cc = ISULAD_ERR_EXEC;
+        ERROR("No such container:%s", request->id);
+        isulad_set_error_message("No such container:%s", request->id);
+        goto pack_response;
+    }
+
+
+    char* id = cont->common_config->id;
+
+    char* container = checkpoint_remove(id,request->dir);
     if (container == NULL) {
         cc = ISULAD_ERR_EXEC;
         goto out;
