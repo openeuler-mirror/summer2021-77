@@ -16,6 +16,7 @@
 #include "utils_file.h"
 #include <lxc/lxccontainer.h>
 #include "container_api.h"
+#include "image_api.h"
 
 /*
  * 根据容器Id，checkpoint Id，以及checkpoint路径去创建一个checkpoint
