@@ -765,7 +765,7 @@ static int do_start_container(container_t *cont, const char *console_fifos[], bo
         ret = -1;
         goto close_exit_fd;
     }
-    goto close_exit_fd;
+    //goto close_exit_fd;
 
     //restore
     //checkpoint_restore_container(cont)
