@@ -28,8 +28,6 @@
 int VolumeServiceImpl::volume_list_request_from_grpc(const ListVolumeRequest *grequest,
                                                      volume_list_volume_request **request)
 {
-    ERROR("volume_list_request_from_grpc\n");
-    return -1;
     volume_list_volume_request *tmpreq =
         static_cast<volume_list_volume_request *>(util_common_calloc_s(sizeof(volume_list_volume_request)));
     if (tmpreq == nullptr) {

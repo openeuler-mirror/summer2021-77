@@ -735,7 +735,6 @@ Status ContainerServiceImpl::RemoteExec(ServerContext *context,
 Status ContainerServiceImpl::Inspect(ServerContext *context, const InspectContainerRequest *request,
                                      InspectContainerResponse *reply)
 {
-    exit(0);
     int tret;
     service_executor_t *cb = nullptr;
     container_inspect_request *container_req = nullptr;

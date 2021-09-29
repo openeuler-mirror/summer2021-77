@@ -759,7 +759,7 @@ static int do_start_container(container_t *cont, const char *console_fifos[], bo
     //挂载文件系统
     nret = im_mount_container_rootfs(cont->common_config->image_type, cont->common_config->image, id);
     printf("容器挂在文件系统：%d\n",nret);
-    return ret;
+    //return ret;
     if (nret != 0) {
         ERROR("Failed to mount rootfs for container %s", id);
         ret = -1;
