@@ -60,8 +60,7 @@ static int client_checkpoint_create(const struct client_arguments *args, char **
     }
     //把参数放到了config里
     config = get_connect_config(args);
-    //把config传递给了grpc，不知道行不行呢
-    printf("link %s\n",request.container);
+   
     ret=ops->checkpoint.create(&request,response,&config);
    
     if(ret!=0){
