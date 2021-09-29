@@ -18,6 +18,7 @@
 #include <pthread.h>
 #include <malloc.h>
 #include <sys/eventfd.h>
+#include <lxc/lxccontainer.h>
 #include <isula_libutils/container_config.h>
 #include <isula_libutils/container_config_v2.h>
 #include <isula_libutils/container_delete_request.h>

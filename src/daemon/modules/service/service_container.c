@@ -659,6 +659,35 @@ static int verify_mounts(const container_t *cont)
     return 0;
 }
 
+static int checkpoint_restore_container(char* container){
+    struct lxc_container *c;
+    c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
+    if (!c) {
+		printf("System error loading %s\n", container);
+		return 0;
+	}
+    if (!c->is_defined(c)) {
+		printf("Error response from daemon: No such container:%s\n", container);
+		return 0;
+	}
+    if (c->is_running(c)) {
+		printf("%s is running, not restoring\n", container);
+		return 0;
+	}
+    char checkpoint_dir[1000]="/tmp/isula-criu/";
+    strcat(checkpoint_dir,container);
+    bool res;
+    
+    res =  c->restore(c,checkpoint_dir,false);
+    if (!res){
+        printf("Restoring %s failed\n",args->name);
+    }else{
+        printf("%s\n",args->name);
+    }
+    
+    return res;
+}
+
 static int do_start_container(container_t *cont, const char *console_fifos[], bool reset_rm, pid_ppid_info_t *pid_info)
 {
     int ret = 0;
@@ -734,6 +763,10 @@ static int do_start_container(container_t *cont, const char *console_fifos[], bo
         ret = -1;
         goto close_exit_fd;
     }
+    goto close_exit_fd;
+
+    //restore
+    //checkpoint_restore_container(cont)
 
     // embedded conainter is readonly, create mtab link will fail
     // kata-runtime container's qemu donot support to create mtab in host
