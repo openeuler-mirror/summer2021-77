@@ -149,6 +149,44 @@ public:
     }
 };
 
+class CheckpointRestore : public
+    ClientBase<CheckpointService, CheckpointService::Stub, isula_restore_checkpoint_request, RestoreCheckpointRequest,
+    isula_restore_checkpoint_response, RestoreCheckpointResponse> {
+public:
+    explicit CheckpointRestore(void *args)
+        : ClientBase(args)
+    {
+    }
+    ~CheckpointRestore() = default;
+    CheckpointRestore(const CheckpointRestore &) = delete;
+    CheckpointRestore &operator=(const CheckpointRestore &) = delete;
+
+    auto request_to_grpc(const isula_restore_checkpoint_request *request, RestoreCheckpointRequest *grequest) -> int override
+    {
+        if (request == nullptr) {
+            return -1;
+        }
+
+        return 0;
+    }
+
+    auto response_from_grpc(RestoreCheckpointResponse *gresponse, isula_restore_checkpoint_response *response) -> int override
+    {
+        response->server_errono = static_cast<uint32_t>(gresponse->cc());
+
+        if (!gresponse->errmsg().empty()) {
+            response->errmsg = util_strdup_s(gresponse->errmsg().c_str());
+        }
+        response->checkpoints=util_strdup_s(gresponse->checkpoints().c_str());
+
+        return 0;
+    }
+
+    auto grpc_call(ClientContext *context, const RestoreCheckpointRequest &req, RestoreCheckpointResponse *reply) -> Status override
+    {
+        return stub_->Restore(context, req, reply);
+    }
+};
 
 auto grpc_checkpoints_client_ops_init(isula_connect_ops *ops) -> int
 {
@@ -159,6 +197,7 @@ auto grpc_checkpoints_client_ops_init(isula_connect_ops *ops) -> int
     ops->checkpoint.create = container_func<isula_create_checkpoint_request, isula_create_checkpoint_response, CheckpointCreate>;
     ops->checkpoint.remove = container_func<isula_remove_checkpoint_request, isula_remove_checkpoint_response, CheckpointRemove>;
     ops->checkpoint.list   = container_func<isula_list_checkpoint_request  , isula_list_checkpoint_response  , CheckpointList>;
+    ops->checkpoint.restore   = container_func<isula_restore_checkpoint_request  , isula_restore_checkpoint_response  , CheckpointRestore>;
 
     return 0;
 }

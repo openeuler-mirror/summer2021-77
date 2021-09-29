@@ -9,7 +9,7 @@
  * PURPOSE.
  * See the Mulan PSL v2 for more details.
  * Author: wangfengtu
- * Create: 2020-09-04
+ * restore: 2020-09-04
  * Description: provide checkpoint remove functions
  ******************************************************************************/
 #include "cprestore.h"
@@ -39,37 +39,47 @@ struct client_arguments g_cmd_checkpoint_restore_args;
 
 
 static int client_checkpoint_restore(const struct client_arguments *args, char ***volumes, size_t *volumes_len){
-    struct lxc_container *c;
-    c=lxc_container_new(args->name,"/var/lib/isulad/engines/lcr/");
-    if (!c) {
-		printf("System error loading %s\n", args->name);
-		return 0;
-	}
-    if (!c->is_defined(c)) {
-		printf("Error response from daemon: No such container:%s\n", args->name);
-		return 0;
-	}
-    if (c->is_running(c)) {
-		printf("%s is running, not restoring\n", args->name);
-		return 0;
-	}
-    char checkpoint_dir[1000]="/tmp/isula-criu/";
-    strcat(checkpoint_dir,c->name);
-    bool res;
-    if(args->checkpoint_dir){
-        strcat(args->checkpoint_dir,c->name);
-        res =  c->restore(c,checkpoint_dir,false);
-    }else{
-        res =  c->restore(c,checkpoint_dir,false);
+    isula_connect_ops *ops =NULL;
+    struct isula_restore_checkpoint_request request ={0};
+    struct isula_restore_checkpoint_response *response =NULL;
+    client_connect_config_t config ={0};
+    int ret = 0;
+
+    response = util_common_calloc_s(sizeof(struct isula_restore_checkpoint_response));
+    if (response==NULL){
+        ERROR("Out of memory");
+        return -1;
     }
+    request.container = args->name;
+    request.dir=args->checkpoint_dir;
+
+    ops = get_connect_client_ops();
     
-    if (!res){
-        printf("Restoring %s failed\n",args->name);
-    }else{
-        printf("%s\n",args->name);
+    if(ops==NULL || ops->checkpoint.restore==NULL){
+        ERROR("Unimplemented ops");
+        ret=-1;
+        goto out;
     }
+    //把参数放到了config里
+    config = get_connect_config(args);
+    //把config传递给了grpc，不知道行不行呢
+    printf("link %s\n",request.container);
+    ret=ops->checkpoint.restore(&request,response,&config);
+   
+    if(ret!=0){
+        client_print_error(response->cc,response->server_errono,response->errmsg);
+        if(response->server_errono){
+            ret=ESERVERERROR;
+        }
+        goto out;
+    }
+     printf("%s\n",response->container);
+
+out:
+    //isula_restore_checkpoint_response_free(response);
+    return ret;
+
     
-    return res;
 }
 
 int cmd_checkpoint_restore_main(int argc, const char **argv)
@@ -115,7 +125,7 @@ int cmd_checkpoint_restore_main(int argc, const char **argv)
     g_cmd_checkpoint_restore_args.name=g_cmd_checkpoint_restore_args.argv[0];
     //printf("%s\n",g_cmd_checkpoint_restore_args.name);
     if (client_checkpoint_restore(&g_cmd_checkpoint_restore_args, &checkpoints, &checkpoints_len) != 0) {
-        ERROR("Create checkpoints failed");
+        ERROR("restore checkpoints failed");
         exit(exit_code);
     }
 

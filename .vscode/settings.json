@@ -4,6 +4,9 @@
         "atomic": "c",
         "iterator": "cpp",
         "__locale": "c",
-        "ios": "c"
+        "ios": "c",
+        "typeinfo": "c",
+        "locale": "c",
+        "thread": "c"
     }
 }

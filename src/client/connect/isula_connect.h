@@ -114,6 +114,9 @@ typedef struct {
     int (*create)(const struct isula_create_checkpoint_request *request, struct isula_create_checkpoint_response *response,
                  void *arg);
 
+    int (*restore)(const struct isula_restore_checkpoint_request *request, struct isula_restore_checkpoint_response *response,
+                 void *arg);
+
 
 
 } checkpoint_ops;
