@@ -26,7 +26,7 @@ int CheckpointServiceImpl::checkpoint_create_request_from_grpc(const CreateCheck
         ERROR("Out of memory");
         return -1;
     }
-    printf("container is empty:%d\n",grequest->container().empty());
+   
 
     if (!grequest->container().empty()) {
         tmpreq->container = util_strdup_s(grequest->container().c_str());
