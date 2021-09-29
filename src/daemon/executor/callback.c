@@ -166,8 +166,5 @@ int service_callback_init(void)
 /* get service callback */
 service_executor_t *get_service_executor(void)
 {
-    openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
-	syslog(LOG_DEBUG,"service_executor_t *get_service_executor(void)\n");
-	closelog();
     return &g_isulad_service_executor;
 }

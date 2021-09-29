@@ -78,6 +78,51 @@ out:
     return (cc != ISULAD_SUCCESS) ? ECOMMON : 0;
 }
 
+static int checkpoint_restore_cb(const checkpoint_restore_checkpoint_request *request, checkpoint_restore_checkpoint_response **response)
+{
+    uint32_t cc = ISULAD_SUCCESS;
+
+
+    DAEMON_CLEAR_ERRMSG();
+
+    if (request == NULL || request->container==NULL || response == NULL) {
+        ERROR("Invalid input arguments");
+        return EINVALIDARGS;
+    }
+
+    *response = util_common_calloc_s(sizeof(checkpoint_restore_checkpoint_response));
+    if (*response == NULL) {
+        ERROR("Out of memory");
+        cc = ISULAD_ERR_MEMOUT;
+        goto out;
+    }
+
+    EVENT("Checkpoint Event: {Object: restore checkpoint, Type: Create}");
+
+    char* container=checkpoint_restore(request->container,request->dir);
+    if (container==NULL) {
+        cc = ISULAD_ERR_EXEC;
+        goto out;
+    }
+    (*response)->container = container;
+
+    
+
+    EVENT("Checkpoint Event: {Object: restore checkpoints, Type: Created");
+
+out:
+    if (*response != NULL) {
+        (*response)->cc = cc;
+        if (g_isulad_errmsg != NULL) {
+            (*response)->errmsg = util_strdup_s(g_isulad_errmsg);
+            DAEMON_CLEAR_ERRMSG();
+        }
+    }
+    //free_checkpoint_names(restored);
+
+    return (cc != ISULAD_SUCCESS) ? ECOMMON : 0;
+}
+
 static int checkpoint_remove_cb(const checkpoint_remove_checkpoint_request *request, checkpoint_remove_checkpoint_response **response)
 {
     uint32_t cc = ISULAD_SUCCESS;
@@ -181,4 +226,5 @@ void checkpoint_callback_init(service_checkpoint_callback_t *cb)
     cb->create = checkpoint_create_cb;
     cb->remove = checkpoint_remove_cb;
     cb->list   = checkpoint_list_cb;
+    cb->remove   = checkpoint_remove_cb;
 }

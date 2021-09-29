@@ -11,6 +11,7 @@ extern "C" {
 
 char* checkpoint_create(char* container,char* dir);
 
+char* checkpoint_restore(char* container,char* dir);
 
 char* checkpoint_remove(char* container,char* dir);
 

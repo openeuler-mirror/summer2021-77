@@ -636,6 +636,18 @@ struct isula_create_checkpoint_response {
     char *errmsg;
 };
 
+struct isula_restore_checkpoint_request {
+    char* container;
+    char* dir;
+};
+
+struct isula_restore_checkpoint_response {
+    char* container;
+    uint32_t cc;
+    uint32_t server_errono;
+    char *errmsg;
+};
+
 struct isula_list_checkpoint_request {
     char* dir;
 };
