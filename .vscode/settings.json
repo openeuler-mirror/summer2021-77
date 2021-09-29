@@ -2,6 +2,8 @@
     "files.associations": {
         "list": "c",
         "atomic": "c",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "__locale": "c",
+        "ios": "c"
     }
 }
