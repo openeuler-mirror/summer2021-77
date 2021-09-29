@@ -175,15 +175,7 @@ char* checkpoint_restore(char* container,char* dir)
     if (!res){
         printf("Restoring %s failed\n",container);
     }else{
-        pid_ppid_info_t pid_info = { 0 };
-        container_state_set_running(cont->state, &pid_info, true);
-        container_state_reset_has_been_manual_stopped(cont->state);
-        container_init_health_monitor(cont->common_config->id);
-        if (container_state_to_disk(cont)) {
-        ERROR("Failed to save container \"%s\" to disk", cont->common_config->id);
-        
-        return container;
-    }
+       
         printf("%s\n",container);
     }
     

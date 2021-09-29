@@ -770,28 +770,27 @@ static int do_start_container(container_t *cont, const char *console_fifos[], bo
 
     //restore流程
     struct lxc_container *c;
-    char *container = id;
-    c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
+    //char *container = id;
+    c=lxc_container_new(id,"/var/lib/isulad/engines/lcr/");
     if (!c) {
-		printf("System error loading %s\n", container);
+		printf("System error loading %s\n", id);
 		return 0;
 	}
     if (!c->is_defined(c)) {
-		printf("Error response from daemon: No such container:%s\n", container);
+		printf("Error response from daemon: No such container:%s\n", id);
 		return 0;
 	}
     if (c->is_running(c)) {
-		printf("%s is running, not restoring\n", container);
+		printf("%s is running, not restoring\n",id);
 		return 0;
 	}
     char checkpoint_dir[1000]="/tmp/isula-criu/";
     strcat(checkpoint_dir,c->name);
     bool res;
-    if(dir){
-        strcat(dir,c->name);
-        res =  c->restore(c,checkpoint_dir,false);
-    }else{
-        res =  c->restore(c,checkpoint_dir,false);
+    res =  c->restore(c,checkpoint_dir,false);
+    
+    if(!res){
+        printf("restore fail\n");
     }
     //goto close_exit_fd;
 
