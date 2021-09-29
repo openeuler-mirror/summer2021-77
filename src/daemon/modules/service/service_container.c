@@ -690,6 +690,7 @@ static int checkpoint_restore_container(char* container){
 */
 static int do_start_container(container_t *cont, const char *console_fifos[], bool reset_rm, pid_ppid_info_t *pid_info)
 {
+    printf("do_start_container\n");
     int ret = 0;
     int nret = 0;
     int exit_fifo_fd = -1;
