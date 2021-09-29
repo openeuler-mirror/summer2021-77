@@ -770,9 +770,10 @@ static int do_start_container(container_t *cont, const char *console_fifos[], bo
 
     //restore流程
     struct lxc_container *c;
-    char *container = id;
-    c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
+    //char *container = id;
+    c=lxc_container_new(id,"/var/lib/isulad/engines/lcr/");
     if (!c) {
+
 		printf("System error loading %s\n", container);
 		
 	}
@@ -782,16 +783,15 @@ static int do_start_container(container_t *cont, const char *console_fifos[], bo
 	}
     if (c->is_running(c)) {
 		printf("%s is running, not restoring\n", container);
-		
+	
 	}
     char checkpoint_dir[1000]="/tmp/isula-criu/";
     strcat(checkpoint_dir,c->name);
     bool res;
-    if(dir){
-        strcat(dir,c->name);
-        res =  c->restore(c,checkpoint_dir,false);
-    }else{
-        res =  c->restore(c,checkpoint_dir,false);
+    res =  c->restore(c,checkpoint_dir,false);
+    
+    if(!res){
+        printf("restore fail\n");
     }
     if(res){
         printf("restore success\n");
