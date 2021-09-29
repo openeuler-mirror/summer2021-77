@@ -141,13 +141,13 @@ char* checkpoint_create(char* container,char* dir)
 
 char* checkpoint_restore(char* container,char* dir)
 {
-    container_t *cont=NULL;
-    cont = containers_store_get(container);
-    int nret = im_mount_container_rootfs(cont->common_config->image_type, cont->common_config->image, container);
-    if(nret!=0){
-        printf("挂载失败");
-    }
-    printf("文件系统挂载成功");
+    //container_t *cont=NULL;
+    //cont = containers_store_get(container);
+    //int nret = im_mount_container_rootfs(cont->common_config->image_type, cont->common_config->image, container);
+    //if(nret!=0){
+    //    printf("挂载失败");
+    //}
+   // printf("文件系统挂载成功");
     struct lxc_container *c;
     c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
     if (!c) {
