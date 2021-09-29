@@ -153,6 +153,7 @@ static int client_checkpoint_rm(const struct client_arguments *args, char ***vol
         }
         goto out;
     }
+    printf("%s",response->container);
 
 out:
     //isula_create_checkpoint_response_free(response);

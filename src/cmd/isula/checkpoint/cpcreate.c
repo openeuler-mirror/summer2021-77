@@ -63,7 +63,7 @@ static int client_checkpoint_create(const struct client_arguments *args, char **
     //把config传递给了grpc，不知道行不行呢
     printf("link %s\n",request.container);
     ret=ops->checkpoint.create(&request,response,&config);
-    printf("link %d\n",ret);
+   
     if(ret!=0){
         client_print_error(response->cc,response->server_errono,response->errmsg);
         if(response->server_errono){
@@ -71,6 +71,7 @@ static int client_checkpoint_create(const struct client_arguments *args, char **
         }
         goto out;
     }
+     printf("%s\n",response->container);
 
 out:
     //isula_create_checkpoint_response_free(response);
