@@ -142,8 +142,8 @@ char* checkpoint_restore(char* container,char* dir)
 {
     container_t *cont=NULL;
     cont = containers_store_get(container);
-    nret = im_mount_container_rootfs(cont->common_config->image_type, cont->common_config->image,
-                                     cont->common_config->id);
+    nret = im_mount_container_rootfs(cont->common_config->image_type, cont->common_config->image, container);
+    
     struct lxc_container *c;
     c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
     if (!c) {
