@@ -7,6 +7,7 @@
         "ios": "c",
         "typeinfo": "c",
         "locale": "c",
-        "thread": "c"
+        "thread": "c",
+        "stdlib.h": "c"
     }
 }
