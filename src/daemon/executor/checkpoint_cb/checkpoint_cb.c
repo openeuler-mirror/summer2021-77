@@ -30,6 +30,7 @@
 #include "err_msg.h"
 #include "isula_libutils/log.h"
 #include "checkpoint_api.h"
+#include "container_api.h"
 
 
 /* checkpoint create cb */
@@ -37,7 +38,7 @@ static int checkpoint_create_cb(const checkpoint_create_checkpoint_request *requ
 {
     uint32_t cc = ISULAD_SUCCESS;
 
-
+    container_t *cont = NULL;
     DAEMON_CLEAR_ERRMSG();
 
     if (request == NULL || request->container==NULL || response == NULL) {
@@ -57,9 +58,9 @@ static int checkpoint_create_cb(const checkpoint_create_checkpoint_request *requ
     cont = containers_store_get(request->container);
     if (cont == NULL) {
         cc = ISULAD_ERR_EXEC;
-        ERROR("No such container:%s", request->id);
-        isulad_set_error_message("No such container:%s", request->id);
-        goto pack_response;
+        ERROR("No such container:%s", request->container);
+        isulad_set_error_message("No such container:%s", request->container);
+       // goto pack_response;
     }
 
 
@@ -92,7 +93,7 @@ out:
 static int checkpoint_restore_cb(const checkpoint_restore_checkpoint_request *request, checkpoint_restore_checkpoint_response **response)
 {
     uint32_t cc = ISULAD_SUCCESS;
-
+container_t *cont = NULL;
 
     DAEMON_CLEAR_ERRMSG();
 
@@ -113,9 +114,9 @@ static int checkpoint_restore_cb(const checkpoint_restore_checkpoint_request *re
     cont = containers_store_get(request->container);
     if (cont == NULL) {
         cc = ISULAD_ERR_EXEC;
-        ERROR("No such container:%s", request->id);
-        isulad_set_error_message("No such container:%s", request->id);
-        goto pack_response;
+        ERROR("No such container:%s", request->container);
+        isulad_set_error_message("No such container:%s", request->container);
+        //goto pack_response;
     }
 
 
@@ -149,7 +150,7 @@ static int checkpoint_remove_cb(const checkpoint_remove_checkpoint_request *requ
 {
     uint32_t cc = ISULAD_SUCCESS;
 
-
+container_t *cont = NULL;
     DAEMON_CLEAR_ERRMSG();
 
     if (request == NULL || request->container==NULL || response == NULL) {
@@ -169,9 +170,9 @@ static int checkpoint_remove_cb(const checkpoint_remove_checkpoint_request *requ
     cont = containers_store_get(request->container);
     if (cont == NULL) {
         cc = ISULAD_ERR_EXEC;
-        ERROR("No such container:%s", request->id);
-        isulad_set_error_message("No such container:%s", request->id);
-        goto pack_response;
+        ERROR("No such container:%s", request->container);
+        isulad_set_error_message("No such container:%s", request->container);
+        //goto pack_response;
     }
 
 
@@ -259,5 +260,5 @@ void checkpoint_callback_init(service_checkpoint_callback_t *cb)
     cb->create = checkpoint_create_cb;
     cb->remove = checkpoint_remove_cb;
     cb->list   = checkpoint_list_cb;
-    cb->remove   = checkpoint_remove_cb;
+    cb->restore= checkpoint_restore_cb;
 }

@@ -141,36 +141,36 @@ char* checkpoint_create(char* container,char* dir)
 char* checkpoint_restore(char* container,char* dir)
 {
     struct lxc_container *c;
-    c=lxc_container_new(args->name,"/var/lib/isulad/engines/lcr/");
+    c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
     if (!c) {
-		printf("System error loading %s\n", args->name);
+		printf("System error loading %s\n", container);
 		return 0;
 	}
     if (!c->is_defined(c)) {
-		printf("Error response from daemon: No such container:%s\n", args->name);
+		printf("Error response from daemon: No such container:%s\n", container);
 		return 0;
 	}
     if (c->is_running(c)) {
-		printf("%s is running, not restoring\n", args->name);
+		printf("%s is running, not restoring\n", container);
 		return 0;
 	}
     char checkpoint_dir[1000]="/tmp/isula-criu/";
     strcat(checkpoint_dir,c->name);
     bool res;
-    if(args->checkpoint_dir){
-        strcat(args->checkpoint_dir,c->name);
+    if(dir){
+        strcat(dir,c->name);
         res =  c->restore(c,checkpoint_dir,false);
     }else{
         res =  c->restore(c,checkpoint_dir,false);
     }
     
     if (!res){
-        printf("Restoring %s failed\n",args->name);
+        printf("Restoring %s failed\n",container);
     }else{
-        printf("%s\n",args->name);
+        printf("%s\n",container);
     }
     
-    return res;
+    return container;
 }
 
 char* checkpoint_list(char* dir){
