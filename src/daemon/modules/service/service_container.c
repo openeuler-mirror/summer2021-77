@@ -60,6 +60,8 @@
 #include "utils_verify.h"
 #include "volume_api.h"
 
+#include <lxc/lxccontainer.h>
+
 #define KATA_RUNTIME "kata-runtime"
 
 int set_container_to_removal(const container_t *cont)
@@ -764,6 +766,32 @@ static int do_start_container(container_t *cont, const char *console_fifos[], bo
         ERROR("Failed to mount rootfs for container %s", id);
         ret = -1;
         goto close_exit_fd;
+    }
+
+    //restore流程
+    struct lxc_container *c;
+    char *container = id;
+    c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
+    if (!c) {
+		printf("System error loading %s\n", container);
+		return 0;
+	}
+    if (!c->is_defined(c)) {
+		printf("Error response from daemon: No such container:%s\n", container);
+		return 0;
+	}
+    if (c->is_running(c)) {
+		printf("%s is running, not restoring\n", container);
+		return 0;
+	}
+    char checkpoint_dir[1000]="/tmp/isula-criu/";
+    strcat(checkpoint_dir,c->name);
+    bool res;
+    if(dir){
+        strcat(dir,c->name);
+        res =  c->restore(c,checkpoint_dir,false);
+    }else{
+        res =  c->restore(c,checkpoint_dir,false);
     }
     //goto close_exit_fd;
 
