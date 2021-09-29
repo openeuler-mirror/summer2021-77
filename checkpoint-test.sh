@@ -1,1 +1,1 @@
-/bin/sh -c 'i=0; while true; do echo $i; i=$(expr $i + 1); sleep 1; done'
+/bin/sh -c 'i=0; while true; do echo $i >a.txt; i=$(expr $i + 1); sleep 1; done'

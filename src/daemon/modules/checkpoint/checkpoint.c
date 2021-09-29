@@ -180,8 +180,8 @@ char* checkpoint_restore(char* container,char* dir)
         container_init_health_monitor(cont->common_config->id);
         if (container_state_to_disk(cont)) {
         ERROR("Failed to save container \"%s\" to disk", cont->common_config->id);
-        ret = -1;
-        return ret;}
+        
+        return container;
     }
         printf("%s\n",container);
     }
