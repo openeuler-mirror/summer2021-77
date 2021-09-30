@@ -7,7 +7,15 @@
 extern "C" {
 #endif
 
+struct checkpoint {
+    char *dir;
+    char *name;
+};
 
+struct checkpoints {
+    struct checkpoint **ches;
+    size_t ches_len;
+};
 
 char* checkpoint_create(char* container,char* dir);
 

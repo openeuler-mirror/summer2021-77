@@ -207,7 +207,9 @@ out:
 static int checkpoint_list_cb(const checkpoint_list_checkpoint_request *request, checkpoint_list_checkpoint_response **response)
 {
     uint32_t cc = ISULAD_SUCCESS;
-
+    struct checkpoints *list =NULL;
+    size_t i=0;
+    checkpoint_checkpoint *che = NULL;
 
     DAEMON_CLEAR_ERRMSG();
 
@@ -223,22 +225,42 @@ static int checkpoint_list_cb(const checkpoint_list_checkpoint_request *request,
         goto out;
     }
 
-    EVENT("Checkpoint Event: {Object: create checkpoint, Type: Create}");
+    EVENT("Checkpoint Event: {Object: list checkpoint, Type: listing}");
 
-    if (checkpoint_list(request->dir) == NULL) {
+    list = checkpoint_list(request->dir)
+    if (list == NULL) {
         cc = ISULAD_ERR_EXEC;
         goto out;
     }
-    
+     if (list->vols_len == 0) {
+        goto out;
+    }
+
+     (*response)->checkpoints = util_smart_calloc_s(sizeof(checkpoint_checkpoint *), list->ches_len);
+    if ((*response)->checkpoints == NULL) {
+        ERROR("out of memory");
+        cc = ISULAD_ERR_MEMOUT;
+        goto err_out;
+    }
+    for (i = 0; i < list->ches_len; i++) {
+        che = util_common_calloc_s(sizeof(checkpoint_checkpoint));
+        if (che == NULL) {
+            ERROR("out of memory");
+            cc = ISULAD_ERR_MEMOUT;
+            goto err_out;
+        }
+        che->dir = util_strdup_s(list->ches[i]->dir);
+        che->name = util_strdup_s(list->ches[i]->name);
+        (*response)->checkpoints[i] = che;
+        (*response)->checkpoints_len++;
 
     
-
-    EVENT("Checkpoint Event: {Object: create checkpoints, Type: Created");
-
 out:
+    EVENT("Checkpoint Event: {Object: list checkpoints, Type: listed");
+
+err_out:
     if (*response != NULL) {
         (*response)->cc = cc;
-        (*response)->checkpoints=checkpoint_list(request->dir);
         if (g_isulad_errmsg != NULL) {
             (*response)->errmsg = util_strdup_s(g_isulad_errmsg);
             DAEMON_CLEAR_ERRMSG();

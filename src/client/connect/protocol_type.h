@@ -652,8 +652,13 @@ struct isula_list_checkpoint_request {
     char* dir;
 };
 
+struct isula_checkpoint_info{
+    char *name;
+    char *dir;
+};
+
 struct isula_list_checkpoint_response {
-    char *checkpoints;
+    struct isula_checkpoint_info *checkpoints;
     uint32_t cc;
     uint32_t server_errono;
     char *errmsg;

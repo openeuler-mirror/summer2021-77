@@ -133,13 +133,47 @@ public:
 
     auto response_from_grpc(ListCheckpointResponse *gresponse, isula_list_checkpoint_response *response) -> int override
     {
-        response->server_errono = static_cast<uint32_t>(gresponse->cc());
+        int num = gresponse->checkpoints_size();
+        if(num<=0){
+            response->checkpoints = nullptr;
+            response->checkpoints_len = 0;
+            response->server_errono = gresponse->cc();
+            if (!gresponse->errmsg().empty()) {
+                response->errmsg = util_strdup_s(gresponse->errmsg().c_str());
+            }
+            return 0;
+        }
 
-        if (!gresponse->errmsg().empty()) {
-            response->errmsg = util_strdup_s(gresponse->errmsg().c_str());
+        response->checkpoints_len = 0;
+
+        if (static_cast<size_t>(num) > SIZE_MAX / sizeof(struct isula_checkpoint_info)) {
+            ERROR("Too many volume");
+            response->cc = ISULAD_ERR_MEMOUT;
             return -1;
         }
-        response->checkpoints=util_strdup_s(gresponse->checkpoints().c_str());
+
+         auto checkpoints = static_cast<struct isula_checkpoint_info *>(
+                           util_common_calloc_s(sizeof(struct isula_checkpoint_info) * static_cast<size_t>(num)));
+        if (checkpoints == nullptr) {
+            ERROR("out of memory");
+            response->cc = ISULAD_ERR_MEMOUT;
+            return -1;
+        }
+
+          for (int i {}; i < num; i++) {
+            const Checkpoint &checkpoint = gresponse->checkpoints(i);
+            const char *dir = !checkpoint.dir().empty() ? checkpoint.dir().c_str() : "-";
+            checkpoints[i].dir = util_strdup_s(dir);
+            const char *name = !checkpoint.name().empty() ? checkpoint.name().c_str() : "-";
+            checkpoints[i].name = util_strdup_s(name);
+        }
+
+        response->checkpoints = checkpoints;
+        response->checkpoints_len = static_cast<size_t>(num);
+        response->server_errono = gresponse->cc();
+        if (!gresponse->errmsg().empty()) {
+            response->errmsg = util_strdup_s(gresponse->errmsg().c_str());
+        }
 
         return 0;
     }

@@ -36,6 +36,36 @@ struct client_arguments g_cmd_checkpoint_ls_args;
     { CMD_OPT_TYPE_STRING, false, "checkpoint-dir", 0, &(cmdargs).checkpoint_dir, "Use a custom checkpoint storage directory", NULL },
 
 
+struct lengths {
+    unsigned int name_length;
+    unsigned int dir_length;
+};
+/* list print table */
+static void list_print_table(const struct isula_list_checkpoint_response *resp, const struct lengths *length)
+{
+    size_t i = 0;
+
+    /* print header */
+    printf("%-*s ", (int)length->name_length, "CHECKPOINT");
+    printf("%-*s ", (int)length->dir_length, "CHECKPOINT_DIR");
+    printf("\n");
+
+    for (i = 0; i < resp->volumes_len; i++) {
+        printf("%-*s ", (int)length->name_length, resp->checkpoints[i].name);
+        printf("%-*s ", (int)length->dir_length, resp->checkpoints[i].dir);
+        printf("\n");
+    }
+}
+
+static void checkpoint_info_print(const struct isula_list_checkpoint_response *response)
+{
+    struct lengths max_len = {
+        .name_length = 20,
+        .dir_length = 100,
+    };
+
+    list_print_table(response, &max_len);
+}
 
 static int client_checkpoint_ls(const struct client_arguments *args, char ***volumes, size_t *volumes_len){
     
@@ -50,10 +80,6 @@ static int client_checkpoint_ls(const struct client_arguments *args, char ***vol
         ERROR("Out of memory");
         return -1;
     }
-
-   
-    
-    
     
     if(args->checkpoint_dir){
          request.dir=args->checkpoint_dir;
@@ -73,7 +99,6 @@ static int client_checkpoint_ls(const struct client_arguments *args, char ***vol
     config = get_connect_config(args);
  
     ret=ops->checkpoint.list(&request,response,&config);
-    printf("\n%s\n",response->checkpoints);
     if(ret!=0){
         client_print_error(response->cc,response->server_errono,response->errmsg);
         if(response->server_errono){
@@ -81,6 +106,8 @@ static int client_checkpoint_ls(const struct client_arguments *args, char ***vol
         }
         goto out;
     }
+
+    checkpoint_info_print(response);
 
 out:
     //isula_create_checkpoint_response_free(response);

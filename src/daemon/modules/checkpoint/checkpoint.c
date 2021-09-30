@@ -17,6 +17,7 @@
 #include <lxc/lxccontainer.h>
 #include "container_api.h"
 #include "image_api.h"
+#include "checkpoint_api.h"
 
 /*
  * 根据容器Id，checkpoint Id，以及checkpoint路径去创建一个checkpoint
@@ -189,7 +190,53 @@ pid_ppid_info_t pid_info = { 0 };
     return container;
 }
 
-char* checkpoint_list(char* dir){
+static struct checkpoints *new_empty_checkpoints(int size)
+{
+    struct checkpoints *ches = NULL;
+
+    ches = util_common_calloc_s(sizeof(struct checkpoints));
+    if (ches == NULL) {
+        ERROR("out of memory");
+        return NULL;
+    }
+
+    if (size == 0) {
+        return ches;
+    }
+
+    ches->ches = util_common_calloc_s(sizeof(struct checkpoint*) * size);
+    if (ches->ches == NULL) {
+        ERROR("out of memory");
+        //free_volumes(vols);
+        return NULL;
+    }
+
+    return ches;
+}
+
+static struct checkpoint * dup_checkpoint(char *name, char *dir)
+{
+    struct checkpoint *che = NULL;
+
+    che = util_common_calloc_s(sizeof(struct checkpoint));
+    if (che == NULL) {
+        ERROR("out of memory");
+        return NULL;
+    }
+
+    che->dir = util_strdup_s(dir);
+    che->name = util_strdup_s(name);
+    return che;
+}
+
+
+struct checkpoints * checkpoint_list(char* dir){
+
+    struct checkpoints *ches = NULL;
+
+    
+    
+
     DIR *dirp;
     struct dirent *dp;
     if(dir){
@@ -206,6 +253,13 @@ char* checkpoint_list(char* dir){
         sum++;
         printf("%s\n",dp->d_name);
     }
+
+     ches = new_empty_checkpoints(sum);
+
+      if (ches == NULL) {
+        ERROR("out of memory");
+        return NULL;
+    }
   
     if(dir){
         dirp=opendir(dir);
@@ -213,17 +267,27 @@ char* checkpoint_list(char* dir){
         dirp=opendir("/tmp/isula-criu/");
     }
     
-    char* checkpoints=(char*)malloc(sum*70);
+   
     while((dp=readdir(dirp))!=NULL){
         if(strcmp(dp->d_name, ".") == 0 || strcmp(dp->d_name, "..") == 0){
             continue;
         }
         sum++;
-        strcat(checkpoints,dp->d_name);
-        strcat(checkpoints,"\n");
+        
+        che = dup_checkpoint(dp->d_name,"/tmp/isula-criu/");
+        if (che == NULL) {
+            ERROR("out of memory");
+            ret = -1;
+            goto out;
+        }
+         ches->ches[ches->ches_len] = che;
+        ches->ches_len++;
     }
+   
+    
+out:
     (void)closedir(dirp);
-    return checkpoints;
+    return ches;
 }
 
 

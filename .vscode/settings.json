@@ -8,6 +8,14 @@
         "typeinfo": "c",
         "locale": "c",
         "thread": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "checkpoint_api.h": "c",
+        "__config": "cpp",
+        "__hash_table": "cpp",
+        "__string": "cpp",
+        "set": "cpp",
+        "tuple": "cpp",
+        "version": "cpp",
+        "*.inc": "cpp"
     }
 }

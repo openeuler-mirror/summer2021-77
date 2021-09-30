@@ -323,11 +323,15 @@ int CheckpointServiceImpl::checkpoint_list_response_to_grpc(checkpoint_list_chec
     if (response->errmsg != nullptr) {
         gresponse->set_errmsg(response->errmsg);
     }
-    gresponse->set_checkpoints(response->checkpoints);
-
-   // for (size_t i {}; i < response->checkpoints_len; i++) {
-     //   gresponse->add_checkpoints(response->checkpoints[i]);
-    //}
+    for (size_t i {}; i < response->checkpoints_len; i++) {
+        auto checkpoint = gresponse->add_checkpoints();
+        if (response->checkpoints[i]->dir != nullptr) {
+            checkpoint->set_dir(response->checkpoints[i]->dir);
+        }
+        if (response->checkpoints[i]->name != nullptr) {
+            checkpoint->set_name(response->checkpoints[i]->name);
+        }
+    }
 
     return 0;
 }
