@@ -947,12 +947,14 @@ int start_container(container_t *cont, const char *console_fifos[], bool reset_r
     }
 
     ret = do_start_container(cont, console_fifos, reset_rm, &pid_info);
+    
     if (ret != 0) {
         ERROR("Runtime start container failed");
         ret = -1;
         goto set_stopped;
     } else {
         container_state_set_running(cont->state, &pid_info, true);
+        //return ret;
         container_state_reset_has_been_manual_stopped(cont->state);
         container_init_health_monitor(cont->common_config->id);
         goto save_container;

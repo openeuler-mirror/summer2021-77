@@ -141,13 +141,13 @@ char* checkpoint_create(char* container,char* dir)
 
 char* checkpoint_restore(char* container,char* dir)
 {
-    //container_t *cont=NULL;
-    //cont = containers_store_get(container);
-    //int nret = im_mount_container_rootfs(cont->common_config->image_type, cont->common_config->image, container);
-    //if(nret!=0){
-    //    printf("挂载失败");
-    //}
-   // printf("文件系统挂载成功");
+    container_t *cont=NULL;
+    cont = containers_store_get(container);
+    int nret = im_mount_container_rootfs(cont->common_config->image_type, cont->common_config->image, container);
+    if(nret!=0){
+        printf("挂载失败");
+    }
+   printf("文件系统挂载成功");
     struct lxc_container *c;
     c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
     if (!c) {
@@ -167,9 +167,9 @@ char* checkpoint_restore(char* container,char* dir)
     bool res;
     if(dir){
         strcat(dir,c->name);
-        res =  c->restore(c,checkpoint_dir,false);
+        res =  c->restore(c,checkpoint_dir,true);
     }else{
-        res =  c->restore(c,checkpoint_dir,false);
+        res =  c->restore(c,checkpoint_dir,true);
     }
     
     if (!res){
@@ -177,6 +177,13 @@ char* checkpoint_restore(char* container,char* dir)
     }else{
        
         printf("%s\n",container);
+    }
+
+    container_state_set_running(cont->state, &pid_info, true);
+    container_state_reset_has_been_manual_stopped(cont->state);
+    container_init_health_monitor(cont->common_config->id);
+    if (container_state_to_disk(cont)) {
+        ERROR("Failed to save container \"%s\" to disk", cont->common_config->id);
     }
     
     return container;
