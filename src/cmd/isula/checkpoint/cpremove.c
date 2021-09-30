@@ -63,14 +63,8 @@ static int client_checkpoint_rm(const struct client_arguments *args, char ***vol
     }
 
     request.container = args->name;
-    char checkpoint_dir[1000]="/tmp/isula-criu/";
-    strcat(checkpoint_dir,args->name);
-    if(args->checkpoint_dir){
-         strcat(args->checkpoint_dir,args->name);
-         request.dir=args->checkpoint_dir;
-    }else{
-        request.dir=checkpoint_dir;
-    }
+    request.dir=args->checkpoint_dir;
+ 
     
     
 
@@ -94,7 +88,7 @@ static int client_checkpoint_rm(const struct client_arguments *args, char ***vol
     }
 
 out:
-    //isula_create_checkpoint_response_free(response);
+    isula_remove_checkpoint_response_free(response);
     return ret;
 }
 

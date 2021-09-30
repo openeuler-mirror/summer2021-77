@@ -217,27 +217,11 @@ int CheckpointServiceImpl::checkpoint_remove_request_from_grpc(const RemoveCheck
     if (!grequest->container().empty()) {
         tmpreq->container = util_strdup_s(grequest->container().c_str());
     }
-    tmpreq->dir = util_strdup_s(grequest->dir().c_str());
+    if (!grequest->dir().empty()) {
+       tmpreq->dir = util_strdup_s(grequest->dir().c_str());
+    }
+    
     *request = tmpreq;
-
-    return 0;
-}
-
-//发送响应
-int CheckpointServiceImpl::checkpoint_remove_response_to_grpc(checkpoint_remove_checkpoint_response *response,
-                                                     RemoveCheckpointResponse *gresponse)
-{
-   
-    if (response == nullptr) {
-        gresponse->set_cc(ISULAD_ERR_MEMOUT);
-        return 0;
-    }
-
-    gresponse->set_cc(response->cc);
-    if (response->errmsg != nullptr) {
-        gresponse->set_errmsg(response->errmsg);
-    }
-    gresponse->set_container(response->container);
 
     return 0;
 }
@@ -275,8 +259,7 @@ Status CheckpointServiceImpl::Remove(ServerContext *context, const RemoveCheckpo
     int ret = cb->checkpoint.remove(checkpoint_req, &checkpoint_res);
     
     //发送响应
-    tret = checkpoint_remove_response_to_grpc(checkpoint_res, reply);
-    printf("\nserver\n");
+    tret = response_to_grpc(checkpoint_res, reply);
     //free_checkpoint_create_checkpoint_request(checkpoint_req);
     //free_checkpoint_create_checkpoint_response(checkpoint_res);
     if (tret != 0) {

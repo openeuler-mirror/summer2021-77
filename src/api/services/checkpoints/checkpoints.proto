@@ -35,9 +35,8 @@ message RemoveCheckpointRequest {
 }
 
 message RemoveCheckpointResponse {
-	string container =1;
-	uint32 cc = 2;
-	string errmsg = 3;
+	uint32 cc = 1;
+	string errmsg = 2;
 }
 
 message CreateCheckpointRequest {

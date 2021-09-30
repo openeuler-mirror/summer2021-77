@@ -95,9 +95,8 @@ public:
 
         if (!gresponse->errmsg().empty()) {
             response->errmsg = util_strdup_s(gresponse->errmsg().c_str());
-            return -1;
         }
-        response->container=util_strdup_s(gresponse->container().c_str());
+       
         
         return 0;
     }

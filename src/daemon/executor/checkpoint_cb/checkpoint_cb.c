@@ -150,22 +150,13 @@ static int checkpoint_remove_cb(const checkpoint_remove_checkpoint_request *requ
 {
     uint32_t cc = ISULAD_SUCCESS;
 
-container_t *cont = NULL;
+    container_t *cont = NULL;
     DAEMON_CLEAR_ERRMSG();
 
     if (request == NULL || request->container==NULL || response == NULL) {
         ERROR("Invalid input arguments");
         return EINVALIDARGS;
     }
-
-    *response = util_common_calloc_s(sizeof(checkpoint_remove_checkpoint_response));
-    if (*response == NULL) {
-        ERROR("Out of memory");
-        cc = ISULAD_ERR_MEMOUT;
-        goto out;
-    }
-
-    EVENT("Checkpoint Event: {Object: create checkpoint, Type: Create}");
 
     cont = containers_store_get(request->container);
     if (cont == NULL) {
@@ -177,24 +168,31 @@ container_t *cont = NULL;
     }
 
 
-    char* id = cont->common_config->id;
-
-    char* container = checkpoint_remove(id,request->dir);
-    if (container == NULL) {
-        cc = ISULAD_ERR_EXEC;
+    *response = util_common_calloc_s(sizeof(checkpoint_remove_checkpoint_response));
+    if (*response == NULL) {
+        ERROR("Out of memory");
+        cc = ISULAD_ERR_MEMOUT;
         goto out;
     }
-    (*response)->container=container;
 
+    EVENT("Checkpoint Event: {Object: remove checkpoint, Type: Removing}");
 
     
 
-    EVENT("Checkpoint Event: {Object: create checkpoints, Type: Created");
+
+    char* id = cont->common_config->id;
+
+    if(checkpoint_remove(id,request->dir)!=0){
+        cc = ISULAD_ERR_EXEC;
+        goto out;
+    }
+    
+
+    EVENT("Checkpoint Event: {Object: remove checkpoints, Type: Deleted");
 
 out:
     if (*response != NULL) {
         (*response)->cc = cc;
-        
         if (g_isulad_errmsg != NULL) {
             (*response)->errmsg = util_strdup_s(g_isulad_errmsg);
             DAEMON_CLEAR_ERRMSG();

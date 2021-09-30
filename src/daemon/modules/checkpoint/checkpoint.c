@@ -58,7 +58,7 @@ void get_file_path(const char *path, const char *file_name,  char *file_path)
     strcat(file_path, file_name);
 }
 
-void delete_file(const char *path)
+int delete_file(const char *path)
 {
     DIR *dir;
     struct dirent *dir_info;
@@ -66,14 +66,12 @@ void delete_file(const char *path)
     if(is_file(path))
     {
         remove(path);
-        return;
-    }
-    if(is_dir(path))
+        return 0;
+    }else if(is_dir(path))
     {
-        printf("is_dir\n");
         if((dir = opendir(path)) == NULL)
             
-            return;
+            return -1;
         while((dir_info = readdir(dir)) != NULL)
         {
             get_file_path(path, dir_info->d_name, file_path);
@@ -83,44 +81,44 @@ void delete_file(const char *path)
             rmdir(file_path);
         }
         rmdir(path);
+    }else{
+        return -1
     }
 }
-char* checkpoint_remove(char* container,char* dir)
+int checkpoint_remove(char* container,char* dir)
 {
 
-    printf("modules\n");
     if(!dir){
         dir="/tmp/isula-criu/";
     }
     strcat(dir,container);
     
-    delete_file(dir);
-    printf("dir:%s\n",dir);
-    printf("modules\n");
-    return container;
+    return delete_file(dir);
+
+
     
 }
 
 
 
-char* checkpoint_create(char* container,char* dir)
+int checkpoint_create(char* container,char* dir)
 {
     struct lxc_container *c;
     c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
     //无法获取容器
     if (!c) {
 		ERROR("System error loading %s\n", container);
-		return 0;
+		return -1;
 	}
     //容器未定义
     if (!c->is_defined(c)) {
 		ERROR("(deamon modules)Error response from daemon: No such container:%s\n",container);
-		return 0;
+		return -1;
 	}
     //容器未运行
     if (!c->is_running(c)) {
 		ERROR("%s not running, not checkpointing\n", container);
-		return 0;
+		return -1;
 	}
 
     char checkpoint_dir[1000]="/tmp/isula-criu/";
@@ -134,13 +132,12 @@ char* checkpoint_create(char* container,char* dir)
     }
     if(!res){
         ERROR("Checkpointing %s failed",container);
-    }else{
-        printf("%s\n",container);
+        return -1;
     }
-    return container;
+    return 0;
 }
 
-char* checkpoint_restore(char* container,char* dir)
+int checkpoint_restore(char* container,char* dir)
 {
     container_t *cont=NULL;
     cont = containers_store_get(container);
@@ -153,15 +150,15 @@ char* checkpoint_restore(char* container,char* dir)
     c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
     if (!c) {
 		printf("System error loading %s\n", container);
-		return 0;
+		return -1;
 	}
     if (!c->is_defined(c)) {
 		printf("Error response from daemon: No such container:%s\n", container);
-		return 0;
+		return -1;
 	}
     if (c->is_running(c)) {
 		printf("%s is running, not restoring\n", container);
-		return 0;
+		return -1;
 	}
     char checkpoint_dir[1000]="/tmp/isula-criu/";
     strcat(checkpoint_dir,c->name);
@@ -175,19 +172,19 @@ char* checkpoint_restore(char* container,char* dir)
     
     if (!res){
         printf("Restoring %s failed\n",container);
-    }else{
-       
-        printf("%s\n",container);
+        return -1;
     }
-pid_ppid_info_t pid_info = { 0 };
+
+    pid_ppid_info_t pid_info = { 0 };
     container_state_set_running(cont->state, &pid_info, true);
     container_state_reset_has_been_manual_stopped(cont->state);
     container_init_health_monitor(cont->common_config->id);
     if (container_state_to_disk(cont)) {
         ERROR("Failed to save container \"%s\" to disk", cont->common_config->id);
+        return -1;
     }
     
-    return container;
+    return 0;
 }
 
 static struct checkpoints *new_empty_checkpoints(int size)

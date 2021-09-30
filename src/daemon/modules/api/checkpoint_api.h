@@ -18,11 +18,11 @@ struct checkpoints {
 
 
 
-char* checkpoint_create(char* container,char* dir);
+int checkpoint_create(char* container,char* dir);
 
-char* checkpoint_restore(char* container,char* dir);
+int checkpoint_restore(char* container,char* dir);
 
-char* checkpoint_remove(char* container,char* dir);
+int checkpoint_remove(char* container,char* dir);
 
 struct checkpoints* checkpoint_list(char* dir);
 
