@@ -88,7 +88,6 @@
 #include "events_format.h"
 #include "stream_wrapper.h"
 #include "utils_timestamp.h"
-#include "checkpoint_api.h"
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -317,6 +316,12 @@ struct isula_checkpoint_info{
     char *name;
     char *dir;
 };
+typedef struct {
+    char *dir;
+
+    char *name;
+}checkpoint_checkpoint;
+
 typedef struct{
     size_t checkpoints_len;
     checkpoint_checkpoint  **checkpoints;
