@@ -82,8 +82,9 @@ int delete_file(const char *path)
         }
         rmdir(path);
     }else{
-        return -1
+        return -1;
     }
+    return 0;
 }
 int checkpoint_remove(char* container,char* dir)
 {

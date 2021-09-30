@@ -36,7 +36,7 @@ struct client_arguments g_cmd_checkpoint_create_args;
 #define CREATE_OPTIONS(cmdargs) \
     { CMD_OPT_TYPE_STRING, false, "checkpoint-dir", 0, &(cmdargs).checkpoint_dir, "Use a custom checkpoint storage directory", NULL },
 
-static int client_checkpoint_create(const struct client_arguments *args, char ***volumes, size_t *volumes_len){
+static int client_checkpoint_create(const struct client_arguments *args, char ***checkpoints, size_t *checkpoints_len){
     isula_connect_ops *ops =NULL;
     struct isula_create_checkpoint_request request ={0};
     struct isula_create_checkpoint_response *response =NULL;

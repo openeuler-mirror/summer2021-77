@@ -66,12 +66,12 @@ static int checkpoint_create_cb(const checkpoint_create_checkpoint_request *requ
 
     char* id = cont->common_config->id;
 
-    char* container=checkpoint_create(id,request->dir);
-    if (container==NULL) {
+    
+    if (checkpoint_create(id,request->dir)!=0) {
         cc = ISULAD_ERR_EXEC;
         goto out;
     }
-    (*response)->container = container;
+   
 
     
 
@@ -122,12 +122,12 @@ container_t *cont = NULL;
 
     char* id = cont->common_config->id;
 
-    char* container=checkpoint_restore(id,request->dir);
-    if (container==NULL) {
+  
+    if (checkpoint_restore(id,request->dir)!=0) {
         cc = ISULAD_ERR_EXEC;
         goto out;
     }
-    (*response)->container = container;
+    
 
     
 

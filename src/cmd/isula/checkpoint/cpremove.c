@@ -88,7 +88,7 @@ static int client_checkpoint_rm(const struct client_arguments *args, char ***vol
     }
 
 out:
-    isula_remove_checkpoint_response_free(response);
+    //isula_remove_checkpoint_response_free(response);
     return ret;
 }
 
