@@ -232,10 +232,6 @@ struct checkpoints * checkpoint_list(char* dir){
     
 
     struct checkpoints *ches = NULL;
-
-    
-    
-
     DIR *dirp;
     struct dirent *dp;
     if(!dir){
@@ -243,6 +239,7 @@ struct checkpoints * checkpoint_list(char* dir){
     }
     dirp=opendir(dir);
     if(dirp==NULL){
+        isulad_set_error_message("checkpoint_dir is NULL");
         return NULL;
     }
     
