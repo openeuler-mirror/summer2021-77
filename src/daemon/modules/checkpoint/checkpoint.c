@@ -178,7 +178,7 @@ char* checkpoint_restore(char* container,char* dir)
        
         printf("%s\n",container);
     }
-
+pid_ppid_info_t pid_info = { 0 };
     container_state_set_running(cont->state, &pid_info, true);
     container_state_reset_has_been_manual_stopped(cont->state);
     container_init_health_monitor(cont->common_config->id);
