@@ -253,6 +253,7 @@ static int checkpoint_list_cb(const checkpoint_list_checkpoint_request *request,
         che->name = util_strdup_s(list->ches[i]->name);
         (*response)->checkpoints[i] = che;
         (*response)->checkpoints_len++;
+    }
 
     
 out:
@@ -270,6 +271,7 @@ err_out:
 
     return (cc != ISULAD_SUCCESS) ? ECOMMON : 0;
 }
+
 
 /* checkpoint callback init */
 void checkpoint_callback_init(service_checkpoint_callback_t *cb)

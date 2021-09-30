@@ -88,6 +88,7 @@
 #include "events_format.h"
 #include "stream_wrapper.h"
 #include "utils_timestamp.h"
+#include "checkpoint_api.h"
 #ifdef __cplusplus
 extern "C" {
 #endif
