@@ -93,8 +93,12 @@ int checkpoint_remove(char* container,char* dir)
         dir="/tmp/isula-criu/";
     }
     strcat(dir,container);
+    if(delete_file(dir)!=0){
+        isulad_set_error_message("Checkpointing remove %s failed",container);
+        return -1
+    }
     
-    return delete_file(dir);
+    return 0;
 
 
     
@@ -108,17 +112,17 @@ int checkpoint_create(char* container,char* dir)
     c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
     //无法获取容器
     if (!c) {
-		ERROR("System error loading %s\n", container);
+		isulad_set_error_message("System error loading %s\n", container);
 		return -1;
 	}
     //容器未定义
     if (!c->is_defined(c)) {
-		ERROR("(deamon modules)Error response from daemon: No such container:%s\n",container);
+		isulad_set_error_message("(deamon modules)Error response from daemon: No such container:%s\n",container);
 		return -1;
 	}
     //容器未运行
     if (!c->is_running(c)) {
-		ERROR("%s not running, not checkpointing\n", container);
+		isulad_set_error_message("%s not running, not checkpointing\n", container);
 		return -1;
 	}
 
@@ -132,7 +136,7 @@ int checkpoint_create(char* container,char* dir)
         res =  c->checkpoint(c,checkpoint_dir,true,false);
     }
     if(!res){
-        ERROR("Checkpointing %s failed",container);
+        isulad_set_error_message("Checkpointing %s failed",container);
         return -1;
     }
     return 0;
@@ -150,15 +154,15 @@ int checkpoint_restore(char* container,char* dir)
     struct lxc_container *c;
     c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
     if (!c) {
-		printf("System error loading %s\n", container);
+		isulad_set_error_message("System error loading %s\n", container);
 		return -1;
 	}
     if (!c->is_defined(c)) {
-		printf("Error response from daemon: No such container:%s\n", container);
+		isulad_set_error_message("Error response from daemon: No such container:%s\n", container);
 		return -1;
 	}
     if (c->is_running(c)) {
-		printf("%s is running, not restoring\n", container);
+		isulad_set_error_message("%s is running, not restoring\n", container);
 		return -1;
 	}
     char checkpoint_dir[1000]="/tmp/isula-criu/";
@@ -172,7 +176,7 @@ int checkpoint_restore(char* container,char* dir)
     }
     
     if (!res){
-        printf("Restoring %s failed\n",container);
+        isulad_set_error_message("Restoring %s failed\n",container);
         return -1;
     }
 
@@ -181,7 +185,7 @@ int checkpoint_restore(char* container,char* dir)
     container_state_reset_has_been_manual_stopped(cont->state);
     container_init_health_monitor(cont->common_config->id);
     if (container_state_to_disk(cont)) {
-        ERROR("Failed to save container \"%s\" to disk", cont->common_config->id);
+        isulad_set_error_message("Failed to save container \"%s\" to disk", cont->common_config->id);
         return -1;
     }
     
