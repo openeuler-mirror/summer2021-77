@@ -67,8 +67,8 @@ static void checkpoint_info_print(const struct isula_list_checkpoint_response *r
     list_print_table(response, &max_len);
 }
 
-static int client_checkpoint_ls(const struct client_arguments *args, char ***volumes, size_t *volumes_len){
-    
+static int client_checkpoint_ls(const struct client_arguments *args, char ***checkpoints, size_t *checkpoints_len){
+     //printf("args->checkpoint_dir:%s\n",args->checkpoint_dir);
     isula_connect_ops *ops =NULL;
     struct isula_list_checkpoint_request request ={0};
     struct isula_list_checkpoint_response *response =NULL;

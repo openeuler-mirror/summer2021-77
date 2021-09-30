@@ -48,8 +48,8 @@ struct client_arguments g_cmd_checkpoint_rm_args;
 
 
 
-static int client_checkpoint_rm(const struct client_arguments *args, char ***volumes, size_t *volumes_len){
-   
+static int client_checkpoint_rm(const struct client_arguments *args, char ***checkpoints, size_t *checkpoints_len){
+    // printf("args->checkpoint_dir:%s\n",args->checkpoint_dir);
     isula_connect_ops *ops =NULL;
     struct isula_remove_checkpoint_request request ={0};
     struct isula_remove_checkpoint_response *response =NULL;
@@ -134,6 +134,9 @@ int cmd_checkpoint_rm_main(int argc, const char **argv)
 
     //printf("%s\n","name");
     g_cmd_checkpoint_rm_args.name=g_cmd_checkpoint_rm_args.argv[0];
+     if(g_cmd_checkpoint_rm_args.argc>1){
+        g_cmd_checkpoint_rm_args.checkpoint_dir=g_cmd_checkpoint_rm_args.argv[1];
+    }
     //printf("%s\n",g_cmd_checkpoint_rm_args.name);
     if (client_checkpoint_rm(&g_cmd_checkpoint_rm_args, &checkpoints, &checkpoints_len) != 0) {
         ERROR("rm checkpoints failed");

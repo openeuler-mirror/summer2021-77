@@ -19,6 +19,7 @@ int CheckpointServiceImpl::checkpoint_create_request_from_grpc(const CreateCheck
 {
    
     printf("checkpoint_create_request_from_grpc\n");
+    printf("dir:%s\n",grequest->dir().c_str());
     checkpoint_create_checkpoint_request *tmpreq =
         static_cast<checkpoint_create_checkpoint_request *>(util_common_calloc_s(sizeof(checkpoint_create_checkpoint_request)));
     if (tmpreq == nullptr) {
@@ -30,6 +31,9 @@ int CheckpointServiceImpl::checkpoint_create_request_from_grpc(const CreateCheck
 
     if (!grequest->container().empty()) {
         tmpreq->container = util_strdup_s(grequest->container().c_str());
+    }
+     if (!grequest->dir().empty()) {
+        tmpreq->dir = util_strdup_s(grequest->dir().c_str());
     }
     *request = tmpreq;
 
@@ -51,9 +55,6 @@ int CheckpointServiceImpl::checkpoint_create_response_to_grpc(checkpoint_create_
         gresponse->set_errmsg(response->errmsg);
     }
 
-   // for (size_t i {}; i < response->checkpoints_len; i++) {
-     //   gresponse->add_checkpoints(response->checkpoints[i]);
-    //}
 
     return 0;
 }
@@ -124,6 +125,9 @@ int CheckpointServiceImpl::checkpoint_restore_request_from_grpc(const RestoreChe
 
     if (!grequest->container().empty()) {
         tmpreq->container = util_strdup_s(grequest->container().c_str());
+    }
+     if (!grequest->dir().empty()) {
+        tmpreq->dir = util_strdup_s(grequest->dir().c_str());
     }
     *request = tmpreq;
 
@@ -281,6 +285,10 @@ int CheckpointServiceImpl::checkpoint_list_request_from_grpc(const ListCheckpoin
     if (tmpreq == nullptr) {
         ERROR("Out of memory");
         return -1;
+    }
+
+     if (!grequest->dir().empty()) {
+        tmpreq->dir = util_strdup_s(grequest->dir().c_str());
     }
 
    

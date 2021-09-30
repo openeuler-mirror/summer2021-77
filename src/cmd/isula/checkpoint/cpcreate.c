@@ -36,7 +36,9 @@ struct client_arguments g_cmd_checkpoint_create_args;
 #define CREATE_OPTIONS(cmdargs) \
     { CMD_OPT_TYPE_STRING, false, "checkpoint-dir", 0, &(cmdargs).checkpoint_dir, "Use a custom checkpoint storage directory", NULL },
 
+
 static int client_checkpoint_create(const struct client_arguments *args, char ***checkpoints, size_t *checkpoints_len){
+   
     isula_connect_ops *ops =NULL;
     struct isula_create_checkpoint_request request ={0};
     struct isula_create_checkpoint_response *response =NULL;
@@ -50,6 +52,7 @@ static int client_checkpoint_create(const struct client_arguments *args, char **
     }
     request.container = args->name;
     request.dir=args->checkpoint_dir;
+  
 
     ops = get_connect_client_ops();
     
@@ -105,7 +108,7 @@ int cmd_checkpoint_create_main(int argc, const char **argv)
     if (command_parse_args(&cmd, &g_cmd_checkpoint_create_args.argc, &g_cmd_checkpoint_create_args.argv)) {
         exit(exit_code);
     }
-    //printf("cmd.options->larg:%s\n",cmd.options->large);
+  
     //printf("%s\n",g_cmd_checkpoint_create_args.checkpoint_dir);
     if (isula_libutils_log_enable(&lconf)) {
         COMMAND_ERROR("checkpoint create: log init failed");
@@ -113,16 +116,12 @@ int cmd_checkpoint_create_main(int argc, const char **argv)
     }
 
 
-
-    /*
-    if (g_cmd_checkpoint_create_args.argc != 1) {
-        
-        COMMAND_ERROR("%s: \"checkpoint create\" requires exactly 1 arguments.", g_cmd_checkpoint_create_args.progname);
-        exit(exit_code);
-    }*/
-
-    //printf("%s\n","name");
     g_cmd_checkpoint_create_args.name=g_cmd_checkpoint_create_args.argv[0];
+    
+    if(g_cmd_checkpoint_create_args.argc>1){
+        g_cmd_checkpoint_create_args.checkpoint_dir=g_cmd_checkpoint_create_args.argv[1];
+    }
+    
     //printf("%s\n",g_cmd_checkpoint_create_args.name);
     if (client_checkpoint_create(&g_cmd_checkpoint_create_args, &checkpoints, &checkpoints_len) != 0) {
         ERROR("Create checkpoints failed");

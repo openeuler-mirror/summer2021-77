@@ -126,6 +126,10 @@ public:
         if (request == nullptr) {
             return -1;
         }
+        
+        if (request->dir != nullptr) {
+            grequest->set_dir(request->dir);
+        }
 
         return 0;
     }

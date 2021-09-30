@@ -72,8 +72,8 @@ int delete_file(const char *path)
     }else if(is_dir(path))
     {
         if((dir = opendir(path)) == NULL)
-            
             return -1;
+      
         while((dir_info = readdir(dir)) != NULL)
         {
             get_file_path(path, dir_info->d_name, file_path);
@@ -111,6 +111,7 @@ int checkpoint_remove(char* container,char* dir)
 
 int checkpoint_create(char* container,char* dir)
 {
+    
     struct lxc_container *c;
     c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
     //无法获取容器
@@ -138,10 +139,11 @@ int checkpoint_create(char* container,char* dir)
     strcat(checkpoint_path,dir);
     strcat(checkpoint_path,container);
     bool res;
-
+printf("checkpoint_path:%s\n",checkpoint_path);
     res =  c->checkpoint(c,checkpoint_path,true,false);
     
     if(!res){
+        printf("checkpoint_path:%s\n",checkpoint_path);
         isulad_set_error_message("Checkpointing %s failed",container);
         return -1;
     }
@@ -258,9 +260,13 @@ struct checkpoints * checkpoint_list(char* dir){
         if(strcmp(dp->d_name, ".") == 0 || strcmp(dp->d_name, "..") == 0){
             continue;
         }
+        if(containers_store_get(dp->d_name)==NULL){
+            continue;
+        }
         sum++;
         printf("%s\n",dp->d_name);
     }
+    
 
      ches = new_empty_checkpoints(sum);
 
@@ -268,6 +274,7 @@ struct checkpoints * checkpoint_list(char* dir){
         ERROR("out of memory");
         return NULL;
     }
+   
   
     dirp=opendir(dir);
    
@@ -275,12 +282,14 @@ struct checkpoints * checkpoint_list(char* dir){
         if(strcmp(dp->d_name, ".") == 0 || strcmp(dp->d_name, "..") == 0){
             continue;
         }
+         if(containers_store_get(dp->d_name)==NULL){
+            continue;
+        }
         sum++;
         
         struct checkpoint *che = dup_checkpoint(dp->d_name,dir);
         if (che == NULL) {
             ERROR("out of memory");
-            //ret = -1;
             goto out;
         }
          ches->ches[ches->ches_len] = che;

@@ -223,7 +223,7 @@ static int checkpoint_list_cb(const checkpoint_list_checkpoint_request *request,
     }
 
     EVENT("Checkpoint Event: {Object: list checkpoint, Type: listing}");
-
+    printf("request->dir:%s\n",request->dir);
     list = checkpoint_list(request->dir);
     if (list == NULL) {
         cc = ISULAD_ERR_EXEC;
