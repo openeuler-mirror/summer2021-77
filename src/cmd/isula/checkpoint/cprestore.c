@@ -63,7 +63,6 @@ static int client_checkpoint_restore(const struct client_arguments *args, char *
     //把参数放到了config里
     config = get_connect_config(args);
     //把config传递给了grpc，不知道行不行呢
-    printf("link %s\n",request.container);
     ret=ops->checkpoint.restore(&request,response,&config);
    
     if(ret!=0){
@@ -73,9 +72,10 @@ static int client_checkpoint_restore(const struct client_arguments *args, char *
         }
         goto out;
     }
-     printf("%s\n",response->container);
+     printf("%s\n",args->name);
 
 out:
+    
     //isula_restore_checkpoint_response_free(response);
     return ret;
 

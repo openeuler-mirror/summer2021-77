@@ -60,9 +60,11 @@ void get_file_path(const char *path, const char *file_name,  char *file_path)
 
 int delete_file(const char *path)
 {
+    printf(" delete_file\n");
     DIR *dir;
     struct dirent *dir_info;
-    char file_path[PATH_MAX];
+    char file_path[1000];
+    
     if(is_file(path))
     {
         remove(path);
@@ -92,16 +94,17 @@ int checkpoint_remove(char* container,char* dir)
     if(!dir){
         dir="/tmp/isula-criu/";
     }
-    strcat(dir,container);
-    if(delete_file(dir)!=0){
+    char checkpoint_path[1000]={0};
+    strcat(checkpoint_path,dir);
+    strcat(checkpoint_path,container);
+
+    if(delete_file(checkpoint_path)!=0){
+        printf("sdelete fail\n");
         isulad_set_error_message("Checkpointing remove %s failed",container);
         return -1;
     }
-    
+    printf("delete success\n");
     return 0;
-
-
-    
 }
 
 

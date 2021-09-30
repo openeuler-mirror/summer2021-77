@@ -68,12 +68,14 @@ static int client_checkpoint_create(const struct client_arguments *args, char **
         if(response->server_errono){
             ret=ESERVERERROR;
         }
+
         goto out;
     }
-    printf("%s\n",response->container);
+    printf("%s\n",args->name);
 
 out:
     //isula_create_checkpoint_response_free(response);
+    
     return ret;
 }
 

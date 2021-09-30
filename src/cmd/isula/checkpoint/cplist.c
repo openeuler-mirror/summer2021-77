@@ -61,7 +61,7 @@ static void checkpoint_info_print(const struct isula_list_checkpoint_response *r
 {
     struct lengths max_len = {
         .name_length = 10,
-        .dir_length = 100,
+        .dir_length = 10,
     };
 
     list_print_table(response, &max_len);
