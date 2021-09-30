@@ -27,7 +27,6 @@ public:
 
     auto request_to_grpc(const isula_create_checkpoint_request *request, CreateCheckpointRequest *grequest) -> int override
     {
-        printf("requesttogrpc\n");
         if (request == nullptr) {
             return -1;
         }

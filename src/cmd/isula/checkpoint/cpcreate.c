@@ -70,7 +70,7 @@ static int client_checkpoint_create(const struct client_arguments *args, char **
         }
         goto out;
     }
-     printf("%s\n",response->container);
+    printf("%s\n",response->container);
 
 out:
     //isula_create_checkpoint_response_free(response);
