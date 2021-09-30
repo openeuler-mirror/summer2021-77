@@ -658,6 +658,7 @@ struct isula_checkpoint_info{
 };
 
 struct isula_list_checkpoint_response {
+    size_t checkpoints_len;
     struct isula_checkpoint_info *checkpoints;
     uint32_t cc;
     uint32_t server_errono;

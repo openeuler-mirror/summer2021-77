@@ -347,6 +347,7 @@ Status CheckpointServiceImpl::List(ServerContext *context, const ListCheckpointR
     }
     //获取服务执行器
     service_executor_t *cb = get_service_executor();
+    
     //获取为空
     if (cb == nullptr || cb->checkpoint.list == nullptr) {
         return Status(StatusCode::UNIMPLEMENTED, "Unimplemented callback");

@@ -231,6 +231,7 @@ static struct checkpoint * dup_checkpoint(char *name, char *dir)
 
 
 struct checkpoints * checkpoint_list(char* dir){
+    
 
     struct checkpoints *ches = NULL;
 
@@ -239,11 +240,14 @@ struct checkpoints * checkpoint_list(char* dir){
 
     DIR *dirp;
     struct dirent *dp;
-    if(dir){
-        dirp=opendir(dir);
-    }else{
-        dirp=opendir("/tmp/isula-criu/");
+    if(!dir){
+        dir="/tmp/isula-criu/";
     }
+    dirp=opendir(dir);
+    if(dirp==NULL){
+        return NULL;
+    }
+    
     
     int sum=0;
     while((dp=readdir(dirp))!=NULL){
@@ -253,6 +257,7 @@ struct checkpoints * checkpoint_list(char* dir){
         sum++;
         printf("%s\n",dp->d_name);
     }
+    printf("\n\nsucess\n\n");
 
      ches = new_empty_checkpoints(sum);
 
@@ -274,10 +279,10 @@ struct checkpoints * checkpoint_list(char* dir){
         }
         sum++;
         
-        che = dup_checkpoint(dp->d_name,"/tmp/isula-criu/");
+        struct checkpoint *che = dup_checkpoint(dp->d_name,"/tmp/isula-criu/");
         if (che == NULL) {
             ERROR("out of memory");
-            ret = -1;
+            //ret = -1;
             goto out;
         }
          ches->ches[ches->ches_len] = che;

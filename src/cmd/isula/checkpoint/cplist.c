@@ -50,7 +50,7 @@ static void list_print_table(const struct isula_list_checkpoint_response *resp, 
     printf("%-*s ", (int)length->dir_length, "CHECKPOINT_DIR");
     printf("\n");
 
-    for (i = 0; i < resp->volumes_len; i++) {
+    for (i = 0; i < resp->checkpoints_len; i++) {
         printf("%-*s ", (int)length->name_length, resp->checkpoints[i].name);
         printf("%-*s ", (int)length->dir_length, resp->checkpoints[i].dir);
         printf("\n");
@@ -60,7 +60,7 @@ static void list_print_table(const struct isula_list_checkpoint_response *resp, 
 static void checkpoint_info_print(const struct isula_list_checkpoint_response *response)
 {
     struct lengths max_len = {
-        .name_length = 20,
+        .name_length = 10,
         .dir_length = 100,
     };
 
@@ -89,7 +89,7 @@ static int client_checkpoint_ls(const struct client_arguments *args, char ***vol
     
 
     ops = get_connect_client_ops();
-    printf("get ops\n");
+    
     if(ops==NULL || ops->checkpoint.list==NULL){
         ERROR("Unimplemented ops");
         ret=-1;
@@ -97,9 +97,11 @@ static int client_checkpoint_ls(const struct client_arguments *args, char ***vol
     }
     //把参数放到了config里
     config = get_connect_config(args);
- 
+    
     ret=ops->checkpoint.list(&request,response,&config);
+    
     if(ret!=0){
+        
         client_print_error(response->cc,response->server_errono,response->errmsg);
         if(response->server_errono){
             ret=ESERVERERROR;
