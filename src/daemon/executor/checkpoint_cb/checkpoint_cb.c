@@ -60,7 +60,7 @@ static int checkpoint_create_cb(const checkpoint_create_checkpoint_request *requ
         cc = ISULAD_ERR_EXEC;
         ERROR("No such container:%s", request->container);
         isulad_set_error_message("No such container:%s", request->container);
-       // goto pack_response;
+        goto out;
     }
 
 
@@ -116,7 +116,7 @@ container_t *cont = NULL;
         cc = ISULAD_ERR_EXEC;
         ERROR("No such container:%s", request->container);
         isulad_set_error_message("No such container:%s", request->container);
-        //goto pack_response;
+        goto out;
     }
 
 
@@ -158,14 +158,7 @@ static int checkpoint_remove_cb(const checkpoint_remove_checkpoint_request *requ
         return EINVALIDARGS;
     }
 
-    cont = containers_store_get(request->container);
-    if (cont == NULL) {
-        cc = ISULAD_ERR_EXEC;
-        ERROR("No such container:%s", request->container);
-        isulad_set_error_message("No such container:%s", request->container);
-        
-        goto out;
-    }
+    
 
 
     *response = util_common_calloc_s(sizeof(checkpoint_remove_checkpoint_response));
@@ -175,9 +168,15 @@ static int checkpoint_remove_cb(const checkpoint_remove_checkpoint_request *requ
         goto out;
     }
 
-    EVENT("Checkpoint Event: {Object: remove checkpoint, Type: Removing}");
+    cont = containers_store_get(request->container);
+    if (cont == NULL) {
+        cc = ISULAD_ERR_EXEC;
+        isulad_set_error_message("No such container:%s", request->container);
+        ERROR("No such container:%s", request->container);
+        goto out;
+    }
 
-    
+    EVENT("Checkpoint Event: {Object: remove checkpoint, Type: Removing}");
 
 
     char* id = cont->common_config->id;
@@ -198,7 +197,6 @@ out:
             DAEMON_CLEAR_ERRMSG();
         }
     }
-    //free_checkpoint_names(created);
 
     return (cc != ISULAD_SUCCESS) ? ECOMMON : 0;
 }

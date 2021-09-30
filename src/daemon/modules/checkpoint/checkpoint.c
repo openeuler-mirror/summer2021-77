@@ -95,7 +95,7 @@ int checkpoint_remove(char* container,char* dir)
     strcat(dir,container);
     if(delete_file(dir)!=0){
         isulad_set_error_message("Checkpointing remove %s failed",container);
-        return -1
+        return -1;
     }
     
     return 0;
