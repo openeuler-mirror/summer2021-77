@@ -207,7 +207,7 @@ out:
 static int checkpoint_list_cb(const checkpoint_list_checkpoint_request *request, checkpoint_list_checkpoint_response **response)
 {
     uint32_t cc = ISULAD_SUCCESS;
-    struct checkpoints *list =NULL;
+    struct checkpoints *list = NULL;
     size_t i=0;
     checkpoint_checkpoint *che = NULL;
 
@@ -227,12 +227,12 @@ static int checkpoint_list_cb(const checkpoint_list_checkpoint_request *request,
 
     EVENT("Checkpoint Event: {Object: list checkpoint, Type: listing}");
 
-    list = checkpoint_list(request->dir)
+    list = checkpoint_list(request->dir);
     if (list == NULL) {
         cc = ISULAD_ERR_EXEC;
         goto out;
     }
-     if (list->vols_len == 0) {
+     if (list->ches_len == 0) {
         goto out;
     }
 

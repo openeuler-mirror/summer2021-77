@@ -17,13 +17,19 @@ struct checkpoints {
     size_t ches_len;
 };
 
+typedef struct {
+    char *dir;
+
+    char *name;
+}checkpoint_checkpoint;
+
 char* checkpoint_create(char* container,char* dir);
 
 char* checkpoint_restore(char* container,char* dir);
 
 char* checkpoint_remove(char* container,char* dir);
 
-char* checkpoint_list(char* dir);
+struct checkpoints* checkpoint_list(char* dir);
 
 
 #ifdef __cplusplus
