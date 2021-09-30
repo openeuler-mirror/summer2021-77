@@ -172,7 +172,8 @@ container_t *cont = NULL;
         cc = ISULAD_ERR_EXEC;
         ERROR("No such container:%s", request->container);
         isulad_set_error_message("No such container:%s", request->container);
-        //goto pack_response;
+        
+        goto out;
     }
 
 

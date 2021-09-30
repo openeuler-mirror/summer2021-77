@@ -70,7 +70,7 @@ void delete_file(const char *path)
     }
     if(is_dir(path))
     {
-        //printf("is_dir\n");
+        printf("is_dir\n");
         if((dir = opendir(path)) == NULL)
             
             return;

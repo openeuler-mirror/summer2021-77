@@ -239,10 +239,6 @@ int CheckpointServiceImpl::checkpoint_remove_response_to_grpc(checkpoint_remove_
     }
     gresponse->set_container(response->container);
 
-   // for (size_t i {}; i < response->checkpoints_len; i++) {
-     //   gresponse->add_checkpoints(response->checkpoints[i]);
-    //}
-
     return 0;
 }
 
