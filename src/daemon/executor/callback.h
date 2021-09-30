@@ -318,7 +318,7 @@ struct isula_checkpoint_info{
 };
 typedef struct{
     size_t checkpoints_len;
-    struct isula_checkpoint_info checkpoints;
+    checkpoint_checkpoint  **checkpoints;
     uint32_t cc;
     uint32_t server_errono;
     char *errmsg;
