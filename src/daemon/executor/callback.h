@@ -88,7 +88,7 @@
 #include "events_format.h"
 #include "stream_wrapper.h"
 #include "utils_timestamp.h"
-
+#include "protocol_type.h"
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -315,7 +315,8 @@ typedef struct {
 
 
 typedef struct{
-    char* checkpoints;
+    size_t checkpoints_len;
+    struct isula_checkpoint_info checkpoints;
     uint32_t cc;
     uint32_t server_errono;
     char *errmsg;
