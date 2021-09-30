@@ -93,8 +93,8 @@ Status CheckpointServiceImpl::Create(ServerContext *context, const CreateCheckpo
     int ret = cb->checkpoint.create(checkpoint_req, &checkpoint_res);
     //发送响应
     tret = checkpoint_create_response_to_grpc(checkpoint_res, reply);
-    //free_checkpoint_create_checkpoint_request(checkpoint_req);
-    //free_checkpoint_create_checkpoint_response(checkpoint_res);
+    free(checkpoint_req);
+    free(checkpoint_res);
     if (tret != 0) {
         openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
 	    syslog(LOG_DEBUG,"发送响应失败\n");
@@ -187,8 +187,8 @@ Status CheckpointServiceImpl::Restore(ServerContext *context, const RestoreCheck
     int ret = cb->checkpoint.restore(checkpoint_req, &checkpoint_res);
     //发送响应
     tret = checkpoint_restore_response_to_grpc(checkpoint_res, reply);
-    //free_checkpoint_create_checkpoint_request(checkpoint_req);
-    //free_checkpoint_create_checkpoint_response(checkpoint_res);
+    free(checkpoint_req);
+    free(checkpoint_res);
     if (tret != 0) {
         openlog("isula",LOG_CONS | LOG_PID,LOG_LOCAL2);
 	    syslog(LOG_DEBUG,"发送响应失败\n");
@@ -260,8 +260,8 @@ Status CheckpointServiceImpl::Remove(ServerContext *context, const RemoveCheckpo
     
     //发送响应
     tret = response_to_grpc(checkpoint_res, reply);
-    //free_checkpoint_create_checkpoint_request(checkpoint_req);
-    //free_checkpoint_create_checkpoint_response(checkpoint_res);
+    free(checkpoint_req);
+    free(checkpoint_res);
     if (tret != 0) {
         
         reply->set_errmsg(util_strdup_s(errno_to_error_message(ISULAD_ERR_INTERNAL)));
@@ -347,8 +347,8 @@ Status CheckpointServiceImpl::List(ServerContext *context, const ListCheckpointR
     int ret = cb->checkpoint.list(checkpoint_req, &checkpoint_res);
     //发送响应
     tret = checkpoint_list_response_to_grpc(checkpoint_res, reply);
-    //free_checkpoint_create_checkpoint_request(checkpoint_req);
-    //free_checkpoint_create_checkpoint_response(checkpoint_res);
+    free(checkpoint_req);
+    free(checkpoint_res);
     if (tret != 0) {
         reply->set_errmsg(util_strdup_s(errno_to_error_message(ISULAD_ERR_INTERNAL)));
         reply->set_cc(ISULAD_ERR_INPUT);

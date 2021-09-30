@@ -85,7 +85,7 @@ out:
             DAEMON_CLEAR_ERRMSG();
         }
     }
-    //free_checkpoint_names(created);
+
 
     return (cc != ISULAD_SUCCESS) ? ECOMMON : 0;
 }
@@ -141,7 +141,7 @@ out:
             DAEMON_CLEAR_ERRMSG();
         }
     }
-    //free_checkpoint_names(restored);
+
 
     return (cc != ISULAD_SUCCESS) ? ECOMMON : 0;
 }
@@ -264,7 +264,7 @@ err_out:
             DAEMON_CLEAR_ERRMSG();
         }
     }
-    //free_checkpoint_names(created);
+
 
     return (cc != ISULAD_SUCCESS) ? ECOMMON : 0;
 }

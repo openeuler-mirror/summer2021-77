@@ -129,15 +129,18 @@ int checkpoint_create(char* container,char* dir)
 		return -1;
 	}
 
-    char checkpoint_dir[1000]="/tmp/isula-criu/";
-    strcat(checkpoint_dir,c->name);
-    bool res;
     //如果自定义了路径就使用自定义路径，否则使用默认路径
-    if(dir){
-        res = c->checkpoint(c,dir,true,false);
-    }else{
-        res =  c->checkpoint(c,checkpoint_dir,true,false);
+    if(!dir){
+        dir="/tmp/isula-criu/";
     }
+
+    char checkpoint_path[1000]={0};
+    strcat(checkpoint_path,dir);
+    strcat(checkpoint_path,container);
+    bool res;
+
+    res =  c->checkpoint(c,checkpoint_path,true,false);
+    
     if(!res){
         isulad_set_error_message("Checkpointing %s failed",container);
         return -1;
@@ -149,11 +152,7 @@ int checkpoint_restore(char* container,char* dir)
 {
     container_t *cont=NULL;
     cont = containers_store_get(container);
-    int nret = im_mount_container_rootfs(cont->common_config->image_type, cont->common_config->image, container);
-    if(nret!=0){
-        printf("挂载失败");
-    }
-   printf("文件系统挂载成功");
+    im_mount_container_rootfs(cont->common_config->image_type, cont->common_config->image, container);
     struct lxc_container *c;
     c=lxc_container_new(container,"/var/lib/isulad/engines/lcr/");
     if (!c) {
@@ -168,15 +167,18 @@ int checkpoint_restore(char* container,char* dir)
 		isulad_set_error_message("%s is running, not restoring\n", container);
 		return -1;
 	}
-    char checkpoint_dir[1000]="/tmp/isula-criu/";
-    strcat(checkpoint_dir,c->name);
-    bool res;
-    if(dir){
-        strcat(dir,c->name);
-        res =  c->restore(c,checkpoint_dir,true);
-    }else{
-        res =  c->restore(c,checkpoint_dir,true);
+
+     if(!dir){
+        dir="/tmp/isula-criu/";
     }
+
+    char checkpoint_path[1000]={0};
+    strcat(checkpoint_path,dir);
+    strcat(checkpoint_path,container);
+    bool res;
+
+    res =  c->restore(c,checkpoint_path,true);
+
     
     if (!res){
         isulad_set_error_message("Restoring %s failed\n",container);
@@ -212,7 +214,7 @@ static struct checkpoints *new_empty_checkpoints(int size)
     ches->ches = util_common_calloc_s(sizeof(struct checkpoint*) * size);
     if (ches->ches == NULL) {
         ERROR("out of memory");
-        //free_volumes(vols);
+        free(ches);
         return NULL;
     }
 
@@ -259,7 +261,6 @@ struct checkpoints * checkpoint_list(char* dir){
         sum++;
         printf("%s\n",dp->d_name);
     }
-    printf("\n\nsucess\n\n");
 
      ches = new_empty_checkpoints(sum);
 
@@ -268,12 +269,7 @@ struct checkpoints * checkpoint_list(char* dir){
         return NULL;
     }
   
-    if(dir){
-        dirp=opendir(dir);
-    }else{
-        dirp=opendir("/tmp/isula-criu/");
-    }
-    
+    dirp=opendir(dir);
    
     while((dp=readdir(dirp))!=NULL){
         if(strcmp(dp->d_name, ".") == 0 || strcmp(dp->d_name, "..") == 0){
@@ -281,7 +277,7 @@ struct checkpoints * checkpoint_list(char* dir){
         }
         sum++;
         
-        struct checkpoint *che = dup_checkpoint(dp->d_name,"/tmp/isula-criu/");
+        struct checkpoint *che = dup_checkpoint(dp->d_name,dir);
         if (che == NULL) {
             ERROR("out of memory");
             //ret = -1;
